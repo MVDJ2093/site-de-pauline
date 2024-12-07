@@ -1,12 +1,28 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
+import {
+  NavigationMenu,
+  NavigationMenuContent,
+  NavigationMenuItem,
+  NavigationMenuLink,
+  NavigationMenuList,
+  NavigationMenuTrigger,
+} from "@/components/ui/navigation-menu";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
+  const expertiseItems = [
+    "Avocat en droit de la fonction publique",
+    "Maladie professionnelle",
+    "Accident de service",
+    "Sanction disciplinaire ou insuffisance professionnelle",
+    "Inaptitude et reclassement",
+    "Harcèlement moral"
+  ];
+
   const menuItems = [
     "Le Cabinet",
-    "Expertises fonction publique",
     "Actualités",
     "Honoraires",
     "RDV en ligne",
@@ -30,8 +46,8 @@ const Header = () => {
           </button>
 
           {/* Desktop navigation */}
-          <nav className="hidden md:flex space-x-6">
-            {menuItems.map((item) => (
+          <nav className="hidden md:flex items-center space-x-6">
+            {menuItems.map((item, index) => (
               <a
                 key={item}
                 href={`#${item.toLowerCase().replace(/ /g, '-')}`}
@@ -40,6 +56,33 @@ const Header = () => {
                 {item}
               </a>
             ))}
+            
+            {/* Expertise dropdown */}
+            <NavigationMenu>
+              <NavigationMenuList>
+                <NavigationMenuItem>
+                  <NavigationMenuTrigger className="text-sm text-navy hover:text-gold">
+                    Expertises fonction publique
+                  </NavigationMenuTrigger>
+                  <NavigationMenuContent>
+                    <ul className="grid w-[400px] gap-3 p-4">
+                      {expertiseItems.map((item) => (
+                        <li key={item}>
+                          <NavigationMenuLink asChild>
+                            <a
+                              href={`#${item.toLowerCase().replace(/ /g, '-')}`}
+                              className="block p-2 text-sm text-navy hover:text-gold hover:bg-gray-50 rounded-md transition-colors"
+                            >
+                              {item}
+                            </a>
+                          </NavigationMenuLink>
+                        </li>
+                      ))}
+                    </ul>
+                  </NavigationMenuContent>
+                </NavigationMenuItem>
+              </NavigationMenuList>
+            </NavigationMenu>
           </nav>
         </div>
 
@@ -56,6 +99,19 @@ const Header = () => {
                 {item}
               </a>
             ))}
+            <div className="py-2">
+              <div className="font-medium text-navy mb-2">Expertises fonction publique</div>
+              {expertiseItems.map((item) => (
+                <a
+                  key={item}
+                  href={`#${item.toLowerCase().replace(/ /g, '-')}`}
+                  className="block py-2 pl-4 text-sm text-navy hover:text-gold transition-colors"
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  {item}
+                </a>
+              ))}
+            </div>
           </nav>
         )}
       </div>
