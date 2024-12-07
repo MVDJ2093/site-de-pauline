@@ -4,6 +4,15 @@ import { Menu, X } from "lucide-react";
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
+  const menuItems = [
+    "Le Cabinet",
+    "Expertises fonction publique",
+    "Actualités",
+    "Honoraires",
+    "RDV en ligne",
+    "Me contacter"
+  ];
+
   return (
     <header className="fixed w-full bg-white/95 backdrop-blur-sm z-50 shadow-sm">
       <div className="container mx-auto px-4 py-4">
@@ -21,12 +30,12 @@ const Header = () => {
           </button>
 
           {/* Desktop navigation */}
-          <nav className="hidden md:flex space-x-8">
-            {["Accueil", "À propos", "Services", "Contact"].map((item) => (
+          <nav className="hidden md:flex space-x-6">
+            {menuItems.map((item) => (
               <a
                 key={item}
-                href={`#${item.toLowerCase()}`}
-                className="text-navy hover:text-gold transition-colors"
+                href={`#${item.toLowerCase().replace(/ /g, '-')}`}
+                className="text-navy hover:text-gold transition-colors whitespace-nowrap text-sm"
               >
                 {item}
               </a>
@@ -37,10 +46,10 @@ const Header = () => {
         {/* Mobile navigation */}
         {isMenuOpen && (
           <nav className="md:hidden pt-4 pb-2">
-            {["Accueil", "À propos", "Services", "Contact"].map((item) => (
+            {menuItems.map((item) => (
               <a
                 key={item}
-                href={`#${item.toLowerCase()}`}
+                href={`#${item.toLowerCase().replace(/ /g, '-')}`}
                 className="block py-2 text-navy hover:text-gold transition-colors"
                 onClick={() => setIsMenuOpen(false)}
               >
