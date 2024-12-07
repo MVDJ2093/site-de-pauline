@@ -23,6 +23,7 @@ const Header = () => {
 
   const menuItems = [
     "Le Cabinet",
+    "Expertises fonction publique",
     "Actualités",
     "Honoraires",
     "RDV en ligne",
@@ -47,71 +48,81 @@ const Header = () => {
 
           {/* Desktop navigation */}
           <nav className="hidden md:flex items-center space-x-6">
-            {menuItems.map((item, index) => (
-              <a
-                key={item}
-                href={`#${item.toLowerCase().replace(/ /g, '-')}`}
-                className="text-navy hover:text-gold transition-colors whitespace-nowrap text-sm"
-              >
-                {item}
-              </a>
-            ))}
-            
-            {/* Expertise dropdown */}
-            <NavigationMenu>
-              <NavigationMenuList>
-                <NavigationMenuItem>
-                  <NavigationMenuTrigger className="text-sm text-navy hover:text-gold">
-                    Expertises fonction publique
-                  </NavigationMenuTrigger>
-                  <NavigationMenuContent>
-                    <ul className="grid w-[400px] gap-3 p-4">
-                      {expertiseItems.map((item) => (
-                        <li key={item}>
-                          <NavigationMenuLink asChild>
-                            <a
-                              href={`#${item.toLowerCase().replace(/ /g, '-')}`}
-                              className="block p-2 text-sm text-navy hover:text-gold hover:bg-gray-50 rounded-md transition-colors"
-                            >
-                              {item}
-                            </a>
-                          </NavigationMenuLink>
-                        </li>
-                      ))}
-                    </ul>
-                  </NavigationMenuContent>
-                </NavigationMenuItem>
-              </NavigationMenuList>
-            </NavigationMenu>
+            {menuItems.map((item, index) => {
+              if (item === "Expertises fonction publique") {
+                return (
+                  <NavigationMenu key={item}>
+                    <NavigationMenuList>
+                      <NavigationMenuItem>
+                        <NavigationMenuTrigger className="text-sm text-navy hover:text-gold">
+                          {item}
+                        </NavigationMenuTrigger>
+                        <NavigationMenuContent>
+                          <ul className="grid w-[400px] gap-3 p-4">
+                            {expertiseItems.map((expertiseItem) => (
+                              <li key={expertiseItem}>
+                                <NavigationMenuLink asChild>
+                                  <a
+                                    href={`#${expertiseItem.toLowerCase().replace(/ /g, '-')}`}
+                                    className="block p-2 text-sm text-navy hover:text-gold hover:bg-gray-50 rounded-md transition-colors"
+                                  >
+                                    {expertiseItem}
+                                  </a>
+                                </NavigationMenuLink>
+                              </li>
+                            ))}
+                          </ul>
+                        </NavigationMenuContent>
+                      </NavigationMenuItem>
+                    </NavigationMenuList>
+                  </NavigationMenu>
+                );
+              }
+              return (
+                <a
+                  key={item}
+                  href={`#${item.toLowerCase().replace(/ /g, '-')}`}
+                  className="text-navy hover:text-gold transition-colors whitespace-nowrap text-sm"
+                >
+                  {item}
+                </a>
+              );
+            })}
           </nav>
         </div>
 
         {/* Mobile navigation */}
         {isMenuOpen && (
           <nav className="md:hidden pt-4 pb-2">
-            {menuItems.map((item) => (
-              <a
-                key={item}
-                href={`#${item.toLowerCase().replace(/ /g, '-')}`}
-                className="block py-2 text-navy hover:text-gold transition-colors"
-                onClick={() => setIsMenuOpen(false)}
-              >
-                {item}
-              </a>
-            ))}
-            <div className="py-2">
-              <div className="font-medium text-navy mb-2">Expertises fonction publique</div>
-              {expertiseItems.map((item) => (
+            {menuItems.map((item) => {
+              if (item === "Expertises fonction publique") {
+                return (
+                  <div key={item} className="py-2">
+                    <div className="font-medium text-navy mb-2">{item}</div>
+                    {expertiseItems.map((expertiseItem) => (
+                      <a
+                        key={expertiseItem}
+                        href={`#${expertiseItem.toLowerCase().replace(/ /g, '-')}`}
+                        className="block py-2 pl-4 text-sm text-navy hover:text-gold transition-colors"
+                        onClick={() => setIsMenuOpen(false)}
+                      >
+                        {expertiseItem}
+                      </a>
+                    ))}
+                  </div>
+                );
+              }
+              return (
                 <a
                   key={item}
                   href={`#${item.toLowerCase().replace(/ /g, '-')}`}
-                  className="block py-2 pl-4 text-sm text-navy hover:text-gold transition-colors"
+                  className="block py-2 text-navy hover:text-gold transition-colors"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   {item}
                 </a>
-              ))}
-            </div>
+              );
+            })}
           </nav>
         )}
       </div>
