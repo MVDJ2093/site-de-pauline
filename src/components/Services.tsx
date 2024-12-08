@@ -1,41 +1,42 @@
 import { Shield, Scale, BookOpen, Users, FileText, HeartPulse } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const expertises = [
   {
     icon: Shield,
     title: "Avocat en droit de la fonction publique",
     description: "Défense de vos droits et garanties statutaires en tant qu'agent public",
-    link: "/expertises/droit-fonction-publique"
+    link: "/expertise/droit-fonction-publique"
   },
   {
     icon: HeartPulse,
     title: "Maladie professionnelle",
     description: "Accompagnement dans la reconnaissance et la gestion de votre maladie professionnelle",
-    link: "/expertises/maladie-professionnelle"
+    link: "/expertise/contentieux-administratif"
   },
   {
     icon: Scale,
     title: "Accident de service",
     description: "Protection de vos droits suite à un accident de service",
-    link: "/expertises/accident-service"
+    link: "/expertise/contentieux-administratif"
   },
   {
     icon: FileText,
     title: "Sanction disciplinaire ou insuffisance professionnelle",
     description: "Défense de vos intérêts face aux procédures disciplinaires",
-    link: "/expertises/sanctions-disciplinaires"
+    link: "/expertise/contentieux-administratif"
   },
   {
     icon: Users,
     title: "Inaptitude et reclassement",
     description: "Accompagnement dans les procédures d'inaptitude et de reclassement",
-    link: "/expertises/inaptitude-reclassement"
+    link: "/expertise/contentieux-administratif"
   },
   {
     icon: Shield,
     title: "Harcèlement moral",
     description: "Protection et défense contre toute forme de harcèlement au travail",
-    link: "/expertises/harcelement-moral"
+    link: "/expertise/contentieux-administratif"
   }
 ];
 
@@ -54,9 +55,9 @@ const Services = () => {
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {expertises.map((expertise) => (
-            <a
+            <Link
               key={expertise.title}
-              href={expertise.link}
+              to={expertise.link}
               className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow cursor-pointer"
             >
               <expertise.icon className="w-12 h-12 text-gold mb-4" />
@@ -64,7 +65,7 @@ const Services = () => {
                 {expertise.title}
               </h3>
               <p className="text-gray-600">{expertise.description}</p>
-            </a>
+            </Link>
           ))}
         </div>
       </div>

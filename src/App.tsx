@@ -10,6 +10,8 @@ import Actualites from "./pages/Actualites";
 import Honoraires from "./pages/Honoraires";
 import RendezVous from "./pages/RendezVous";
 import Contact from "./pages/Contact";
+import DroitFonctionPublique from "./pages/expertise/DroitFonctionPublique";
+import ContentieuxAdministratif from "./pages/expertise/ContentieuxAdministratif";
 
 const queryClient = new QueryClient();
 
@@ -27,6 +29,8 @@ const App = () => (
           <Route path="/honoraires" element={<Honoraires />} />
           <Route path="/rendez-vous" element={<RendezVous />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/expertise/droit-fonction-publique" element={<DroitFonctionPublique />} />
+          <Route path="/expertise/contentieux-administratif" element={<ContentieuxAdministratif />} />
         </Routes>
       </BrowserRouter>
     </TooltipProvider>
