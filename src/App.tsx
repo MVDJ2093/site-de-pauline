@@ -12,6 +12,10 @@ import RendezVous from "./pages/RendezVous";
 import Contact from "./pages/Contact";
 import DroitFonctionPublique from "./pages/expertise/DroitFonctionPublique";
 import ContentieuxAdministratif from "./pages/expertise/ContentieuxAdministratif";
+import ProtectionStatutaire from "./pages/expertise/ProtectionStatutaire";
+import Discipline from "./pages/expertise/Discipline";
+import CarriereRemuneration from "./pages/expertise/CarriereRemuneration";
+import ConseilAssistance from "./pages/expertise/ConseilAssistance";
 
 const queryClient = new QueryClient();
 
@@ -31,6 +35,10 @@ const App = () => (
           <Route path="/contact" element={<Contact />} />
           <Route path="/expertise/droit-fonction-publique" element={<DroitFonctionPublique />} />
           <Route path="/expertise/contentieux-administratif" element={<ContentieuxAdministratif />} />
+          <Route path="/expertise/protection-statutaire" element={<ProtectionStatutaire />} />
+          <Route path="/expertise/discipline" element={<Discipline />} />
+          <Route path="/expertise/carriere-remuneration" element={<CarriereRemuneration />} />
+          <Route path="/expertise/conseil-assistance" element={<ConseilAssistance />} />
         </Routes>
       </BrowserRouter>
     </TooltipProvider>
