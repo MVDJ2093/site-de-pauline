@@ -1,47 +1,70 @@
-import { Shield, Scale, BookOpen, Users } from "lucide-react";
+import { Shield, Scale, BookOpen, Users, FileText, HeartPulse } from "lucide-react";
 
-const services = [
+const expertises = [
   {
     icon: Shield,
-    title: "Protection statutaire",
+    title: "Avocat en droit de la fonction publique",
     description: "Défense de vos droits et garanties statutaires en tant qu'agent public",
+    link: "/expertises/droit-fonction-publique"
+  },
+  {
+    icon: HeartPulse,
+    title: "Maladie professionnelle",
+    description: "Accompagnement dans la reconnaissance et la gestion de votre maladie professionnelle",
+    link: "/expertises/maladie-professionnelle"
   },
   {
     icon: Scale,
-    title: "Contentieux administratif",
-    description: "Représentation devant les juridictions administratives",
+    title: "Accident de service",
+    description: "Protection de vos droits suite à un accident de service",
+    link: "/expertises/accident-service"
   },
   {
-    icon: BookOpen,
-    title: "Conseil juridique",
-    description: "Accompagnement et conseil sur vos droits et obligations",
+    icon: FileText,
+    title: "Sanction disciplinaire ou insuffisance professionnelle",
+    description: "Défense de vos intérêts face aux procédures disciplinaires",
+    link: "/expertises/sanctions-disciplinaires"
   },
   {
     icon: Users,
-    title: "Carrière & Mobilité",
-    description: "Assistance dans l'évolution de votre carrière administrative",
+    title: "Inaptitude et reclassement",
+    description: "Accompagnement dans les procédures d'inaptitude et de reclassement",
+    link: "/expertises/inaptitude-reclassement"
   },
+  {
+    icon: Shield,
+    title: "Harcèlement moral",
+    description: "Protection et défense contre toute forme de harcèlement au travail",
+    link: "/expertises/harcelement-moral"
+  }
 ];
 
 const Services = () => {
   return (
-    <section id="services" className="py-20 bg-lightGray">
+    <section id="services" className="py-20 bg-white">
+      <div 
+        className="absolute inset-0 bg-cover bg-center opacity-10"
+        style={{
+          backgroundImage: "url('https://images.unsplash.com/photo-1524522173746-f628baad3644?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2531&q=80')"
+        }}
+      />
       <div className="container mx-auto px-4">
         <h2 className="text-3xl md:text-4xl font-bold text-center text-navy mb-12">
-          Domaines d'expertise
+          EXPERTISE FONCTION PUBLIQUE
         </h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          {services.map((service) => (
-            <div
-              key={service.title}
-              className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow"
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {expertises.map((expertise) => (
+            <a
+              key={expertise.title}
+              href={expertise.link}
+              className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow cursor-pointer"
             >
-              <service.icon className="w-12 h-12 text-gold mb-4" />
+              <expertise.icon className="w-12 h-12 text-gold mb-4" />
               <h3 className="text-xl font-semibold text-navy mb-2">
-                {service.title}
+                {expertise.title}
               </h3>
-              <p className="text-gray-600">{service.description}</p>
-            </div>
+              <p className="text-gray-600">{expertise.description}</p>
+            </a>
           ))}
         </div>
       </div>
