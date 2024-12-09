@@ -1,12 +1,12 @@
-import { Shield, Scale, BookOpen, Users, FileText, HeartPulse } from "lucide-react";
+import { Shield, HeartPulse, Users, Scale, FileText, Phone } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const expertises = [
   {
-    icon: Shield,
-    title: "Avocat en droit de la fonction publique",
-    description: "Défense de vos droits et garanties statutaires en tant qu'agent public",
-    link: "/expertise/droit-fonction-publique"
+    icon: Scale,
+    title: "Accident de service",
+    description: "Protection de vos droits suite à un accident de service",
+    link: "/expertise/contentieux-administratif"
   },
   {
     icon: HeartPulse,
@@ -15,9 +15,15 @@ const expertises = [
     link: "/expertise/contentieux-administratif"
   },
   {
-    icon: Scale,
-    title: "Accident de service",
-    description: "Protection de vos droits suite à un accident de service",
+    icon: Shield,
+    title: "Harcèlement moral",
+    description: "Protection et défense contre toute forme de harcèlement au travail",
+    link: "/expertise/contentieux-administratif"
+  },
+  {
+    icon: Users,
+    title: "Inaptitude physique & reclassement",
+    description: "Accompagnement dans les procédures d'inaptitude et de reclassement",
     link: "/expertise/contentieux-administratif"
   },
   {
@@ -27,16 +33,10 @@ const expertises = [
     link: "/expertise/contentieux-administratif"
   },
   {
-    icon: Users,
-    title: "Inaptitude et reclassement",
-    description: "Accompagnement dans les procédures d'inaptitude et de reclassement",
-    link: "/expertise/contentieux-administratif"
-  },
-  {
-    icon: Shield,
-    title: "Harcèlement moral",
-    description: "Protection et défense contre toute forme de harcèlement au travail",
-    link: "/expertise/contentieux-administratif"
+    icon: Phone,
+    title: "Autres situations",
+    description: "Contactez-nous pour toute autre situation nécessitant notre expertise",
+    link: "/contact"
   }
 ];
 

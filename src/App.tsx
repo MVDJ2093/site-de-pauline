@@ -16,6 +16,7 @@ import ProtectionStatutaire from "./pages/expertise/ProtectionStatutaire";
 import Discipline from "./pages/expertise/Discipline";
 import CarriereRemuneration from "./pages/expertise/CarriereRemuneration";
 import ConseilAssistance from "./pages/expertise/ConseilAssistance";
+import AccidentService from "./pages/expertise/AccidentService";
 
 const queryClient = new QueryClient();
 
@@ -39,6 +40,7 @@ const App = () => (
           <Route path="/expertise/discipline" element={<Discipline />} />
           <Route path="/expertise/carriere-remuneration" element={<CarriereRemuneration />} />
           <Route path="/expertise/conseil-assistance" element={<ConseilAssistance />} />
+          <Route path="/expertise/accident-service" element={<AccidentService />} />
         </Routes>
       </BrowserRouter>
     </TooltipProvider>
