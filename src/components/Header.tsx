@@ -1,14 +1,6 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { Link } from "react-router-dom";
-import {
-  NavigationMenu,
-  NavigationMenuContent,
-  NavigationMenuItem,
-  NavigationMenuLink,
-  NavigationMenuList,
-  NavigationMenuTrigger,
-} from "@/components/ui/navigation-menu";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -24,8 +16,8 @@ const Header = () => {
   ];
 
   return (
-    <header className="fixed w-full bg-offWhite backdrop-blur-sm z-50 shadow-sm">
-      <div className="container mx-auto px-4 py-4">
+    <header className="fixed w-full flex justify-center px-4 py-2 z-50">
+      <div className="w-full max-w-7xl bg-white/95 backdrop-blur-sm rounded-2xl shadow-sm px-6 py-4">
         <div className="flex justify-between items-center">
           <Link to="/" className="text-2xl font-semibold text-navy">
             <span className="text-gold">PAB</span> AVOCAT
