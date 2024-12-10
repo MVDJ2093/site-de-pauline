@@ -10,7 +10,9 @@ const Description = () => {
           </div>
           
           <div className="md:w-2/3 font-aptos">
-            <h2 className="text-3xl font-bold text-navy mb-8">À propos de Pauline Anger-Bourez</h2>
+            <h2 className="text-3xl text-navy mb-8">
+              À propos de <span className="font-bold">Pauline Anger-Bourez</span>
+            </h2>
             <div className="space-y-6 text-lg text-gray-700">
               <p>
                 Avocate depuis 2016, Pauline ANGER-BOUREZ accompagne les employeurs publics et
