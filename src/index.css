@@ -6,13 +6,13 @@
 
 @layer base {
   :root {
-    --background: 0 0% 95%; /* Modifié pour un blanc cassé */
+    --background: 20 30% 98%; /* Modifié pour le nouveau beige/rose pâle */
     --foreground: 222.2 84% 4.9%;
 
-    --card: 0 0% 95%; /* Modifié pour correspondre au fond */
+    --card: 20 30% 98%; /* Modifié pour correspondre au fond */
     --card-foreground: 222.2 84% 4.9%;
 
-    --popover: 0 0% 95%; /* Modifié pour correspondre au fond */
+    --popover: 20 30% 98%; /* Modifié pour correspondre au fond */
     --popover-foreground: 222.2 84% 4.9%;
 
     --primary: 222.2 47.4% 11.2%;
@@ -36,7 +36,7 @@
 
     --radius: 0.5rem;
 
-    --sidebar-background: 0 0% 98%;
+    --sidebar-background: 20 30% 98%;
     --sidebar-foreground: 240 5.3% 26.1%;
     --sidebar-primary: 240 5.9% 10%;
     --sidebar-primary-foreground: 0 0% 98%;
