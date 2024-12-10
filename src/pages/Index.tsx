@@ -8,7 +8,7 @@ import RdvButton from "@/components/RdvButton";
 
 const Index = () => {
   return (
-    <div className="min-h-screen w-full bg-offWhite">
+    <main className="min-h-screen w-full bg-offWhite">
       <Header />
       <Hero />
       <Description />
@@ -16,7 +16,7 @@ const Index = () => {
       <YouAre />
       <RdvButton />
       <Footer />
-    </div>
+    </main>
   );
 };
 
