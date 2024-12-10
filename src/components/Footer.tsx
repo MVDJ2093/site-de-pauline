@@ -1,18 +1,24 @@
 import { Phone, Mail, MapPin } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
     <footer id="contact" className="py-12">
       <div className="container mx-auto px-4">
         <div className="bg-navy rounded-2xl shadow-lg p-8">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="bg-navy/50 p-6 rounded-xl">
               <h3 className="text-2xl font-semibold mb-4 text-white">
                 <span className="text-gold">PAB</span> AVOCAT
               </h3>
-              <p className="text-gray-300">
-                Cabinet d'avocat spécialisé en droit de la fonction publique
-              </p>
+              <div className="space-y-2">
+                <Link to="/honoraires" className="block text-gray-300 hover:text-gold transition-colors">
+                  Honoraires
+                </Link>
+                <Link to="/mentions-legales" className="block text-gray-300 hover:text-gold transition-colors">
+                  Mentions légales
+                </Link>
+              </div>
             </div>
             
             <div className="bg-navy/50 p-6 rounded-xl">
