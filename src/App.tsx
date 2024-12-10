@@ -25,7 +25,7 @@ const App = () => (
           <Route path="/cabinet" element={<Cabinet />} />
           <Route path="/employeurs-publics" element={<EmployeursPublics />} />
           <Route path="/agents-publics" element={<AgentsPublics />} />
-          <Route path="/expertises" element={<Expertises />} />
+          <Route path="/autres-domaines-d-expertise" element={<Expertises />} />
           <Route path="/actualites" element={<Actualites />} />
           <Route path="/honoraires" element={<Honoraires />} />
           <Route path="/contact" element={<Contact />} />
