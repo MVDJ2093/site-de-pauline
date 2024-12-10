@@ -5,7 +5,7 @@ const Footer = () => {
     <footer id="contact" className="py-12">
       <div className="container mx-auto px-4">
         <div className="bg-navy rounded-2xl shadow-lg p-8">
-          <div className="flex items-start space-x-8">
+          <div className="flex items-start space-x-16">
             <Link to="/" className="text-2xl font-semibold text-white hover:text-gold transition-colors">
               <span className="text-gold">PAB</span> AVOCAT
             </Link>
