@@ -5,7 +5,7 @@ const Hero = () => {
         className="absolute inset-0 bg-cover bg-center"
         style={{
           backgroundImage: "url('/lovable-uploads/2587e9b0-2dbb-4a9d-b829-a597ba0a5202.png')",
-          opacity: 0.2,
+          opacity: 0.4,
         }}
       />
       <div className="container mx-auto px-4 relative z-10 animate-fadeIn">
