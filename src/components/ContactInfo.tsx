@@ -1,20 +1,20 @@
 const ContactInfo = () => {
   return (
-    <div className="relative overflow-hidden p-8 rounded-2xl bg-gradient-to-br from-white to-[#F8F7FF] shadow-xl border border-gold/30 animate-fadeIn backdrop-blur-sm">
+    <div className="relative overflow-hidden p-8 rounded-2xl bg-gradient-to-br from-white to-[#F8F7FF] shadow-xl border border-gold shadow-gold/10 animate-fadeIn backdrop-blur-sm">
       {/* Decorative elements */}
-      <div className="absolute -top-24 -right-24 w-48 h-48 bg-gradient-to-br from-navy/40 to-gold/40 rounded-full blur-3xl" />
-      <div className="absolute -bottom-24 -left-24 w-48 h-48 bg-gradient-to-tr from-gold/30 to-navy/30 rounded-full blur-3xl" />
+      <div className="absolute -top-24 -right-24 w-48 h-48 bg-gradient-to-br from-gold/30 to-navy/40 rounded-full blur-3xl" />
+      <div className="absolute -bottom-24 -left-24 w-48 h-48 bg-gradient-to-tr from-gold/40 to-navy/30 rounded-full blur-3xl" />
       
       {/* Content */}
       <div className="relative space-y-8">
         <div className="space-y-4">
-          <h2 className="text-5xl font-aptos font-bold bg-clip-text text-transparent bg-gradient-to-r from-navy to-gold tracking-tight">
+          <h2 className="text-5xl font-aptos font-bold bg-clip-text text-transparent bg-gradient-to-r from-gold via-gold to-navy tracking-tight">
             Contact
           </h2>
           <div className="flex items-center space-x-3">
             <div className="w-20 h-1 bg-gradient-to-r from-gold to-navy rounded-full" />
+            <div className="w-3 h-1 bg-gold rounded-full" />
             <div className="w-3 h-1 bg-gold/50 rounded-full" />
-            <div className="w-3 h-1 bg-gold/30 rounded-full" />
           </div>
         </div>
         
