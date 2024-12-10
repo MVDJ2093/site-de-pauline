@@ -22,7 +22,7 @@ export default {
         navy: "#1A1F2C",
         gold: "#C6A87D",
         lightGray: "#F5F5F5",
-        offWhite: "#FEFEE2", // Modifié pour la nouvelle couleur
+        offWhite: "#F3F3F3", // Retour à la couleur blanc cassé précédente
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
