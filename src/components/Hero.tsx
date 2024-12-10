@@ -10,12 +10,12 @@ const Hero = () => {
       />
       <div className="container mx-auto px-4 relative z-10 animate-fadeIn">
         <div className="max-w-3xl mx-auto text-center">
-          <h1 className="text-4xl md:text-5xl font-bold mb-6">
+          <h1 className="text-4xl md:text-5xl font-bold mb-6 font-aptos">
             <span className="text-gold">Pauline Anger-Bourez</span>
             <br />
             Avocate en droit de la fonction publique
           </h1>
-          <p className="text-xl md:text-2xl mb-8 text-gray-200">
+          <p className="text-xl md:text-2xl mb-8 text-gray-200 font-aptos">
             Expertise et accompagnement personnalisé pour les agents de la fonction publique et leurs Administrations
           </p>
         </div>

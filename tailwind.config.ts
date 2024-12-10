@@ -18,6 +18,9 @@ export default {
       },
     },
     extend: {
+      fontFamily: {
+        aptos: ['Aptos', 'sans-serif'],
+      },
       colors: {
         navy: "#1A1F2C",
         gold: "#C6A87D",
