@@ -4,6 +4,7 @@ import Footer from "@/components/Footer";
 import ContactBanner from "@/components/ContactBanner";
 import ContactInfo from "@/components/ContactInfo";
 import ContactForm from "@/components/ContactForm";
+import RdvButton from "@/components/RdvButton";
 
 const Contact = () => {
   return (
@@ -19,7 +20,7 @@ const Contact = () => {
           </div>
         </div>
       </main>
-
+      <RdvButton />
       <Footer />
     </div>
   );

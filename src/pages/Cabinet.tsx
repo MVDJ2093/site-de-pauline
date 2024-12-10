@@ -1,6 +1,7 @@
 import React from "react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import RdvButton from "@/components/RdvButton";
 
 const Cabinet = () => {
   return (
@@ -17,6 +18,7 @@ const Cabinet = () => {
           </div>
         </div>
       </main>
+      <RdvButton />
       <Footer />
     </div>
   );
