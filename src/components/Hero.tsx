@@ -13,7 +13,7 @@ const Hero = () => {
           <h1 className="text-4xl md:text-5xl font-bold mb-6">
             <span className="text-gold">Pauline Anger-Bourez</span>
             <br />
-            Avocat en droit de la fonction publique
+            Avocate en droit de la fonction publique
           </h1>
           <p className="text-xl md:text-2xl mb-8 text-gray-200">
             Expertise et accompagnement personnalisé pour les agents de la fonction publique
