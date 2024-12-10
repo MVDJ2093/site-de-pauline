@@ -11,7 +11,7 @@ const Hero = () => {
       <div className="container mx-auto px-4 relative z-10 animate-fadeIn">
         <div className="max-w-3xl mx-auto text-center">
           <h1 className="text-4xl md:text-5xl font-bold mb-6 font-aptos">
-            <span className="text-gold">Pauline Anger-Bourez</span>
+            <span className="text-gold tracking-wide">Pauline Anger-Bourez</span>
             <br />
             <span className="text-3xl md:text-4xl">Avocate en droit de la fonction publique</span>
           </h1>
