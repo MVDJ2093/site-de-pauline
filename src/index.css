@@ -4,13 +4,13 @@
 
 @layer base {
   :root {
-    --background: 0 0% 95%; /* Modifié pour un blanc cassé */
+    --background: 60 100% 94%; /* Modifié pour #FEFEE2 */
     --foreground: 222.2 84% 4.9%;
 
-    --card: 0 0% 95%; /* Modifié pour correspondre au fond */
+    --card: 60 100% 94%; /* Modifié pour correspondre au fond */
     --card-foreground: 222.2 84% 4.9%;
 
-    --popover: 0 0% 95%; /* Modifié pour correspondre au fond */
+    --popover: 60 100% 94%; /* Modifié pour correspondre au fond */
     --popover-foreground: 222.2 84% 4.9%;
 
     --primary: 222.2 47.4% 11.2%;
