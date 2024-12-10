@@ -4,7 +4,7 @@ const RdvButton = () => {
       href="https://consultation.avocat.fr/avocat-lille/pauline-anger-bourez-39917.html"
       target="_blank"
       rel="noopener noreferrer"
-      className="fixed right-6 bottom-6 bg-gold text-white px-6 py-4 rounded-lg hover:bg-navy transition-colors duration-300 shadow-lg flex items-center gap-2 font-medium z-50"
+      className="fixed right-6 bottom-6 bg-gold text-white px-4 py-2 rounded-lg hover:bg-navy transition-colors duration-300 shadow-lg flex items-center gap-2 font-medium z-50"
     >
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -16,7 +16,7 @@ const RdvButton = () => {
         strokeWidth="2"
         strokeLinecap="round"
         strokeLinejoin="round"
-        className="size-5"
+        className="size-4"
       >
         <rect width="18" height="18" x="3" y="4" rx="2" ry="2" />
         <line x1="16" x2="16" y1="2" y2="6" />
@@ -29,7 +29,7 @@ const RdvButton = () => {
         <path d="M12 18h.01" />
         <path d="M16 18h.01" />
       </svg>
-      <span className="flex flex-col">
+      <span className="flex flex-col text-sm">
         <span>Prendre</span>
         <span>rendez-vous</span>
       </span>
