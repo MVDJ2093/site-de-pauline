@@ -78,7 +78,7 @@ const ContactForm = () => {
                     <FormControl>
                       <Input 
                         {...field} 
-                        className="bg-white/50 border-gold/50 focus:border-gold focus:ring-1 focus:ring-gold focus:ring-offset-0 transition-colors"
+                        className="bg-white/50 border-gold/50 focus:outline-none transition-colors"
                       />
                     </FormControl>
                     <FormMessage />
@@ -94,7 +94,7 @@ const ContactForm = () => {
                     <FormControl>
                       <Input 
                         {...field}
-                        className="bg-white/50 border-gold/50 focus:border-gold focus:ring-1 focus:ring-gold focus:ring-offset-0 transition-colors"
+                        className="bg-white/50 border-gold/50 focus:outline-none transition-colors"
                       />
                     </FormControl>
                     <FormMessage />
@@ -114,7 +114,7 @@ const ContactForm = () => {
                       <Input 
                         type="email" 
                         {...field}
-                        className="bg-white/50 border-gold/50 focus:border-gold focus:ring-1 focus:ring-gold focus:ring-offset-0 transition-colors"
+                        className="bg-white/50 border-gold/50 focus:outline-none transition-colors"
                       />
                     </FormControl>
                     <FormMessage />
@@ -131,7 +131,7 @@ const ContactForm = () => {
                       <Input 
                         type="tel" 
                         {...field}
-                        className="bg-white/50 border-gold/50 focus:border-gold focus:ring-1 focus:ring-gold focus:ring-offset-0 transition-colors"
+                        className="bg-white/50 border-gold/50 focus:outline-none transition-colors"
                       />
                     </FormControl>
                     <FormMessage />
@@ -149,7 +149,7 @@ const ContactForm = () => {
                   <FormControl>
                     <Input 
                       {...field}
-                      className="bg-white/50 border-gold/50 focus:border-gold focus:ring-1 focus:ring-gold focus:ring-offset-0 transition-colors"
+                      className="bg-white/50 border-gold/50 focus:outline-none transition-colors"
                     />
                   </FormControl>
                   <FormMessage />
@@ -167,7 +167,7 @@ const ContactForm = () => {
                     <Textarea 
                       rows={5} 
                       {...field}
-                      className="bg-white/50 border-gold/50 focus:border-gold focus:ring-1 focus:ring-gold focus:ring-offset-0 transition-colors resize-none"
+                      className="bg-white/50 border-gold/50 focus:outline-none transition-colors resize-none"
                     />
                   </FormControl>
                   <FormMessage />
