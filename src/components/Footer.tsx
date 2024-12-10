@@ -13,7 +13,7 @@ const Footer = () => {
           
           <div className="mt-8 pt-8 border-t border-gray-800/50 flex justify-between items-center">
             <p className="text-gray-400">© {new Date().getFullYear()} Cabinet PAB Avocat. Tous droits réservés.</p>
-            <div className="flex gap-6">
+            <div className="flex gap-8 ml-auto">
               <Link to="/honoraires" className="text-gray-300 hover:text-gold transition-colors">
                 Honoraires
               </Link>
