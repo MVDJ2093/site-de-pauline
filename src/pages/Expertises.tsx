@@ -38,9 +38,15 @@ const Expertises = () => {
           <h1 className="text-4xl font-bold text-navy mb-8">Expertises fonction publique</h1>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {expertises.map((expertise, index) => (
-              <div key={index} className="bg-lightGray p-6 rounded-lg hover:shadow-lg transition-shadow">
-                <h2 className="text-xl font-semibold text-navy mb-4">{expertise.title}</h2>
-                <p className="text-gray-700">{expertise.description}</p>
+              <div 
+                key={index} 
+                className="relative bg-navy text-white p-6 rounded-lg hover:shadow-lg transition-all duration-300 group overflow-hidden"
+              >
+                <div className="absolute inset-0 bg-gradient-to-br from-navy to-gold opacity-75 group-hover:opacity-90 transition-opacity" />
+                <div className="relative z-10">
+                  <h2 className="text-xl font-semibold mb-4">{expertise.title}</h2>
+                  <p className="text-gray-100">{expertise.description}</p>
+                </div>
               </div>
             ))}
           </div>
