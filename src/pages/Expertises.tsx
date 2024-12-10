@@ -32,9 +32,9 @@ const Expertises = () => {
   ];
 
   return (
-    <div className="min-h-screen flex flex-col">
+    <div className="min-h-screen flex flex-col bg-offWhite">
       <Header />
-      <main className="flex-grow pt-20 bg-white">
+      <main className="flex-grow pt-20">
         <div className="container mx-auto px-4 py-12">
           <h1 className="text-4xl font-bold text-navy mb-8">Expertises fonction publique</h1>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">

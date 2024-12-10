@@ -5,13 +5,12 @@ import RdvButton from "@/components/RdvButton";
 
 const Actualites = () => {
   return (
-    <div className="min-h-screen flex flex-col">
+    <div className="min-h-screen flex flex-col bg-offWhite">
       <Header />
-      <main className="flex-grow pt-20 bg-white">
+      <main className="flex-grow pt-20">
         <div className="container mx-auto px-4 py-12">
           <h1 className="text-4xl font-bold text-navy mb-8">Actualités</h1>
           <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-            {/* Articles à ajouter */}
             <div className="bg-lightGray p-6 rounded-lg">
               <h2 className="text-xl font-semibold text-navy mb-4">
                 Dernières actualités du droit de la fonction publique
