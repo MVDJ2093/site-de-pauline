@@ -16,7 +16,7 @@ const Header = () => {
   ];
 
   return (
-    <header className="fixed w-full flex justify-center px-4 py-2 z-50">
+    <header className="fixed w-full flex justify-center px-4 py-6 z-50">
       <div className="w-full max-w-7xl bg-[#f3f3f3]/40 backdrop-blur-md rounded-2xl shadow-sm px-6 py-4 transition-all duration-300">
         <div className="flex justify-between items-center">
           <Link to="/" className="text-2xl font-semibold text-navy">
