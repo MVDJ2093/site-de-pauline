@@ -44,7 +44,7 @@ const Services = () => {
   return (
     <section id="services" className="py-20 bg-white relative">
       <div 
-        className="absolute inset-0 bg-cover bg-center opacity-5"
+        className="absolute inset-0 bg-cover bg-center opacity-3"
         style={{
           backgroundImage: "url('/lovable-uploads/65140cf6-56cc-4a61-813e-65c723927adb.png')"
         }}
