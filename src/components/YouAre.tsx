@@ -9,18 +9,26 @@ const YouAre = () => {
         <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
           <Link
             to="/employeurs-publics"
-            className="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition-shadow text-center group"
+            className="bg-white p-8 rounded-xl shadow-md hover:shadow-xl transition-all duration-300 ease-in-out transform hover:-translate-y-1 border border-gray-100 hover:border-gold/20 group"
           >
-            <Building2 className="w-16 h-16 mx-auto mb-4 text-gold group-hover:text-navy transition-colors" />
-            <h3 className="text-2xl font-semibold text-navy mb-2">EMPLOYEUR PUBLIC</h3>
+            <div className="flex flex-col items-center text-center">
+              <div className="w-16 h-16 flex items-center justify-center rounded-full bg-gold/10 mb-4 group-hover:bg-gold/20 transition-colors duration-300">
+                <Building2 className="w-8 h-8 text-gold group-hover:scale-110 transition-transform duration-300" />
+              </div>
+              <h3 className="text-2xl font-semibold text-navy mb-2 group-hover:text-gold transition-colors duration-300">EMPLOYEUR PUBLIC</h3>
+            </div>
           </Link>
           
           <Link
             to="/agents-publics"
-            className="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition-shadow text-center group"
+            className="bg-white p-8 rounded-xl shadow-md hover:shadow-xl transition-all duration-300 ease-in-out transform hover:-translate-y-1 border border-gray-100 hover:border-gold/20 group"
           >
-            <User className="w-16 h-16 mx-auto mb-4 text-gold group-hover:text-navy transition-colors" />
-            <h3 className="text-2xl font-semibold text-navy mb-2">AGENT PUBLIC</h3>
+            <div className="flex flex-col items-center text-center">
+              <div className="w-16 h-16 flex items-center justify-center rounded-full bg-gold/10 mb-4 group-hover:bg-gold/20 transition-colors duration-300">
+                <User className="w-8 h-8 text-gold group-hover:scale-110 transition-transform duration-300" />
+              </div>
+              <h3 className="text-2xl font-semibold text-navy mb-2 group-hover:text-gold transition-colors duration-300">AGENT PUBLIC</h3>
+            </div>
           </Link>
         </div>
       </div>
