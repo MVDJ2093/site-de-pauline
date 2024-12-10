@@ -17,7 +17,7 @@ const Header = () => {
     { label: "Le cabinet", path: "/cabinet" },
     { label: "Employeurs publics", path: "/employeurs-publics" },
     { label: "Agents publics", path: "/agents-publics" },
-    { label: "Expertises", path: "/expertises" },
+    { label: "Autres domaines d'expertise", path: "/expertises" },
     { label: "Honoraires", path: "/honoraires" },
     { label: "Actualités", path: "/actualites" },
     { label: "Contact", path: "/contact" }
