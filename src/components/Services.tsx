@@ -43,12 +43,6 @@ const expertises = [
 const Services = () => {
   return (
     <section id="services" className="py-20 bg-white relative">
-      <div 
-        className="absolute inset-0 bg-cover bg-center opacity-3"
-        style={{
-          backgroundImage: "url('/lovable-uploads/65140cf6-56cc-4a61-813e-65c723927adb.png')"
-        }}
-      />
       <div className="container mx-auto px-4 relative z-10">
         <h2 className="text-3xl md:text-4xl font-bold text-center text-navy mb-12">
           DOMAINES D'EXPERTISE
