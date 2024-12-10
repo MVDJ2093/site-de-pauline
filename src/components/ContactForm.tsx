@@ -56,7 +56,7 @@ const ContactForm = () => {
       {/* Content */}
       <div className="relative space-y-8">
         <div className="space-y-4">
-          <h2 className="text-5xl font-aptos font-bold bg-clip-text text-transparent bg-gradient-to-r from-navy to-gold tracking-tight">
+          <h2 className="text-3xl md:text-4xl font-aptos font-bold bg-clip-text text-transparent bg-gradient-to-r from-navy to-gold tracking-tight">
             Formulaire de contact
           </h2>
           <div className="flex items-center space-x-3">
