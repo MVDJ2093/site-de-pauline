@@ -18,12 +18,6 @@ const Hero = () => {
           <p className="text-xl md:text-2xl mb-8 text-gray-200">
             Expertise et accompagnement personnalisé pour les agents de la fonction publique
           </p>
-          <a
-            href="#contact"
-            className="inline-block bg-gold text-navy px-8 py-3 rounded-md hover:bg-white transition-colors duration-300"
-          >
-            Prendre rendez-vous
-          </a>
         </div>
       </div>
     </section>
