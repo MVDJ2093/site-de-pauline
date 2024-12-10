@@ -48,101 +48,142 @@ const ContactForm = () => {
   };
 
   return (
-    <div className="bg-offWhite p-6 rounded-lg">
-      <h2 className="text-2xl font-aptos text-navy mb-6">Formulaire de contact</h2>
-      <Form {...form}>
-        <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
-          <div className="grid md:grid-cols-2 gap-4">
-            <FormField
-              control={form.control}
-              name="lastName"
-              render={({ field }) => (
-                <FormItem>
-                  <FormLabel>Nom *</FormLabel>
-                  <FormControl>
-                    <Input {...field} />
-                  </FormControl>
-                  <FormMessage />
-                </FormItem>
-              )}
-            />
-            <FormField
-              control={form.control}
-              name="firstName"
-              render={({ field }) => (
-                <FormItem>
-                  <FormLabel>Prénom *</FormLabel>
-                  <FormControl>
-                    <Input {...field} />
-                  </FormControl>
-                  <FormMessage />
-                </FormItem>
-              )}
-            />
+    <div className="relative overflow-hidden p-8 rounded-2xl bg-gradient-to-br from-white to-[#F8F7FF] shadow-xl border border-purple-100/30 animate-fadeIn backdrop-blur-sm">
+      {/* Decorative elements */}
+      <div className="absolute -top-24 -right-24 w-48 h-48 bg-gradient-to-br from-purple-200/40 to-blue-200/40 rounded-full blur-3xl" />
+      <div className="absolute -bottom-24 -left-24 w-48 h-48 bg-gradient-to-tr from-gold/30 to-purple-200/30 rounded-full blur-3xl" />
+      
+      {/* Content */}
+      <div className="relative space-y-8">
+        <div className="space-y-4">
+          <h2 className="text-5xl font-aptos font-bold bg-clip-text text-transparent bg-gradient-to-r from-navy via-[#7E69AB] to-[#9b87f5] tracking-tight">
+            Formulaire de contact
+          </h2>
+          <div className="flex items-center space-x-3">
+            <div className="w-20 h-1 bg-gradient-to-r from-gold via-[#9b87f5] to-[#7E69AB] rounded-full" />
+            <div className="w-3 h-1 bg-gold/50 rounded-full" />
+            <div className="w-3 h-1 bg-gold/30 rounded-full" />
           </div>
+        </div>
 
-          <div className="grid md:grid-cols-2 gap-4">
+        <Form {...form}>
+          <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
+            <div className="grid md:grid-cols-2 gap-6">
+              <FormField
+                control={form.control}
+                name="lastName"
+                render={({ field }) => (
+                  <FormItem>
+                    <FormLabel className="text-gray-700 font-medium">Nom *</FormLabel>
+                    <FormControl>
+                      <Input 
+                        {...field} 
+                        className="bg-white/50 border-purple-100/50 focus:border-purple-200 transition-colors"
+                      />
+                    </FormControl>
+                    <FormMessage />
+                  </FormItem>
+                )}
+              />
+              <FormField
+                control={form.control}
+                name="firstName"
+                render={({ field }) => (
+                  <FormItem>
+                    <FormLabel className="text-gray-700 font-medium">Prénom *</FormLabel>
+                    <FormControl>
+                      <Input 
+                        {...field}
+                        className="bg-white/50 border-purple-100/50 focus:border-purple-200 transition-colors"
+                      />
+                    </FormControl>
+                    <FormMessage />
+                  </FormItem>
+                )}
+              />
+            </div>
+
+            <div className="grid md:grid-cols-2 gap-6">
+              <FormField
+                control={form.control}
+                name="email"
+                render={({ field }) => (
+                  <FormItem>
+                    <FormLabel className="text-gray-700 font-medium">Email *</FormLabel>
+                    <FormControl>
+                      <Input 
+                        type="email" 
+                        {...field}
+                        className="bg-white/50 border-purple-100/50 focus:border-purple-200 transition-colors"
+                      />
+                    </FormControl>
+                    <FormMessage />
+                  </FormItem>
+                )}
+              />
+              <FormField
+                control={form.control}
+                name="phone"
+                render={({ field }) => (
+                  <FormItem>
+                    <FormLabel className="text-gray-700 font-medium">Téléphone *</FormLabel>
+                    <FormControl>
+                      <Input 
+                        type="tel" 
+                        {...field}
+                        className="bg-white/50 border-purple-100/50 focus:border-purple-200 transition-colors"
+                      />
+                    </FormControl>
+                    <FormMessage />
+                  </FormItem>
+                )}
+              />
+            </div>
+
             <FormField
               control={form.control}
-              name="email"
+              name="subject"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel>Email *</FormLabel>
+                  <FormLabel className="text-gray-700 font-medium">Objet *</FormLabel>
                   <FormControl>
-                    <Input type="email" {...field} />
+                    <Input 
+                      {...field}
+                      className="bg-white/50 border-purple-100/50 focus:border-purple-200 transition-colors"
+                    />
                   </FormControl>
                   <FormMessage />
                 </FormItem>
               )}
             />
+
             <FormField
               control={form.control}
-              name="phone"
+              name="message"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel>Téléphone *</FormLabel>
+                  <FormLabel className="text-gray-700 font-medium">Message *</FormLabel>
                   <FormControl>
-                    <Input type="tel" {...field} />
+                    <Textarea 
+                      rows={5} 
+                      {...field}
+                      className="bg-white/50 border-purple-100/50 focus:border-purple-200 transition-colors resize-none"
+                    />
                   </FormControl>
                   <FormMessage />
                 </FormItem>
               )}
             />
-          </div>
 
-          <FormField
-            control={form.control}
-            name="subject"
-            render={({ field }) => (
-              <FormItem>
-                <FormLabel>Objet *</FormLabel>
-                <FormControl>
-                  <Input {...field} />
-                </FormControl>
-                <FormMessage />
-              </FormItem>
-            )}
-          />
-
-          <FormField
-            control={form.control}
-            name="message"
-            render={({ field }) => (
-              <FormItem>
-                <FormLabel>Message *</FormLabel>
-                <FormControl>
-                  <Textarea rows={5} {...field} />
-                </FormControl>
-                <FormMessage />
-              </FormItem>
-            )}
-          />
-
-          <Button type="submit" className="w-full bg-gold hover:bg-gold/90">
-            Envoyer
-          </Button>
-        </form>
-      </Form>
+            <Button 
+              type="submit" 
+              className="w-full bg-gradient-to-r from-navy via-[#7E69AB] to-[#9b87f5] hover:opacity-90 transition-opacity text-white font-medium py-6"
+            >
+              Envoyer
+            </Button>
+          </form>
+        </Form>
+      </div>
     </div>
   );
 };
