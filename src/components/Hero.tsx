@@ -1,6 +1,6 @@
 const Hero = () => {
   return (
-    <section className="relative min-h-screen flex items-center justify-center bg-navy text-white pt-16">
+    <section className="relative min-h-screen flex items-center justify-center bg-navy text-white">
       <div
         className="absolute inset-0 bg-cover bg-center"
         style={{
