@@ -4,8 +4,31 @@ const RdvButton = () => {
       href="https://consultation.avocat.fr/avocat-lille/pauline-anger-bourez-39917.html"
       target="_blank"
       rel="noopener noreferrer"
-      className="fixed right-0 top-1/2 -translate-y-1/2 bg-gold text-white px-4 py-8 -rotate-90 origin-right hover:bg-navy transition-colors duration-300 shadow-lg"
+      className="fixed right-6 bottom-6 bg-gold text-white px-6 py-4 rounded-lg hover:bg-navy transition-colors duration-300 shadow-lg flex items-center gap-2 font-medium z-50"
     >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        className="size-5"
+      >
+        <rect width="18" height="18" x="3" y="4" rx="2" ry="2" />
+        <line x1="16" x2="16" y1="2" y2="6" />
+        <line x1="8" x2="8" y1="2" y2="6" />
+        <line x1="3" x2="21" y1="10" y2="10" />
+        <path d="M8 14h.01" />
+        <path d="M12 14h.01" />
+        <path d="M16 14h.01" />
+        <path d="M8 18h.01" />
+        <path d="M12 18h.01" />
+        <path d="M16 18h.01" />
+      </svg>
       Prendre un rendez-vous
     </a>
   );
