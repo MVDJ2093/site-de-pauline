@@ -29,7 +29,10 @@ const RdvButton = () => {
         <path d="M12 18h.01" />
         <path d="M16 18h.01" />
       </svg>
-      Prendre un rendez-vous
+      <span className="flex flex-col">
+        <span>Prendre</span>
+        <span>rendez-vous</span>
+      </span>
     </a>
   );
 };
