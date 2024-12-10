@@ -5,11 +5,11 @@ const Footer = () => {
     <footer id="contact" className="py-12">
       <div className="container mx-auto px-4">
         <div className="bg-navy rounded-2xl shadow-lg p-8">
-          <div className="flex items-center justify-between">
+          <div className="flex items-start justify-between">
             <h3 className="text-2xl font-semibold text-white">
               <span className="text-gold">PAB</span> AVOCAT
             </h3>
-            <div className="flex gap-8">
+            <div className="flex flex-col gap-2">
               <Link to="/honoraires" className="text-gray-300 hover:text-gold transition-colors">
                 Honoraires
               </Link>
