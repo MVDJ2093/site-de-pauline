@@ -23,7 +23,7 @@ const ContactInfo = () => {
         </h3>
         
         <p className="text-gray-600 leading-relaxed text-lg font-light max-w-2xl">
-          Une fois votre formulaire envoyé, nous prenons en compte votre demande et nous ferons le nécessaire pour vous apporter l'aide et les ressources dont nous disposons.
+          Une fois votre formulaire envoyé, nous prendrons en compte votre demande ferons le nécessaire pour vous apporter l'aide et les ressources dont nous disposons.
         </p>
       </div>
     </div>
