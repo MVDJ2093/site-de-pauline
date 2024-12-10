@@ -16,7 +16,7 @@ const Hero = () => {
             Avocate en droit de la fonction publique
           </h1>
           <p className="text-xl md:text-2xl mb-8 text-gray-200">
-            Expertise et accompagnement personnalisé pour les agents de la fonction publique
+            Expertise et accompagnement personnalisé pour les agents de la fonction publique et leurs Administrations
           </p>
         </div>
       </div>
