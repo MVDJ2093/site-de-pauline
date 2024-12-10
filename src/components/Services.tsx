@@ -58,13 +58,19 @@ const Services = () => {
             <Link
               key={expertise.title}
               to={expertise.link}
-              className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow cursor-pointer"
+              className="group bg-white rounded-xl p-6 shadow-md hover:shadow-xl transition-all duration-300 ease-in-out transform hover:-translate-y-1 border border-gray-100 hover:border-gold/20"
             >
-              <expertise.icon className="w-12 h-12 text-gold mb-4" />
-              <h3 className="text-xl font-semibold text-navy mb-2">
-                {expertise.title}
-              </h3>
-              <p className="text-gray-600">{expertise.description}</p>
+              <div className="flex flex-col items-center text-center">
+                <div className="w-16 h-16 flex items-center justify-center rounded-full bg-gold/10 mb-4 group-hover:bg-gold/20 transition-colors duration-300">
+                  <expertise.icon className="w-8 h-8 text-gold group-hover:scale-110 transition-transform duration-300" />
+                </div>
+                <h3 className="text-xl font-semibold text-navy mb-3 group-hover:text-gold transition-colors duration-300">
+                  {expertise.title}
+                </h3>
+                <p className="text-gray-600 group-hover:text-gray-700 transition-colors duration-300">
+                  {expertise.description}
+                </p>
+              </div>
             </Link>
           ))}
         </div>
