@@ -24,7 +24,7 @@ const Header = () => {
   ];
 
   return (
-    <header className="fixed w-full bg-[#FDE1D3]/95 backdrop-blur-sm z-50 shadow-sm">
+    <header className="fixed w-full bg-[#FEF7CD]/30 backdrop-blur-sm z-50 shadow-sm">
       <div className="container mx-auto px-4 py-4">
         <div className="flex justify-between items-center">
           <Link to="/" className="text-2xl font-semibold text-navy">
