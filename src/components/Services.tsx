@@ -1,42 +1,42 @@
-import { Shield, HeartPulse, Users, Scale, FileText, Phone } from "lucide-react";
+import { Briefcase, Shield, DollarSign, Gavel, UserX, Clock } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const expertises = [
   {
-    icon: Scale,
-    title: "Accident de service",
-    description: "Protection de vos droits suite à un accident de service",
-    link: "/expertise/contentieux-administratif"
-  },
-  {
-    icon: HeartPulse,
-    title: "Maladie professionnelle",
-    description: "Accompagnement dans la reconnaissance et la gestion de votre maladie professionnelle",
-    link: "/expertise/contentieux-administratif"
+    icon: Briefcase,
+    title: "Carrière",
+    description: "Mobilité, notation, avancement, disponibilité, détachement, inaptitude, reclassement, congés",
+    link: "/expertise/carriere-remuneration"
   },
   {
     icon: Shield,
-    title: "Harcèlement moral",
-    description: "Protection et défense contre toute forme de harcèlement au travail",
-    link: "/expertise/contentieux-administratif"
+    title: "Accident de service-CITIS/ Maladie professionnelle",
+    description: "Accompagnement dans la reconnaissance et la gestion des accidents de service et maladies professionnelles",
+    link: "/expertise/accident-service"
   },
   {
-    icon: Users,
-    title: "Inaptitude physique & reclassement",
-    description: "Accompagnement dans les procédures d'inaptitude et de reclassement",
-    link: "/expertise/contentieux-administratif"
+    icon: DollarSign,
+    title: "Rémunération",
+    description: "Conseil et assistance pour toutes questions relatives à votre rémunération",
+    link: "/expertise/carriere-remuneration"
   },
   {
-    icon: FileText,
-    title: "Sanction disciplinaire ou insuffisance professionnelle",
-    description: "Défense de vos intérêts face aux procédures disciplinaires",
-    link: "/expertise/contentieux-administratif"
+    icon: Gavel,
+    title: "Discipline",
+    description: "Défense et accompagnement dans les procédures disciplinaires",
+    link: "/expertise/discipline"
   },
   {
-    icon: Phone,
-    title: "Autres situations",
-    description: "Contactez-nous pour toute autre situation nécessitant notre expertise",
-    link: "/contact"
+    icon: UserX,
+    title: "Cessation des fonctions",
+    description: "Licenciement, rupture conventionnelle, fin de contrat",
+    link: "/expertise/carriere-remuneration"
+  },
+  {
+    icon: Clock,
+    title: "Temps de travail",
+    description: "Questions relatives à l'organisation et aux droits liés au temps de travail",
+    link: "/expertise/carriere-remuneration"
   }
 ];
 
