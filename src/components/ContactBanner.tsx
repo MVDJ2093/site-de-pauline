@@ -11,7 +11,7 @@ const ContactBanner = () => {
         }}
       />
       <div className="relative z-20 container mx-auto px-4 h-full flex items-center justify-center">
-        <h1 className="text-4xl md:text-6xl font-aptos font-light text-white tracking-[0.2em] uppercase">
+        <h1 className="text-4xl md:text-5xl font-aptos text-white tracking-wide">
           Nous Contacter
         </h1>
       </div>
