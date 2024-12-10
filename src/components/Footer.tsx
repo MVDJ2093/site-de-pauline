@@ -19,7 +19,7 @@ const Footer = () => {
             </div>
           </div>
           
-          <div className="mt-8 pt-8 border-t border-gray-800/50">
+          <div className="mt-8 pt-8 border-t border-gray-800/50 text-center">
             <p className="text-gray-400">© {new Date().getFullYear()} Cabinet PAB Avocat. Tous droits réservés.</p>
           </div>
         </div>
