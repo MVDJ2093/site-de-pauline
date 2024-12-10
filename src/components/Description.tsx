@@ -9,7 +9,7 @@ const Description = () => {
             </div>
           </div>
           
-          <div className="md:w-2/3">
+          <div className="md:w-2/3 font-aptos">
             <h2 className="text-3xl font-bold text-navy mb-8">À propos de Pauline Anger-Bourez</h2>
             <div className="space-y-6 text-lg text-gray-700">
               <p>
