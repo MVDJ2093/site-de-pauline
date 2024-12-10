@@ -4,7 +4,7 @@ const RdvButton = () => {
       href="https://consultation.avocat.fr/avocat-lille/pauline-anger-bourez-39917.html"
       target="_blank"
       rel="noopener noreferrer"
-      className="fixed right-6 bottom-6 bg-gold text-white px-4 py-2 rounded-lg hover:bg-navy transition-colors duration-300 shadow-lg flex items-center gap-2 font-medium z-50"
+      className="fixed right-6 bottom-6 bg-gold text-black px-4 py-2 rounded-lg hover:bg-navy hover:text-white transition-colors duration-300 shadow-lg flex items-center gap-2 font-medium z-50"
     >
       <svg
         xmlns="http://www.w3.org/2000/svg"
