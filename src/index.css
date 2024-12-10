@@ -6,13 +6,13 @@
 
 @layer base {
   :root {
-    --background: 20 30% 98%; /* Modifié pour le nouveau beige/rose pâle */
+    --background: 20 30% 98%;
     --foreground: 222.2 84% 4.9%;
 
-    --card: 20 30% 98%; /* Modifié pour correspondre au fond */
+    --card: 20 30% 98%;
     --card-foreground: 222.2 84% 4.9%;
 
-    --popover: 20 30% 98%; /* Modifié pour correspondre au fond */
+    --popover: 20 30% 98%;
     --popover-foreground: 222.2 84% 4.9%;
 
     --primary: 222.2 47.4% 11.2%;
@@ -91,6 +91,6 @@
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-offWhite text-foreground;
   }
 }
