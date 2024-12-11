@@ -4,7 +4,7 @@ import RdvButton from "@/components/RdvButton";
 
 const MentionsLegales = () => {
   return (
-    <div className="min-h-screen w-full bg-[#F5E6D3]">
+    <div className="min-h-screen w-full bg-offWhite">
       <Header />
       <main className="container mx-auto px-4 py-24">
         <div className="max-w-4xl mx-auto prose prose-lg">
