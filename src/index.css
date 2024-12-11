@@ -91,6 +91,6 @@
   }
 
   body {
-    @apply bg-offWhite text-foreground;
+    @apply bg-[#F5E6D3] text-foreground;
   }
 }

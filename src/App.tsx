@@ -11,6 +11,7 @@ import Expertises from "./pages/Expertises";
 import Actualites from "./pages/Actualites";
 import Honoraires from "./pages/Honoraires";
 import Contact from "./pages/Contact";
+import MentionsLegales from "./pages/MentionsLegales";
 
 const queryClient = new QueryClient();
 
@@ -29,6 +30,7 @@ const App = () => (
           <Route path="/actualites" element={<Actualites />} />
           <Route path="/honoraires" element={<Honoraires />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/mentions-legales" element={<MentionsLegales />} />
         </Routes>
       </BrowserRouter>
     </TooltipProvider>
