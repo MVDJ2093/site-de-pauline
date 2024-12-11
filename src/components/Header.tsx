@@ -17,13 +17,12 @@ const Header = () => {
 
   return (
     <header className="fixed w-full flex justify-center px-4 py-6 z-50">
-      <div className="w-full max-w-7xl bg-[#f3f3f3]/40 backdrop-blur-md rounded-2xl shadow-sm px-6 py-4 transition-all duration-300">
+      <div className="w-full max-w-[1920px] bg-[#f3f3f3]/40 backdrop-blur-md rounded-2xl shadow-sm px-6 py-4 transition-all duration-300">
         <div className="flex justify-between items-center">
           <Link to="/" className="text-2xl font-semibold text-navy">
             <span className="text-gold">PAB</span> AVOCAT
           </Link>
           
-          {/* Mobile menu button */}
           <button
             className="md:hidden"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
@@ -31,7 +30,6 @@ const Header = () => {
             {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
 
-          {/* Desktop navigation */}
           <nav className="hidden md:flex items-center space-x-6">
             {menuItems.map((item) => (
               <Link
@@ -45,7 +43,6 @@ const Header = () => {
           </nav>
         </div>
 
-        {/* Mobile navigation */}
         {isMenuOpen && (
           <nav className="md:hidden pt-4 pb-2">
             {menuItems.map((item) => (
