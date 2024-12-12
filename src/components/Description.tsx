@@ -1,11 +1,13 @@
 const Description = () => {
   return (
-    <section className="py-16 bg-white">
+    <section className="py-16 bg-offWhite">
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row gap-8 max-w-6xl mx-auto">
           <div className="md:w-1/3">
-            <div className="bg-gray-200 rounded-lg aspect-[3/4] flex items-center justify-center">
-              <p className="text-gray-500 text-sm">Photo de Maître Anger-Bourez</p>
+            <div className="bg-[#f3f3f3]/40 backdrop-blur-md rounded-2xl shadow-sm p-4">
+              <div className="bg-gray-200 rounded-lg aspect-[3/4] flex items-center justify-center">
+                <p className="text-gray-500 text-sm">Photo de Maître Anger-Bourez</p>
+              </div>
             </div>
           </div>
           
