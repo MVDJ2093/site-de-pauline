@@ -5,7 +5,7 @@ const expertises = [
   {
     icon: Briefcase,
     title: "Carrière",
-    description: "Mobilité, notation, avancement, disponibilité, détachement, inaptitude, reclassement, congés",
+    description: "Mobilité, notation, avancement, disponibilité, détachement, inaptitude, congés",
     link: "/expertise/carriere-remuneration"
   },
   {
@@ -52,15 +52,14 @@ const Services = () => {
             <Link
               key={expertise.title}
               to={expertise.link}
-              className="group bg-white/80 backdrop-blur-sm rounded-xl p-6 shadow-md hover:shadow-xl transition-all duration-500 ease-in-out transform hover:-translate-y-2 hover:scale-[1.02] border border-gray-100 hover:border-gold/20"
+              className="group bg-gradient-to-br from-white/80 to-white/40 backdrop-blur-sm rounded-xl p-6 shadow-md hover:shadow-xl transition-all duration-500 ease-in-out transform hover:-translate-y-2 hover:scale-[1.02] border border-gray-100/50 hover:border-gold/20"
               style={{
-                animationDelay: `${index * 100}ms`,
-                animation: "fadeIn 0.5s ease-out forwards",
                 opacity: 0,
+                animation: `fadeIn 0.5s ease-out ${index * 0.1}s forwards`,
               }}
             >
               <div className="flex flex-col items-center text-center">
-                <div className="w-16 h-16 flex items-center justify-center rounded-full bg-gold/10 mb-4 group-hover:bg-gold/20 transition-all duration-500 transform group-hover:scale-110">
+                <div className="w-16 h-16 flex items-center justify-center rounded-full bg-gradient-to-br from-gold/10 to-gold/5 mb-4 group-hover:bg-gold/20 transition-all duration-500 transform group-hover:scale-110">
                   <expertise.icon className="w-8 h-8 text-gold group-hover:scale-110 transition-transform duration-500" />
                 </div>
                 <h3 className="text-xl font-semibold text-navy mb-3 group-hover:text-gold transition-colors duration-500">
