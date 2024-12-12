@@ -42,7 +42,7 @@ const expertises = [
 
 const Services = () => {
   return (
-    <section id="services" className="py-20 bg-white relative">
+    <section id="services" className="py-20 bg-offWhite relative">
       <div className="container mx-auto px-4 relative z-10">
         <h2 className="text-2xl md:text-3xl tracking-wide text-center text-navy mb-12">
           DOMAINES D'EXPERTISE
