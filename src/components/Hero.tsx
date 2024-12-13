@@ -11,8 +11,8 @@ const Hero = () => {
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-3xl mx-auto text-center">
           <h1 className="text-4xl md:text-5xl font-bold mb-6 font-aptos opacity-0 animate-[fadeIn_1.5s_ease-in-out_forwards] tracking-tight">
-            <span className="text-gold tracking-wide bg-clip-text text-transparent bg-gradient-to-r from-gold to-[#E5C49B] flex items-center justify-center">
-              <span className="text-6xl">A</span>NGER-<span className="text-6xl">B</span>OUREZ<span className="text-6xl">A</span>VOCAT
+            <span className="text-gold tracking-wide bg-clip-text text-transparent bg-gradient-to-r from-gold to-[#E5C49B] flex items-center justify-center text-3xl md:text-4xl">
+              <span className="text-4xl md:text-5xl">A</span>NGER-<span className="text-4xl md:text-5xl">B</span>OUREZ<span className="text-4xl md:text-5xl">A</span>VOCAT
             </span>
             <span className="text-3xl md:text-4xl mt-4 block opacity-0 animate-[fadeIn_1.5s_ease-in-out_0.8s_forwards] tracking-wide">
               Fonction publique
