@@ -11,8 +11,8 @@ const Header = () => {
     {
       label: "Fonction publique",
       children: [
-        { label: "Employeurs publics", path: "/employeurs-publics" },
-        { label: "Agents publics", path: "/agents-publics" },
+        { label: "Employeur public", path: "/employeurs-publics" },
+        { label: "Agent public", path: "/agents-publics" },
       ],
     },
     { label: "Autres domaines d'expertise", path: "/autres-domaines-d-expertise" },
@@ -41,25 +41,27 @@ const Header = () => {
               item.children ? (
                 <div
                   key={item.label}
-                  className="relative group"
+                  className="relative"
                   onMouseEnter={() => setIsDropdownOpen(true)}
                   onMouseLeave={() => setIsDropdownOpen(false)}
                 >
                   <button className="text-lg font-medium text-navy hover:text-gold transition-all duration-300 whitespace-nowrap flex items-center gap-1">
                     {item.label}
-                    <ChevronDown size={20} className="transition-transform group-hover:rotate-180" />
+                    <ChevronDown size={20} />
                   </button>
-                  <div className="absolute top-full left-0 mt-2 py-2 min-w-[200px] bg-[#f3f3f3]/40 backdrop-blur-md rounded-lg shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">
-                    {item.children.map((child) => (
-                      <Link
-                        key={child.label}
-                        to={child.path}
-                        className="block px-4 py-2 text-navy hover:text-gold transition-all duration-300"
-                      >
-                        {child.label}
-                      </Link>
-                    ))}
-                  </div>
+                  {isDropdownOpen && (
+                    <div className="absolute top-full left-0 mt-2 py-2 min-w-[200px] bg-transparent">
+                      {item.children.map((child) => (
+                        <Link
+                          key={child.label}
+                          to={child.path}
+                          className="block px-4 py-2 text-navy hover:text-gold transition-all duration-300"
+                        >
+                          {child.label}
+                        </Link>
+                      ))}
+                    </div>
+                  )}
                 </div>
               ) : (
                 <Link
