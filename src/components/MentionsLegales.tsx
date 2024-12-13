@@ -12,10 +12,10 @@ const MentionsLegales = () => {
           
           <section className="mb-8">
             <h2 className="text-2xl font-semibold text-navy mb-4">Maître Pauline Anger-Bourez</h2>
-            <p>Adresse : 50 Rue Gustave Delory 59800 LILLE</p>
+            <p>50 Rue Gustave Delory 59800 LILLE</p>
             <p>Numéro de SIREN : 824354815</p>
             <p>Téléphone : +33 7 65 78 99 12</p>
-            <p>Email : <a href="mailto:pauline.anger-bourez@avocat.fr" className="text-navy hover:text-gold transition-colors">pauline.anger-bourez@avocat.fr</a></p>
+            <p>Email : pauline.anger-bourez@avocat.fr</p>
           </section>
           
           <section className="mb-8">
