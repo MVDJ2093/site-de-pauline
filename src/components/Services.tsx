@@ -1,9 +1,9 @@
-import { Briefcase, HeartPulse, Euro, Scale, UserCog, Clock } from "lucide-react";
+import { Briefcase, HeartPulse, Euro, Gavel, UserCog, Clock } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const expertises = [
   {
-    icon: UserCog,
+    icon: Briefcase,
     title: "Carrière",
     description: "Mobilité, notation, avancement, disponibilité, détachement, inaptitude, congés",
     link: "/expertise/carriere-remuneration"
@@ -21,7 +21,7 @@ const expertises = [
     link: "/expertise/carriere-remuneration"
   },
   {
-    icon: Scale,
+    icon: Gavel,
     title: "Discipline",
     description: "Défense et accompagnement dans les procédures disciplinaires",
     link: "/expertise/discipline"
@@ -44,7 +44,7 @@ const Services = () => {
   return (
     <section id="services" className="py-20 bg-offWhite relative">
       <div className="container mx-auto px-4 relative z-10">
-        <h2 className="text-2xl md:text-3xl tracking-wide text-center text-navy mb-12 font-bold transform transition-all duration-500 hover:scale-105">
+        <h2 className="text-2xl md:text-3xl tracking-wide text-center text-navy mb-12 font-extrabold transform transition-all duration-500">
           DOMAINES D'EXPERTISE
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">

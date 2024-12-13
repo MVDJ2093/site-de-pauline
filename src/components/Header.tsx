@@ -7,8 +7,7 @@ const Header = () => {
 
   const menuItems = [
     { label: "Le cabinet", path: "/cabinet" },
-    { label: "Employeurs publics", path: "/employeurs-publics" },
-    { label: "Agents publics", path: "/agents-publics" },
+    { label: "Fonction publique", path: "/fonction-publique" },
     { label: "Autres domaines d'expertise", path: "/autres-domaines-d-expertise" },
     { label: "Honoraires", path: "/honoraires" },
     { label: "Actualités", path: "/actualites" },
@@ -17,9 +16,9 @@ const Header = () => {
 
   return (
     <header className="fixed w-full flex justify-center px-4 py-6 z-50">
-      <div className="w-full max-w-[1200px] bg-[#f3f3f3]/40 backdrop-blur-md rounded-2xl px-6 py-4 transition-all duration-500 hover:shadow-lg">
+      <div className="w-full max-w-[1000px] bg-[#f3f3f3]/40 backdrop-blur-md rounded-2xl px-6 py-4 transition-all duration-500 hover:shadow-lg">
         <div className="flex justify-between items-center">
-          <Link to="/" className="text-2xl font-semibold text-navy transition-all duration-500 hover:scale-105">
+          <Link to="/" className="text-2xl font-semibold text-navy transition-all duration-500">
             <span className="text-gold bg-clip-text text-transparent bg-gradient-to-r from-gold to-[#E5C49B]">PAB</span> AVOCAT
           </Link>
           
@@ -35,7 +34,7 @@ const Header = () => {
               <Link
                 key={item.label}
                 to={item.path}
-                className="text-navy hover:text-gold transition-all duration-300 whitespace-nowrap text-sm transform hover:scale-105"
+                className="text-navy hover:text-gold transition-all duration-300 whitespace-nowrap text-base font-medium"
               >
                 {item.label}
               </Link>
@@ -49,7 +48,7 @@ const Header = () => {
               <Link
                 key={item.label}
                 to={item.path}
-                className="block py-2 text-navy hover:text-gold transition-all duration-300 transform hover:translate-x-2"
+                className="block py-2 text-navy hover:text-gold transition-all duration-300"
                 onClick={() => setIsMenuOpen(false)}
               >
                 {item.label}
