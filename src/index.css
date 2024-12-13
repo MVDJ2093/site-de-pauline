@@ -94,7 +94,8 @@
 }
 
 /* Remove Lovable banner */
-.lovable-banner {
+.lovable-banner, 
+div[class*="lovable"] {
   display: none !important;
 }
 

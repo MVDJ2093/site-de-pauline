@@ -2,8 +2,8 @@ const Description = () => {
   return (
     <section className="py-16 bg-offWhite">
       <div className="container mx-auto px-4">
-        <div className="flex flex-col md:flex-row gap-8 max-w-6xl mx-auto group">
-          <div className="md:w-1/3 transform transition-all duration-700 hover:scale-[1.03] opacity-0 animate-[fadeIn_1s_ease-in-out_forwards]">
+        <div className="flex flex-col md:flex-row gap-8 max-w-6xl mx-auto">
+          <div className="md:w-1/3 transform transition-all duration-300 hover:scale-[1.02] opacity-0 animate-[fadeIn_1s_ease-in-out_forwards]">
             <div className="bg-gradient-to-br from-[#f3f3f3]/80 to-white/40 backdrop-blur-md rounded-2xl shadow-lg p-4 hover:shadow-xl transition-all duration-500">
               <div className="bg-gradient-to-br from-gray-200 to-gray-100 rounded-lg aspect-[3/4] flex items-center justify-center overflow-hidden">
                 <p className="text-gray-500 text-sm">Photo de Maître Anger-Bourez</p>
