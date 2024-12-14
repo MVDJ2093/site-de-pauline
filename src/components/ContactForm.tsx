@@ -40,6 +40,8 @@ const ContactForm = () => {
 
   const onSubmit = async (values: z.infer<typeof formSchema>) => {
     console.log("Form submitted:", values);
+    // In a real implementation, you would send this to your backend
+    // which would then forward it to pauline.anger-bourez@avocat.fr
     toast({
       title: "Message envoyé",
       description: "Nous vous répondrons dans les plus brefs délais.",
@@ -65,6 +67,12 @@ const ContactForm = () => {
             <div className="w-3 h-1 bg-gold/30 rounded-full" />
           </div>
         </div>
+
+        <p className="text-lg text-gray-600">
+          Le Cabinet est là pour vous accompagner. Une fois votre formulaire envoyé, 
+          nous prendrons en compte votre demande et ferons le nécessaire afin de vous 
+          apporter l'aide et les ressources dont nous disposons.
+        </p>
 
         <Form {...form}>
           <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
