@@ -1,4 +1,5 @@
 import { MapPin, Phone, Mail } from "lucide-react";
+import GoogleMap from "./GoogleMap";
 
 const ContactInfo = () => {
   return (
@@ -10,7 +11,7 @@ const ContactInfo = () => {
         <div className="relative space-y-8">
           <div className="space-y-4">
             <h2 className="text-3xl md:text-4xl font-aptos font-bold bg-clip-text text-transparent bg-gradient-to-r from-navy to-gold tracking-tight">
-              Informations pratiques
+              Contact
             </h2>
             <div className="flex items-center space-x-3">
               <div className="w-20 h-1 bg-gradient-to-r from-gold to-navy rounded-full" />
@@ -36,6 +37,7 @@ const ContactInfo = () => {
               pauline.anger-bourez@avocat.fr
             </a>
           </div>
+          <GoogleMap />
         </div>
       </div>
     </div>

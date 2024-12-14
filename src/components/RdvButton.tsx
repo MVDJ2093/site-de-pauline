@@ -5,10 +5,11 @@ const RdvButton = () => {
   return (
     <Link
       to="/rendez-vous"
-      className="fixed bottom-8 right-8 bg-gradient-to-r from-navy to-gold text-white px-6 py-3 rounded-full flex items-center space-x-2 shadow-lg hover:shadow-xl transition-all duration-300 z-50"
+      className="fixed top-1/2 right-8 transform -translate-y-1/2 bg-gradient-to-r from-navy to-gold text-white px-4 py-3 rounded-xl flex flex-col items-center space-y-1 shadow-lg hover:shadow-xl transition-all duration-300 z-50 text-sm font-normal"
     >
-      <Calendar className="w-5 h-5" />
-      <span className="font-normal">Prendre rendez-vous</span>
+      <span>Prendre</span>
+      <span>rendez-vous</span>
+      <Calendar className="w-4 h-4 mt-1" />
     </Link>
   );
 };
