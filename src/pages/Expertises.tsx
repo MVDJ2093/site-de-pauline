@@ -1,49 +1,36 @@
-import React from "react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import RdvButton from "@/components/RdvButton";
 
 const Expertises = () => {
-  const expertises = [
-    {
-      title: "Avocat en droit de la fonction publique",
-      description: "Expertise juridique spécialisée pour les agents de la fonction publique."
-    },
-    {
-      title: "Maladie professionnelle",
-      description: "Accompagnement dans la reconnaissance et la gestion des maladies professionnelles."
-    },
-    {
-      title: "Accident de service",
-      description: "Assistance juridique pour les accidents survenus dans le cadre du service."
-    },
-    {
-      title: "Sanction disciplinaire ou insuffisance professionnelle",
-      description: "Défense des agents face aux procédures disciplinaires."
-    },
-    {
-      title: "Inaptitude et reclassement",
-      description: "Conseil et accompagnement dans les procédures de reclassement."
-    },
-    {
-      title: "Harcèlement moral",
-      description: "Protection et défense des agents victimes de harcèlement moral."
-    }
-  ];
-
   return (
     <div className="min-h-screen flex flex-col bg-offWhite">
       <Header />
-      <main className="flex-grow pt-20">
+      <main className="flex-grow">
+        <div className="relative h-[400px] w-full overflow-hidden">
+          <div
+            className="absolute inset-0 bg-cover bg-center"
+            style={{
+              backgroundImage: "url('https://images.unsplash.com/photo-1589829545856-d10d557cf95f?q=80&w=2070&auto=format&fit=crop')",
+            }}
+          >
+            <div className="absolute inset-0 bg-navy/50"></div>
+          </div>
+          <div className="relative h-full flex items-center justify-center text-white">
+            <h1 className="text-4xl md:text-5xl font-bold font-aptos">Autres domaines d'expertise</h1>
+          </div>
+        </div>
         <div className="container mx-auto px-4 py-12">
-          <h1 className="text-4xl font-bold text-navy mb-8">Expertises fonction publique</h1>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {expertises.map((expertise, index) => (
-              <div key={index} className="bg-lightGray p-6 rounded-lg hover:shadow-lg transition-shadow">
-                <h2 className="text-xl font-semibold text-navy mb-4">{expertise.title}</h2>
-                <p className="text-gray-700">{expertise.description}</p>
-              </div>
-            ))}
+          <h1 className="text-4xl font-bold text-navy mb-8">Autres domaines d'expertise</h1>
+          <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+            <div className="bg-lightGray p-6 rounded-lg">
+              <h2 className="text-xl font-semibold text-navy mb-4">
+                Expertises complémentaires
+              </h2>
+              <p className="text-gray-700">
+                Contenu à venir...
+              </p>
+            </div>
           </div>
         </div>
       </main>

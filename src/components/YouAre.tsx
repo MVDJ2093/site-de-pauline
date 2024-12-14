@@ -5,7 +5,7 @@ const YouAre = () => {
   return (
     <section className="py-16 bg-offWhite">
       <div className="container mx-auto px-4">
-        <h2 className="text-4xl font-bold text-center text-navy mb-12 transform transition-all duration-500 hover:scale-105">
+        <h2 className="text-4xl font-bold text-center mb-12 transform transition-all duration-500 hover:scale-105 bg-clip-text text-transparent bg-gradient-to-r from-navy to-gold">
           VOUS ÊTES
         </h2>
         <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">

@@ -1,8 +1,7 @@
-import React from "react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import ContactInfo from "@/components/ContactInfo";
 import ContactForm from "@/components/ContactForm";
+import ContactInfo from "@/components/ContactInfo";
 import RdvButton from "@/components/RdvButton";
 
 const Contact = () => {
@@ -14,7 +13,7 @@ const Contact = () => {
           <div
             className="absolute inset-0 bg-cover bg-center"
             style={{
-              backgroundImage: "url('https://images.unsplash.com/photo-1483058712412-4245e9b90334?q=80&w=2070&auto=format&fit=crop')",
+              backgroundImage: "url('https://images.unsplash.com/photo-1577415124269-fc1140a69e91?q=80&w=2070&auto=format&fit=crop')",
             }}
           >
             <div className="absolute inset-0 bg-navy/50"></div>
@@ -23,12 +22,10 @@ const Contact = () => {
             <h1 className="text-4xl md:text-5xl font-bold font-aptos">Contact</h1>
           </div>
         </div>
-        <div className="py-24">
-          <div className="container mx-auto px-4">
-            <div className="grid md:grid-cols-2 gap-12">
-              <ContactInfo />
-              <ContactForm />
-            </div>
+        <div className="container mx-auto px-4 py-12 grid md:grid-cols-2 gap-8">
+          <ContactForm />
+          <div className="w-full">
+            <ContactInfo />
           </div>
         </div>
       </main>

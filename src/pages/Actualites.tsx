@@ -1,4 +1,3 @@
-import React from "react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import RdvButton from "@/components/RdvButton";
@@ -12,7 +11,7 @@ const Actualites = () => {
           <div
             className="absolute inset-0 bg-cover bg-center"
             style={{
-              backgroundImage: "url('https://images.unsplash.com/photo-1450101499163-c8848c66ca85?q=80&w=2070&auto=format&fit=crop')",
+              backgroundImage: "url('https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?q=80&w=2070&auto=format&fit=crop')",
             }}
           >
             <div className="absolute inset-0 bg-navy/50"></div>
