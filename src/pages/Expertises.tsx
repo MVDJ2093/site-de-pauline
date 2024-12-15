@@ -12,7 +12,6 @@ const Expertises = () => {
             className="absolute inset-0 bg-cover bg-center"
             style={{
               backgroundImage: "url('https://images.unsplash.com/photo-1589829545856-d10d557cf95f?q=80&w=2070&auto=format&fit=crop')",
-              opacity: 0.125,
             }}
           >
             <div className="absolute inset-0 bg-navy/50"></div>
