@@ -1,6 +1,3 @@
-import { MapPin, Phone, Mail } from "lucide-react";
-import GoogleMap from "./GoogleMap";
-
 const ContactInfo = () => {
   return (
     <div className="max-w-[1200px] mx-auto h-full">
@@ -11,33 +8,21 @@ const ContactInfo = () => {
         <div className="relative space-y-8">
           <div className="space-y-4">
             <h2 className="text-3xl md:text-4xl font-aptos font-bold bg-clip-text text-transparent bg-gradient-to-r from-navy to-gold tracking-tight">
-              Contact
+              Informations pratiques
             </h2>
-            <div className="flex items-center space-x-3">
-              <div className="w-20 h-1 bg-gradient-to-r from-gold to-navy rounded-full" />
-              <div className="w-3 h-1 bg-gold/50 rounded-full" />
-              <div className="w-3 h-1 bg-gold/30 rounded-full" />
-            </div>
+            <p className="text-lg text-gray-700">
+              Pour toute demande d'information, n'hésitez pas à nous contacter via le formulaire ci-dessous ou par téléphone.
+            </p>
+            <p className="text-lg text-gray-700">
+              Adresse : 123 Rue de la Loi, 75001 Paris, France
+            </p>
+            <p className="text-lg text-gray-700">
+              Téléphone : +33 1 23 45 67 89
+            </p>
+            <p className="text-lg text-gray-700">
+              Email : contact@anger-bourez.fr
+            </p>
           </div>
-
-          <div className="flex items-start space-x-4">
-            <MapPin className="w-6 h-6 text-gold shrink-0 mt-1" />
-            <p className="text-lg">50 rue Gustave Delory<br />59800 Lille</p>
-          </div>
-          <div className="flex items-center space-x-4">
-            <Phone className="w-6 h-6 text-gold shrink-0" />
-            <p className="text-lg">+33 7 65 78 99 12</p>
-          </div>
-          <div className="flex items-center space-x-4">
-            <Mail className="w-6 h-6 text-gold shrink-0" />
-            <a 
-              href="mailto:pauline.anger-bourez@avocat.fr" 
-              className="text-lg hover:text-gold transition-colors"
-            >
-              pauline.anger-bourez@avocat.fr
-            </a>
-          </div>
-          <GoogleMap />
         </div>
       </div>
     </div>
