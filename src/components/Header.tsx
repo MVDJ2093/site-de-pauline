@@ -23,10 +23,10 @@ const Header = () => {
 
   return (
     <header className="fixed w-full flex justify-center px-4 py-6 z-50">
-      <div className="w-[95%] bg-[#f3f3f3]/40 backdrop-blur-md rounded-2xl px-6 py-4 transition-all duration-500 hover:shadow-lg">
+      <div className="w-full max-w-[1200px] bg-[#f3f3f3]/40 backdrop-blur-md rounded-2xl px-6 py-4 transition-all duration-500 hover:shadow-lg">
         <div className="flex justify-between items-center">
-          <Link to="/" className="text-2xl font-semibold transition-all duration-500">
-            <span className="bg-clip-text text-transparent bg-gradient-to-r from-navy via-gold to-[#E5C49B]">ANGER-BOUREZ</span> AVOCAT
+          <Link to="/" className="text-2xl font-semibold text-navy transition-all duration-500">
+            <span className="text-gold bg-clip-text text-transparent bg-gradient-to-r from-gold to-[#E5C49B]">PAB</span>AVOCAT
           </Link>
           
           <button
