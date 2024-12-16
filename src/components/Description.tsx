@@ -13,7 +13,7 @@ const Description = () => {
           
           <div className="md:w-2/3 font-aptos opacity-0 animate-[fadeIn_1s_ease-in-out_0.3s_forwards]">
             <h2 className="text-3xl text-navy mb-8 transform transition-all duration-500 group-hover:translate-x-2 tracking-tight">
-              À propos de <span className="font-bold text-navy">Pauline Anger-Bourez</span>
+              À propos de <span className="font-bold bg-clip-text text-transparent bg-gradient-to-r from-navy to-gold">Pauline Anger-Bourez</span>
             </h2>
             <div className="space-y-6 text-lg text-gray-700">
               <p className="transform transition-all duration-500 hover:translate-x-2">
