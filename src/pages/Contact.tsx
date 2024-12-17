@@ -13,7 +13,7 @@ const Contact = () => {
           <div
             className="absolute inset-0 bg-cover bg-center"
             style={{
-              backgroundImage: "url('https://images.unsplash.com/photo-1577415124269-fc1140a69e91?q=80&w=2070&auto=format&fit=crop')",
+              backgroundImage: "url('/lovable-uploads/2bc1cbf1-8abc-4045-b37b-be608289d4d3.png')",
             }}
           >
             <div className="absolute inset-0 bg-navy/70"></div>
