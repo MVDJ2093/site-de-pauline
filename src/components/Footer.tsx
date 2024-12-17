@@ -7,7 +7,7 @@ const Footer = () => {
         <div className="flex justify-between items-start">
           <div className="flex items-start gap-32">
             <Link to="/" className="text-2xl font-semibold text-[#f1f1f1] hover:text-gold transition-all duration-500">
-              <span className="text-gold bg-clip-text text-transparent bg-gradient-to-r from-gold to-[#E5C49B]">PAB</span> AVOCAT
+              <span className="text-gold bg-clip-text text-transparent bg-gradient-to-r from-gold to-[#E5C49B]">PAB</span>AVOCAT
             </Link>
             
             <div className="flex flex-col space-y-2 text-[#f1f1f1]">
