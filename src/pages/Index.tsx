@@ -1,10 +1,24 @@
-import { Link } from "react-router-dom";
+import { useState } from "react";
+import { useNavigate } from "react-router-dom";
+import { toast } from "sonner";
 
 const Index = () => {
+  const [showPasswordPrompt, setShowPasswordPrompt] = useState(false);
+  const navigate = useNavigate();
+
+  const handleTitleClick = () => {
+    const password = prompt("Veuillez entrer le mot de passe :");
+    if (password === "C0ffr3") {
+      navigate("/home");
+    } else {
+      toast.error("Mot de passe incorrect");
+    }
+  };
+
   return (
     <div className="min-h-screen w-full bg-offWhite flex flex-col items-center justify-center px-4">
       <div className="text-center max-w-2xl mx-auto animate-fade-in">
-        <h1 className="text-4xl md:text-5xl font-bold mb-6">
+        <h1 className="text-4xl md:text-5xl font-bold mb-6 cursor-pointer" onClick={handleTitleClick}>
           <span className="text-gold">PAB</span>
           <span className="text-navy">AVOCAT</span>
         </h1>
@@ -16,13 +30,6 @@ const Index = () => {
         <p className="text-lg text-gray-600 mb-6">
           Notre nouveau site est en cours de développement et sera bientôt disponible.
         </p>
-        
-        <Link 
-          to="/home" 
-          className="text-sm text-gold hover:text-navy transition-colors underline"
-        >
-          Accéder au site en développement
-        </Link>
       </div>
     </div>
   );
