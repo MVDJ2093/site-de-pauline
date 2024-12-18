@@ -84,13 +84,25 @@
     --sidebar-ring: 217.2 91.2% 59.8%;
   }
 
-  * {
-    @apply border-border;
-  }
+* {
+  @apply border-border;
+  font-family: 'Aptos', sans-serif;
+}
 
-  body {
-    @apply bg-offWhite text-foreground;
-  }
+body {
+  @apply bg-offWhite text-foreground text-[15px];
+}
+
+h1 {
+  @apply text-3xl md:text-4xl font-bold;
+}
+
+h2 {
+  @apply text-xl md:text-2xl font-medium;
+}
+
+p {
+  @apply text-sm md:text-base leading-relaxed;
 }
 
 /* Remove Lovable banner */
