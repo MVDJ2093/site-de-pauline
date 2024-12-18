@@ -9,7 +9,6 @@ const Index = () => {
 
   const handleTitleClick = () => {
     const result = prompt("Veuillez entrer le mot de passe :");
-
     if (result === "C0ffr3") {
       navigate("/home");
     } else {
@@ -20,9 +19,10 @@ const Index = () => {
   return (
     <div className="min-h-screen w-full bg-offWhite flex flex-col items-center justify-center px-4">
       <div className="text-center max-w-2xl mx-auto animate-fade-in">
-        <h1 className="text-4xl md:text-5xl font-bold mb-6 cursor-pointer" onClick={handleTitleClick}>
-          <span className="text-gold">PAB</span>
-          <span className="text-navy">AVOCAT</span>
+        <h1 className="text-4xl md:text-5xl font-bold mb-6 cursor-pointer flex flex-wrap justify-center items-center gap-2" onClick={handleTitleClick}>
+          <span className="bg-clip-text text-transparent bg-gradient-to-r from-gold to-[#E5C49B] whitespace-nowrap">
+            ANGER-BOUREZ AVOCAT
+          </span>
         </h1>
         
         <h2 className="text-2xl md:text-3xl text-navy mb-8 font-light">
