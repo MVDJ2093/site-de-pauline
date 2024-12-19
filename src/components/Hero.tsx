@@ -10,15 +10,15 @@ const Hero = () => {
       />
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-3xl mx-auto text-center">
-          <h1 className="text-4xl md:text-5xl font-bold mb-6 font-aptos opacity-0 animate-[fadeIn_1.5s_ease-in-out_forwards] tracking-tight">
-            <span className="bg-clip-text text-transparent bg-gradient-to-r from-gold to-[#E5C49B] flex items-center justify-center">
-              ANGER-BOUREZ <span className="mx-2"></span> AVOCAT
+          <h1 className="text-3xl md:text-4xl font-bold mb-6 font-aptos opacity-0 animate-[fadeIn_1.5s_ease-in-out_forwards] tracking-tight">
+            <span className="bg-clip-text text-transparent bg-gradient-to-r from-gold via-[#E5C49B] to-gold whitespace-nowrap">
+              ANGER-BOUREZ AVOCAT
             </span>
-            <span className="text-3xl md:text-4xl mt-4 block opacity-0 animate-[fadeIn_1.5s_ease-in-out_0.8s_forwards] tracking-wide">
+            <span className="text-2xl md:text-3xl mt-4 block opacity-0 animate-[fadeIn_1.5s_ease-in-out_0.8s_forwards] tracking-wide">
               Fonction publique
             </span>
           </h1>
-          <p className="text-xl md:text-2xl mb-8 text-gray-200 font-aptos opacity-0 animate-[fadeIn_1.5s_ease-in-out_1.2s_forwards] tracking-wide">
+          <p className="text-lg md:text-xl mb-8 text-gray-200 font-aptos opacity-0 animate-[fadeIn_1.5s_ease-in-out_1.2s_forwards] tracking-wide">
             Expertise et accompagnement personnalisé pour les Agents de la fonction publique et les Employeurs publics
           </p>
         </div>
