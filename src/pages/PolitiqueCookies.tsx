@@ -11,7 +11,7 @@ const PolitiqueCookies = () => {
           <h1 className="text-3xl font-bold text-navy mb-8">Politique de Cookies</h1>
           
           <section className="mb-8">
-            <h2 className="text-2xl font-semibold text-navy mb-4">1. Qu'est-ce qu'un cookie ?</h2>
+            <h2 className="text-2xl font-semibold text-navy mb-4">Qu'est-ce qu'un cookie ?</h2>
             <p className="text-gray-600">
               Un cookie est un petit fichier texte stocké sur votre appareil lors de votre visite sur notre site. 
               Ces fichiers permettent de mémoriser vos préférences et d'améliorer votre expérience de navigation.
@@ -19,7 +19,7 @@ const PolitiqueCookies = () => {
           </section>
 
           <section className="mb-8">
-            <h2 className="text-2xl font-semibold text-navy mb-4">2. Types de cookies utilisés</h2>
+            <h2 className="text-2xl font-semibold text-navy mb-4">Types de cookies utilisés</h2>
             
             <div className="space-y-6">
               <div>
@@ -55,7 +55,7 @@ const PolitiqueCookies = () => {
           </section>
 
           <section className="mb-8">
-            <h2 className="text-2xl font-semibold text-navy mb-4">3. Gestion des cookies</h2>
+            <h2 className="text-2xl font-semibold text-navy mb-4">Gestion des cookies</h2>
             <p className="text-gray-600">Vous pouvez à tout moment :</p>
             <ul className="list-disc pl-6 text-gray-600">
               <li>Modifier vos préférences via la bannière de consentement</li>
@@ -65,7 +65,7 @@ const PolitiqueCookies = () => {
           </section>
 
           <section className="mb-8">
-            <h2 className="text-2xl font-semibold text-navy mb-4">4. Impact du refus des cookies</h2>
+            <h2 className="text-2xl font-semibold text-navy mb-4">Impact du refus des cookies</h2>
             <p className="text-gray-600">
               Le refus des cookies non essentiels n'affecte pas la navigation sur le site. 
               Seules les fonctionnalités liées aux cookies refusés seront désactivées.
