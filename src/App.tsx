@@ -13,6 +13,8 @@ import Actualites from "./pages/Actualites";
 import Honoraires from "./pages/Honoraires";
 import Contact from "./pages/Contact";
 import MentionsLegales from "./pages/MentionsLegales";
+import PolitiqueCookies from "./pages/PolitiqueCookies";
+import CookieConsent from "./components/CookieConsent";
 
 const queryClient = new QueryClient();
 
@@ -33,7 +35,9 @@ const App = () => (
           <Route path="/honoraires" element={<Honoraires />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/mentions-legales" element={<MentionsLegales />} />
+          <Route path="/politique-cookies" element={<PolitiqueCookies />} />
         </Routes>
+        <CookieConsent />
       </BrowserRouter>
     </TooltipProvider>
   </QueryClientProvider>
