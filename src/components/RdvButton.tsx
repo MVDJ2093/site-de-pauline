@@ -6,10 +6,10 @@ const RdvButton = () => {
       href="https://consultation.avocat.fr/avocat-lille/pauline-anger-bourez-39917.html"
       target="_blank"
       rel="noopener noreferrer"
-      className="fixed md:top-1/2 md:right-8 md:-translate-y-1/2 bottom-4 right-4 bg-gradient-to-r from-[#1A1F2C]/90 to-[#C6A87D]/95 hover:from-[#1A1F2C] hover:to-[#C6A87D] text-white rounded-md flex items-center shadow-lg hover:shadow-xl transition-all duration-300 z-50 backdrop-blur-sm md:px-4 md:py-2 px-3 py-0.5"
+      className="fixed md:top-1/2 md:right-8 md:-translate-y-1/2 bottom-4 right-4 bg-gradient-to-r from-navy to-gold hover:from-navy/90 hover:to-gold/90 text-white rounded-md flex items-center shadow-lg hover:shadow-xl transition-all duration-300 z-50 md:max-w-[200px] md:max-h-[60px] md:px-4 md:py-3 px-3 py-1.5"
     >
-      <Calendar className="md:w-4 md:h-4 w-3 h-3" />
-      <div className="hidden md:flex flex-col items-start ml-2.5 text-[13px] font-medium">
+      <Calendar className="md:w-5 md:h-5 w-3 h-3" />
+      <div className="hidden md:flex flex-col items-start ml-3 text-sm font-medium">
         <span>Prendre</span>
         <span>rendez-vous</span>
       </div>
