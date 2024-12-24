@@ -27,13 +27,28 @@ const CookieConsent = () => {
 
   useEffect(() => {
     const savedPreferences = localStorage.getItem("cookiePreferences");
-    if (!savedPreferences) {
+    const savedTimestamp = localStorage.getItem("cookieTimestamp");
+    
+    if (savedPreferences && savedTimestamp) {
+      const timestamp = parseInt(savedTimestamp);
+      const thirteenMonthsInMs = 13 * 30 * 24 * 60 * 60 * 1000;
+      
+      if (Date.now() - timestamp > thirteenMonthsInMs) {
+        // Si plus de 13 mois se sont écoulés, on supprime les préférences
+        localStorage.removeItem("cookiePreferences");
+        localStorage.removeItem("cookieTimestamp");
+        setShowBanner(true);
+      } else {
+        setShowBanner(false);
+      }
+    } else {
       setShowBanner(true);
     }
   }, []);
 
   const savePreferences = (prefs: CookiePreferences) => {
     localStorage.setItem("cookiePreferences", JSON.stringify(prefs));
+    localStorage.setItem("cookieTimestamp", Date.now().toString());
     setShowBanner(false);
     toast.success("Vos préférences ont été enregistrées");
     console.log("Préférences cookies sauvegardées:", prefs);
@@ -70,12 +85,12 @@ const CookieConsent = () => {
   if (!showBanner) return null;
 
   return (
-    <div className="fixed bottom-4 left-4 z-50 max-w-[400px] bg-white rounded-lg shadow-lg">
-      <div className="p-6">
+    <div className="fixed bottom-4 left-4 z-50 max-w-[400px] md:max-w-[400px] w-[calc(100%-2rem)] md:w-auto bg-white rounded-lg shadow-lg">
+      <div className="p-4 md:p-6">
         {!showDetails ? (
-          <div className="space-y-4">
-            <h3 className="text-lg font-semibold text-navy">Nous respectons votre vie privée</h3>
-            <p className="text-sm text-gray-600">
+          <div className="space-y-3 md:space-y-4">
+            <h3 className="text-base md:text-lg font-semibold text-navy">Nous respectons votre vie privée</h3>
+            <p className="text-xs md:text-sm text-gray-600">
               Nous utilisons des cookies pour améliorer votre expérience de navigation, diffuser des publicités ou des contenus personnalisés et analyser notre trafic. 
               En cliquant sur « Tout accepter », vous consentez à notre utilisation des cookies. Pour plus d'informations, consultez notre{" "}
               <Link to="/politique-cookies" className="text-gold hover:underline">
@@ -87,20 +102,20 @@ const CookieConsent = () => {
               <Button
                 variant="outline"
                 onClick={() => setShowDetails(true)}
-                className="w-full"
+                className="w-full text-xs md:text-sm"
               >
                 Personnaliser
               </Button>
               <Button
                 variant="outline"
                 onClick={handleRejectAll}
-                className="w-full"
+                className="w-full text-xs md:text-sm"
               >
                 Tout refuser
               </Button>
               <Button
                 onClick={handleAcceptAll}
-                className="w-full bg-gradient-to-r from-navy to-gold hover:from-navy/90 hover:to-gold/90"
+                className="w-full text-xs md:text-sm bg-gradient-to-r from-navy to-gold hover:from-navy/90 hover:to-gold/90"
               >
                 Tout accepter
               </Button>

@@ -17,6 +17,9 @@ const Footer = () => {
               <Link to="/mentions-legales" className="hover:text-gold transition-all duration-300">
                 Mentions légales
               </Link>
+              <Link to="/politique-cookies" className="hover:text-gold transition-all duration-300">
+                Politique des cookies
+              </Link>
             </div>
           </div>
         </div>
