@@ -11,8 +11,8 @@ const Actualites = () => {
           <div
             className="absolute inset-0 bg-cover bg-center"
             style={{
-              backgroundImage: "url('/lovable-uploads/photo-1486312338219-ce68d2c6f44d')",
-              opacity: 0.8,
+              backgroundImage: "url('/lovable-uploads/65140cf6-56cc-4a61-813e-65c723927adb.png')",
+              opacity: 1,
             }}
           >
             <div className="absolute inset-0 bg-navy/30"></div>
