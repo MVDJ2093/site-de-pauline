@@ -8,7 +8,7 @@ const Contact = () => {
   return (
     <div className="min-h-screen flex flex-col bg-offWhite">
       <Header />
-      <main className="flex-grow pt-24">
+      <main className="flex-grow pt-32">
         <div className="relative h-[400px] w-full overflow-hidden">
           <div
             className="absolute inset-0 bg-cover bg-center"

@@ -11,11 +11,11 @@ const Actualites = () => {
           <div
             className="absolute inset-0 bg-cover bg-center"
             style={{
-              backgroundImage: "url('/lovable-uploads/65140cf6-56cc-4a61-813e-65c723927adb.png')",
-              opacity: 1,
+              backgroundImage: "url('https://images.unsplash.com/photo-1585829365295-ab7cd400c167?q=80&w=2070&auto=format&fit=crop')",
+              opacity: 0.8,
             }}
           >
-            <div className="absolute inset-0 bg-navy/30"></div>
+            <div className="absolute inset-0 bg-navy/50"></div>
           </div>
           <div className="relative h-full flex items-center justify-center text-white">
             <h1 className="text-4xl md:text-5xl font-bold font-aptos">Actualités</h1>

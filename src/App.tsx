@@ -15,6 +15,12 @@ import Contact from "./pages/Contact";
 import MentionsLegales from "./pages/MentionsLegales";
 import PolitiqueCookies from "./pages/PolitiqueCookies";
 import CookieConsent from "./components/CookieConsent";
+import Carriere from "./pages/expertise/Carriere";
+import Remuneration from "./pages/expertise/Remuneration";
+import CessationFonctions from "./pages/expertise/CessationFonctions";
+import TempsTravail from "./pages/expertise/TempsTravail";
+import AccidentService from "./pages/expertise/AccidentService";
+import Discipline from "./pages/expertise/Discipline";
 
 const queryClient = new QueryClient();
 
@@ -36,6 +42,12 @@ const App = () => (
           <Route path="/contact" element={<Contact />} />
           <Route path="/mentions-legales" element={<MentionsLegales />} />
           <Route path="/politique-cookies" element={<PolitiqueCookies />} />
+          <Route path="/expertise/carriere" element={<Carriere />} />
+          <Route path="/expertise/remuneration" element={<Remuneration />} />
+          <Route path="/expertise/cessation-des-fonctions" element={<CessationFonctions />} />
+          <Route path="/expertise/temps-de-travail" element={<TempsTravail />} />
+          <Route path="/expertise/accident-service" element={<AccidentService />} />
+          <Route path="/expertise/discipline" element={<Discipline />} />
         </Routes>
         <CookieConsent />
       </BrowserRouter>

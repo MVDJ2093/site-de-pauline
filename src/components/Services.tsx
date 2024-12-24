@@ -6,37 +6,37 @@ const expertises = [
     icon: Briefcase,
     title: "Carrière",
     description: "Mobilité, notation, avancement, disponibilité, détachement, inaptitude, congés",
-    link: "/expertise/carriere-remuneration"
+    link: "https://angerbourezavocat.fr/expertise/carriere"
   },
   {
     icon: HeartPulse,
     title: "Accident de service-CITIS/ Maladie professionnelle",
     description: "Accompagnement dans la reconnaissance et la gestion des accidents de service et maladies professionnelles",
-    link: "/expertise/accident-service"
+    link: "https://angerbourezavocat.fr/expertise/accident-service"
   },
   {
     icon: Euro,
     title: "Rémunération",
     description: "Conseil et assistance pour toutes questions relatives à votre rémunération",
-    link: "/expertise/carriere-remuneration"
+    link: "https://angerbourezavocat.fr/expertise/remuneration"
   },
   {
     icon: Gavel,
     title: "Discipline",
     description: "Défense et accompagnement dans les procédures disciplinaires",
-    link: "/expertise/discipline"
+    link: "https://angerbourezavocat.fr/expertise/discipline"
   },
   {
     icon: UserCog,
     title: "Cessation des fonctions",
     description: "Licenciement, rupture conventionnelle, fin de contrat",
-    link: "/expertise/carriere-remuneration"
+    link: "https://angerbourezavocat.fr/expertise/cessation-des-fonctions"
   },
   {
     icon: Clock,
     title: "Temps de travail",
     description: "Questions relatives à l'organisation et aux droits liés au temps de travail",
-    link: "/expertise/carriere-remuneration"
+    link: "https://angerbourezavocat.fr/expertise/temps-de-travail"
   }
 ];
 
