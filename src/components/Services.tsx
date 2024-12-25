@@ -44,8 +44,8 @@ const Services = () => {
   return (
     <section id="services" className="py-20 bg-offWhite relative">
       <div className="container mx-auto px-4 relative z-10 max-w-[1200px]">
-        <h2 className="text-3xl md:text-4xl tracking-wide text-center mb-12 font-aptos">
-          <span className="text-navy font-bold">
+        <h2 className="text-2xl md:text-3xl tracking-wide text-center mb-12 font-aptos">
+          <span className="text-navy font-medium">
             DOMAINES D'EXPERTISE
           </span>
         </h2>
