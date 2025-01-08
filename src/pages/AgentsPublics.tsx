@@ -20,7 +20,6 @@ const AgentsPublics = () => {
             className="absolute inset-0 bg-cover bg-center"
             style={{
               backgroundImage: "url('https://images.unsplash.com/photo-1517048676732-d65bc937f952?q=80&w=2070&auto=format&fit=crop')",
-              opacity: 0.7,
             }}
           >
             <div className="absolute inset-0 bg-navy/60"></div>

@@ -13,10 +13,9 @@ const Cabinet = () => {
             className="absolute inset-0 bg-cover bg-center"
             style={{
               backgroundImage: "url('https://images.unsplash.com/photo-1589829545856-d10d557cf95f?q=80&w=2070&auto=format&fit=crop')",
-              opacity: 0.7,
             }}
           >
-            <div className="absolute inset-0 bg-navy/60"></div>
+            <div className="absolute inset-0 bg-navy/50"></div>
           </div>
           <div className="relative h-full flex items-center justify-center text-white">
             <h1 className="text-4xl md:text-5xl font-bold font-aptos">Le Cabinet</h1>
