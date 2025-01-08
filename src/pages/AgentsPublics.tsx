@@ -20,9 +20,10 @@ const AgentsPublics = () => {
             className="absolute inset-0 bg-cover bg-center"
             style={{
               backgroundImage: "url('https://images.unsplash.com/photo-1517048676732-d65bc937f952?q=80&w=2070&auto=format&fit=crop')",
+              opacity: 0.7,
             }}
           >
-            <div className="absolute inset-0 bg-navy/50"></div>
+            <div className="absolute inset-0 bg-navy/60"></div>
           </div>
           <div className="relative h-full flex items-center justify-center text-white">
             <h1 className="text-4xl md:text-5xl font-bold font-aptos">Agents Publics</h1>

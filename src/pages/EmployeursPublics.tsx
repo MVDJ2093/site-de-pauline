@@ -17,7 +17,7 @@ const EmployeursPublics = () => {
       <main className="flex-grow">
         <div className="relative h-[400px] w-full overflow-hidden">
           <div
-            className="absolute inset-0 bg-cover bg-center"
+            className="absolute inset-0 bg-cover bg-center bg-[position:50%_65%]"
             style={{
               backgroundImage: "url('https://images.unsplash.com/photo-1497215728101-856f4ea42174?q=80&w=2070&auto=format&fit=crop')",
             }}
