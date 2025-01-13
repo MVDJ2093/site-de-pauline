@@ -11,7 +11,7 @@ const YouAre = () => {
         <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
           <Link
             to="/employeurs-publics"
-            className="bg-gold p-8 rounded-xl shadow-md hover:shadow-xl transition-all duration-500 ease-in-out transform hover:-translate-y-2 hover:scale-[1.02] group"
+            className="bg-gradient-to-r from-navy via-gold to-gold p-8 rounded-xl shadow-md hover:shadow-xl transition-all duration-500 ease-in-out transform hover:-translate-y-2 hover:scale-[1.02] group"
           >
             <div className="flex flex-col items-center text-center">
               <div className="w-16 h-16 flex items-center justify-center rounded-full bg-white/10 mb-4 group-hover:bg-white/20 transition-all duration-500 transform group-hover:scale-110">
@@ -25,7 +25,7 @@ const YouAre = () => {
           
           <Link
             to="/agents-publics"
-            className="bg-gold p-8 rounded-xl shadow-md hover:shadow-xl transition-all duration-500 ease-in-out transform hover:-translate-y-2 hover:scale-[1.02] group"
+            className="bg-gradient-to-r from-navy via-gold to-gold p-8 rounded-xl shadow-md hover:shadow-xl transition-all duration-500 ease-in-out transform hover:-translate-y-2 hover:scale-[1.02] group"
           >
             <div className="flex flex-col items-center text-center">
               <div className="w-16 h-16 flex items-center justify-center rounded-full bg-white/10 mb-4 group-hover:bg-white/20 transition-all duration-500 transform group-hover:scale-110">
