@@ -14,8 +14,8 @@ const YouAre = () => {
             className="bg-offWhite p-8 rounded-xl shadow-md hover:shadow-xl transition-all duration-500 ease-in-out transform hover:-translate-y-2 hover:scale-[1.02] group"
           >
             <div className="flex flex-col items-center text-center">
-              <div className="w-16 h-16 flex items-center justify-center rounded-full bg-navy/10 mb-4 group-hover:bg-navy/20 transition-all duration-500 transform group-hover:scale-110">
-                <Building2 className="w-8 h-8 text-navy group-hover:scale-110 transition-transform duration-500" />
+              <div className="w-16 h-16 flex items-center justify-center rounded-full bg-gold/10 mb-4 group-hover:bg-gold/20 transition-all duration-500 transform group-hover:scale-110">
+                <Building2 className="w-8 h-8 text-gold group-hover:scale-110 transition-transform duration-500" />
               </div>
               <h3 className="text-2xl font-semibold text-navy mb-2 group-hover:text-navy/90 transition-colors duration-500">
                 EMPLOYEUR PUBLIC
@@ -28,8 +28,8 @@ const YouAre = () => {
             className="bg-offWhite p-8 rounded-xl shadow-md hover:shadow-xl transition-all duration-500 ease-in-out transform hover:-translate-y-2 hover:scale-[1.02] group"
           >
             <div className="flex flex-col items-center text-center">
-              <div className="w-16 h-16 flex items-center justify-center rounded-full bg-navy/10 mb-4 group-hover:bg-navy/20 transition-all duration-500 transform group-hover:scale-110">
-                <User className="w-8 h-8 text-navy group-hover:scale-110 transition-transform duration-500" />
+              <div className="w-16 h-16 flex items-center justify-center rounded-full bg-gold/10 mb-4 group-hover:bg-gold/20 transition-all duration-500 transform group-hover:scale-110">
+                <User className="w-8 h-8 text-gold group-hover:scale-110 transition-transform duration-500" />
               </div>
               <h3 className="text-2xl font-semibold text-navy mb-2 group-hover:text-navy/90 transition-colors duration-500">
                 AGENT PUBLIC
