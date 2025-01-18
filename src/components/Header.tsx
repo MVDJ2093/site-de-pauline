@@ -23,7 +23,7 @@ const Header = () => {
 
   return (
     <header className="fixed w-full flex justify-center px-4 py-3 z-50">
-      <div className="w-full bg-[#f3f3f3]/40 backdrop-blur-md px-6 py-2 transition-all duration-500 hover:shadow-lg">
+      <div className="w-full bg-[#f3f3f3]/30 backdrop-blur-md px-6 py-2 transition-all duration-500 hover:shadow-lg rounded-2xl">
         <div className="flex justify-between items-center max-w-[1400px] mx-auto">
           <Link to="/" className="transition-all duration-500">
             <img 
