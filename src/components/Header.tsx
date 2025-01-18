@@ -24,8 +24,8 @@ const Header = () => {
   return (
     <header className="fixed w-full flex justify-center px-4 py-3 z-50">
       <div className="w-full bg-[#f3f3f3]/30 backdrop-blur-md px-6 py-2 transition-all duration-500 hover:shadow-lg rounded-2xl">
-        <div className="flex justify-between items-center max-w-[1400px] mx-auto">
-          <Link to="/" className="transition-all duration-500">
+        <div className="flex justify-between items-start max-w-[1400px] mx-auto">
+          <Link to="/" className="transition-all duration-500 pt-2">
             <img 
               src="/lovable-uploads/2b5188f9-d7fa-4ec6-949c-cc7b1dc61eba.png" 
               alt="PAB Avocat" 
@@ -40,7 +40,7 @@ const Header = () => {
             {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
 
-          <nav className="hidden md:flex items-center gap-6">
+          <nav className="hidden md:flex items-center gap-6 mx-auto">
             {menuItems.map((item) => (
               item.children ? (
                 <div
