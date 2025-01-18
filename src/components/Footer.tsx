@@ -2,16 +2,16 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <footer className="w-full bg-[#1A1F2C] py-16 relative overflow-hidden">
+    <footer className="w-full bg-[#1A1F2C] py-32 relative overflow-hidden">
       <div className="container mx-auto px-6 relative z-10">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12">
           {/* Logo column */}
-          <div>
+          <div className="pt-0">
             <Link to="/" className="block">
               <img 
                 src="/lovable-uploads/2b5188f9-d7fa-4ec6-949c-cc7b1dc61eba.png" 
                 alt="PAB Avocat" 
-                className="h-32 w-auto brightness-0 invert"
+                className="h-40 w-auto brightness-0 invert"
               />
             </Link>
           </div>

@@ -23,13 +23,13 @@ const Header = () => {
 
   return (
     <header className="fixed w-full flex justify-center px-4 py-3 z-50">
-      <div className="w-full max-w-[1200px] bg-[#f3f3f3]/40 backdrop-blur-md rounded-2xl px-6 py-2 transition-all duration-500 hover:shadow-lg">
-        <div className="flex justify-between items-center">
+      <div className="w-full bg-[#f3f3f3]/40 backdrop-blur-md px-6 py-2 transition-all duration-500 hover:shadow-lg">
+        <div className="flex justify-between items-center max-w-[1400px] mx-auto">
           <Link to="/" className="transition-all duration-500">
             <img 
               src="/lovable-uploads/2b5188f9-d7fa-4ec6-949c-cc7b1dc61eba.png" 
               alt="PAB Avocat" 
-              className="h-20 w-auto"
+              className="h-24 w-auto"
             />
           </Link>
           
@@ -53,12 +53,12 @@ const Header = () => {
                     {item.label}
                     <ChevronDown size={20} />
                   </button>
-                  <div className="absolute top-full left-0 mt-2 py-2 min-w-[200px] bg-[#1A1F2C] rounded-xl shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">
+                  <div className="absolute top-full left-0 mt-2 py-2 min-w-[200px] bg-white rounded-xl shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">
                     {item.children.map((child) => (
                       <Link
                         key={child.label}
                         to={child.path}
-                        className="block px-6 py-2 text-white hover:text-gold hover:bg-[#2A2F3C] transition-all duration-300"
+                        className="block px-6 py-2 text-black hover:text-gold hover:bg-gray-50 transition-all duration-300"
                       >
                         {child.label}
                       </Link>
