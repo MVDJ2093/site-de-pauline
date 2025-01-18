@@ -22,14 +22,14 @@ const Header = () => {
   ];
 
   return (
-    <header className="fixed w-full flex justify-center px-4 py-1 z-50">
-      <div className="w-full max-w-[1200px] bg-[#f3f3f3]/40 backdrop-blur-md rounded-2xl px-6 py-1 transition-all duration-500 hover:shadow-lg">
+    <header className="fixed w-full flex justify-center px-4 py-3 z-50">
+      <div className="w-full max-w-[1200px] bg-[#f3f3f3]/40 backdrop-blur-md rounded-2xl px-6 py-2 transition-all duration-500 hover:shadow-lg">
         <div className="flex justify-between items-center">
           <Link to="/" className="transition-all duration-500">
             <img 
               src="/lovable-uploads/2b5188f9-d7fa-4ec6-949c-cc7b1dc61eba.png" 
               alt="PAB Avocat" 
-              className="h-16 w-auto"
+              className="h-20 w-auto"
             />
           </Link>
           
@@ -40,7 +40,7 @@ const Header = () => {
             {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
 
-          <nav className="hidden md:flex items-center gap-2 ml-8">
+          <nav className="hidden md:flex items-center gap-6">
             {menuItems.map((item) => (
               item.children ? (
                 <div
