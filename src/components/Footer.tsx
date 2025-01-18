@@ -59,7 +59,7 @@ const Footer = () => {
         <img 
           src="/lovable-uploads/2b5188f9-d7fa-4ec6-949c-cc7b1dc61eba.png" 
           alt="PAB Avocat Background" 
-          className="h-[800px] w-auto brightness-0 invert opacity-10"
+          className="h-[400px] w-auto brightness-0 invert opacity-10"
         />
       </div>
     </footer>

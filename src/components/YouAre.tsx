@@ -3,7 +3,7 @@ import { Building2, User } from "lucide-react";
 
 const YouAre = () => {
   return (
-    <section className="py-16 bg-offWhite">
+    <section className="py-16 bg-white">
       <div className="container mx-auto px-4">
         <h2 className="text-2xl md:text-3xl font-bold text-center mb-12 transform transition-all duration-500 hover:scale-105 text-navy">
           VOUS ÊTES
