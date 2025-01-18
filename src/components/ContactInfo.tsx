@@ -3,7 +3,7 @@ import GoogleMap from "./GoogleMap";
 
 const ContactInfo = ({ isHomePage = false }) => {
   return (
-    <div className="max-w-[1200px] mx-auto h-full">
+    <div className="max-w-[1200px] mx-auto h-full mb-12">
       <div className="relative overflow-hidden p-8 rounded-2xl bg-gradient-to-br from-white to-[#F8F7FF] border border-gold/30 animate-fadeIn backdrop-blur-sm h-full">
         <div className="relative space-y-8">
           <div className="space-y-4">

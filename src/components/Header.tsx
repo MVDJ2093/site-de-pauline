@@ -40,7 +40,7 @@ const Header = () => {
             {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
 
-          <nav className="hidden md:flex items-center gap-6">
+          <nav className="hidden md:flex items-center justify-center flex-1 gap-8">
             {menuItems.map((item) => (
               item.children ? (
                 <div
@@ -49,7 +49,7 @@ const Header = () => {
                   onMouseEnter={() => setIsDropdownOpen(true)}
                   onMouseLeave={() => setIsDropdownOpen(false)}
                 >
-                  <button className="text-lg text-navy hover:text-gold transition-all duration-300 whitespace-nowrap flex items-center gap-1">
+                  <button className="text-base text-navy hover:text-gold transition-all duration-300 whitespace-nowrap flex items-center gap-1">
                     {item.label}
                     <ChevronDown size={20} />
                   </button>
@@ -69,7 +69,7 @@ const Header = () => {
                 <Link
                   key={item.label}
                   to={item.path}
-                  className="text-lg text-navy hover:text-gold transition-all duration-300 whitespace-nowrap"
+                  className="text-base text-navy hover:text-gold transition-all duration-300 whitespace-nowrap"
                 >
                   {item.label}
                 </Link>
