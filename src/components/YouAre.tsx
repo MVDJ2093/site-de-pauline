@@ -3,7 +3,7 @@ import { Building2, User } from "lucide-react";
 
 const YouAre = () => {
   return (
-    <section className="py-16 bg-offWhite">
+    <section className="py-20 bg-offWhite">
       <div className="container mx-auto px-4">
         <h2 className="text-2xl md:text-3xl font-bold text-center mb-12 transform transition-all duration-500 hover:scale-105 text-navy">
           VOUS ÊTES
@@ -11,7 +11,7 @@ const YouAre = () => {
         <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
           <Link
             to="/employeurs-publics"
-            className="bg-offWhite p-8 rounded-xl shadow-md hover:shadow-xl transition-all duration-500 ease-in-out transform hover:-translate-y-2 hover:scale-[1.02] group"
+            className="group bg-gradient-to-br from-white/80 to-white/40 backdrop-blur-sm rounded-xl p-6 shadow-md hover:shadow-xl transition-all duration-500 ease-in-out transform hover:-translate-y-1 border border-gray-100/50 hover:border-gold/20"
           >
             <div className="flex flex-col items-center text-center">
               <div className="w-16 h-16 flex items-center justify-center rounded-full bg-gold/10 mb-4 group-hover:bg-gold/20 transition-all duration-500 transform group-hover:scale-110">
@@ -25,7 +25,7 @@ const YouAre = () => {
           
           <Link
             to="/agents-publics"
-            className="bg-offWhite p-8 rounded-xl shadow-md hover:shadow-xl transition-all duration-500 ease-in-out transform hover:-translate-y-2 hover:scale-[1.02] group"
+            className="group bg-gradient-to-br from-white/80 to-white/40 backdrop-blur-sm rounded-xl p-6 shadow-md hover:shadow-xl transition-all duration-500 ease-in-out transform hover:-translate-y-1 border border-gray-100/50 hover:border-gold/20"
           >
             <div className="flex flex-col items-center text-center">
               <div className="w-16 h-16 flex items-center justify-center rounded-full bg-gold/10 mb-4 group-hover:bg-gold/20 transition-all duration-500 transform group-hover:scale-110">
