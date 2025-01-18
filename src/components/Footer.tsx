@@ -2,9 +2,18 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <footer className="w-full flex justify-center px-4 py-4">
-      <div className="w-full max-w-[1200px] bg-[#1A1F2C]/90 backdrop-blur-md rounded-2xl px-6 py-3 transition-all duration-500 hover:shadow-lg">
-        <div className="flex justify-between items-center">
+    <footer className="w-full flex justify-center px-4 py-4 relative">
+      <div className="w-full max-w-[1200px] bg-[#1A1F2C]/90 backdrop-blur-md rounded-2xl px-6 py-3 transition-all duration-500 hover:shadow-lg relative overflow-hidden">
+        {/* Logo en arrière-plan */}
+        <div className="absolute right-0 top-1/2 transform -translate-y-1/2 opacity-10">
+          <img 
+            src="/lovable-uploads/2b5188f9-d7fa-4ec6-949c-cc7b1dc61eba.png" 
+            alt="PAB Avocat Background" 
+            className="h-48 w-auto brightness-0 invert"
+          />
+        </div>
+
+        <div className="flex justify-between items-center relative z-10">
           <div className="flex items-center gap-72">
             <Link to="/" className="transition-all duration-500">
               <img 
@@ -28,7 +37,7 @@ const Footer = () => {
           </div>
         </div>
         
-        <div className="mt-2 text-[#f1f1f1] text-center text-sm">
+        <div className="mt-2 text-[#f1f1f1] text-center text-sm relative z-10">
           <p className="opacity-80 hover:opacity-100 transition-opacity duration-300">
             © {new Date().getFullYear()} Cabinet PAB Avocat. Tous droits réservés.
           </p>
