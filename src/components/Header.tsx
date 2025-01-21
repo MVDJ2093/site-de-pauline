@@ -25,13 +25,7 @@ const Header = () => {
     <header className="fixed w-full flex justify-center px-4 py-3 z-50">
       <div className="w-full bg-[#f3f3f3]/30 backdrop-blur-md px-6 py-2 transition-all duration-500 hover:shadow-lg rounded-2xl">
         <div className="flex justify-between items-center max-w-[1400px] mx-auto">
-          <Link to="/" className="transition-all duration-500">
-            <img 
-              src="/lovable-uploads/2b5188f9-d7fa-4ec6-949c-cc7b1dc61eba.png" 
-              alt="PAB Avocat" 
-              className="h-24 w-auto"
-            />
-          </Link>
+          <div className="w-24"></div> {/* Espace réservé pour maintenir l'alignement */}
           
           <button
             className="md:hidden"
