@@ -27,10 +27,10 @@ const Header = () => {
   };
 
   return (
-    <header className="fixed w-full top-0 z-50">
-      <div className="w-full bg-gradient-to-b from-white/80 to-white/40 backdrop-blur-sm px-6 py-4 transition-all duration-500 hover:shadow-lg">
+    <header className="fixed w-full flex justify-center px-4 py-6 z-50">
+      <div className="w-full bg-[#f3f3f3]/30 backdrop-blur-md px-6 py-4 transition-all duration-500 hover:shadow-lg rounded-2xl">
         <div className="flex justify-between items-center max-w-[1400px] mx-auto">
-          <div className="w-24 mt-6"></div>
+          <div className="w-24"></div>
           
           <button
             className="md:hidden"
