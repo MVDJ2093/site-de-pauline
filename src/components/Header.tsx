@@ -7,25 +7,25 @@ const Header = () => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
   const menuItems = [
-    { label: "Le cabinet", path: "/cabinet" },
+    { label: "LE CABINET", path: "/cabinet" },
     {
-      label: "Fonction publique",
+      label: "FONCTION PUBLIQUE",
       children: [
-        { label: "Employeur public", path: "/employeurs-publics" },
-        { label: "Agent public", path: "/agents-publics" },
+        { label: "EMPLOYEUR PUBLIC", path: "/employeurs-publics" },
+        { label: "AGENT PUBLIC", path: "/agents-publics" },
       ],
     },
-    { label: "Autres domaines d'expertise", path: "/autres-domaines-d-expertise" },
-    { label: "Honoraires", path: "/honoraires" },
-    { label: "Actualités", path: "/actualites" },
-    { label: "Contact", path: "/contact" }
+    { label: "AUTRES DOMAINES D'EXPERTISE", path: "/autres-domaines-d-expertise" },
+    { label: "HONORAIRES", path: "/honoraires" },
+    { label: "ACTUALITÉS", path: "/actualites" },
+    { label: "CONTACT", path: "/contact" }
   ];
 
   return (
-    <header className="fixed w-full flex justify-center px-4 py-3 z-50">
-      <div className="w-full bg-[#f3f3f3]/30 backdrop-blur-md px-6 py-2 transition-all duration-500 hover:shadow-lg rounded-2xl">
+    <header className="fixed w-full flex justify-center px-4 py-6 z-50">
+      <div className="w-full bg-[#f3f3f3]/30 backdrop-blur-md px-6 py-4 transition-all duration-500 hover:shadow-lg rounded-2xl">
         <div className="flex justify-between items-center max-w-[1400px] mx-auto">
-          <div className="w-24"></div> {/* Espace réservé pour maintenir l'alignement */}
+          <div className="w-24"></div>
           
           <button
             className="md:hidden"
@@ -43,7 +43,7 @@ const Header = () => {
                   onMouseEnter={() => setIsDropdownOpen(true)}
                   onMouseLeave={() => setIsDropdownOpen(false)}
                 >
-                  <button className="text-base text-navy hover:text-gold transition-all duration-300 whitespace-nowrap flex items-center gap-1">
+                  <button className="text-[16px] text-navy hover:text-gold transition-all duration-300 whitespace-nowrap flex items-center gap-1">
                     {item.label}
                     <ChevronDown size={20} />
                   </button>
@@ -63,7 +63,7 @@ const Header = () => {
                 <Link
                   key={item.label}
                   to={item.path}
-                  className="text-base text-navy hover:text-gold transition-all duration-300 whitespace-nowrap"
+                  className="text-[16px] text-navy hover:text-gold transition-all duration-300 whitespace-nowrap"
                 >
                   {item.label}
                 </Link>

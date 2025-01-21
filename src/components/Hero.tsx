@@ -2,11 +2,11 @@ const Hero = () => {
   return (
     <section className="relative min-h-screen flex items-center justify-center bg-navy text-white overflow-hidden">
       {/* Logo transparent en haut à gauche */}
-      <div className="absolute left-0 top-0 transform -translate-y-1/4">
+      <div className="absolute left-0 top-32 transform -translate-y-1/4">
         <img 
           src="/lovable-uploads/2b5188f9-d7fa-4ec6-949c-cc7b1dc61eba.png" 
           alt="PAB Avocat Background" 
-          className="h-[480px] w-auto brightness-0 invert opacity-10"
+          className="h-[528px] w-auto brightness-0 invert opacity-10"
         />
       </div>
       <div className="container mx-auto px-4 relative z-10">
