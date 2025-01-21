@@ -9,7 +9,7 @@ const Footer = () => {
           <div className="pt-0">
             <Link to="/" className="block">
               <img 
-                src="/lovable-uploads/2b5188f9-d7fa-4ec6-949c-cc7b1dc61eba.png" 
+                src="/lovable-uploads/ae7e83cc-65e2-46d7-abf9-d728f1f74f6a.png" 
                 alt="PAB Avocat" 
                 className="h-40 w-auto brightness-0 invert"
               />
@@ -57,9 +57,9 @@ const Footer = () => {
       {/* Background logo */}
       <div className="absolute right-0 bottom-0 transform translate-y-1/2">
         <img 
-          src="/lovable-uploads/2b5188f9-d7fa-4ec6-949c-cc7b1dc61eba.png" 
+          src="/lovable-uploads/ae7e83cc-65e2-46d7-abf9-d728f1f74f6a.png" 
           alt="PAB Avocat Background" 
-          className="h-[480px] w-auto brightness-0 invert opacity-10" // Augmenté de 20%
+          className="h-[480px] w-auto brightness-0 invert opacity-10"
         />
       </div>
     </footer>

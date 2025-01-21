@@ -27,7 +27,7 @@ const Header = () => {
         <div className="flex justify-between items-center max-w-[1400px] mx-auto">
           <Link to="/" className="transition-all duration-500">
             <img 
-              src="/lovable-uploads/2b5188f9-d7fa-4ec6-949c-cc7b1dc61eba.png" 
+              src="/lovable-uploads/ae7e83cc-65e2-46d7-abf9-d728f1f74f6a.png" 
               alt="PAB Avocat" 
               className="h-24 w-auto"
             />
