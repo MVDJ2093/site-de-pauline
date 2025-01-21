@@ -2,7 +2,7 @@ const Hero = () => {
   return (
     <section className="relative min-h-screen flex items-center justify-center bg-navy text-white overflow-hidden">
       {/* Logo transparent en haut à gauche */}
-      <div className="absolute left-0 top-32 transform -translate-y-1/4">
+      <div className="absolute left-0 top-44 transform -translate-y-1/4">
         <img 
           src="/lovable-uploads/2b5188f9-d7fa-4ec6-949c-cc7b1dc61eba.png" 
           alt="PAB Avocat Background" 

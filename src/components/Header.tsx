@@ -1,10 +1,11 @@
 import { useState } from "react";
 import { Menu, X, ChevronDown } from "lucide-react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+  const location = useLocation();
 
   const menuItems = [
     { label: "LE CABINET", path: "/cabinet" },
@@ -20,6 +21,10 @@ const Header = () => {
     { label: "ACTUALITÉS", path: "/actualites" },
     { label: "CONTACT", path: "/contact" }
   ];
+
+  const isActive = (path: string) => {
+    return location.pathname === path;
+  };
 
   return (
     <header className="fixed w-full flex justify-center px-4 py-6 z-50">
@@ -43,7 +48,7 @@ const Header = () => {
                   onMouseEnter={() => setIsDropdownOpen(true)}
                   onMouseLeave={() => setIsDropdownOpen(false)}
                 >
-                  <button className="text-[16px] text-navy hover:text-gold transition-all duration-300 whitespace-nowrap flex items-center gap-1">
+                  <button className={`text-[16px] ${item.children.some(child => isActive(child.path)) ? 'text-[#C4AF67]' : 'text-navy'} hover:text-gold transition-all duration-300 whitespace-nowrap flex items-center gap-1`}>
                     {item.label}
                     <ChevronDown size={20} />
                   </button>
@@ -52,7 +57,7 @@ const Header = () => {
                       <Link
                         key={child.label}
                         to={child.path}
-                        className="block px-6 py-2 text-black hover:text-gold hover:bg-gray-50 transition-all duration-300"
+                        className={`block px-6 py-2 ${isActive(child.path) ? 'text-[#C4AF67]' : 'text-black'} hover:text-gold hover:bg-gray-50 transition-all duration-300`}
                       >
                         {child.label}
                       </Link>
@@ -63,7 +68,7 @@ const Header = () => {
                 <Link
                   key={item.label}
                   to={item.path}
-                  className="text-[16px] text-navy hover:text-gold transition-all duration-300 whitespace-nowrap"
+                  className={`text-[16px] ${isActive(item.path) ? 'text-[#C4AF67]' : 'text-navy'} hover:text-gold transition-all duration-300 whitespace-nowrap`}
                 >
                   {item.label}
                 </Link>
@@ -78,7 +83,7 @@ const Header = () => {
               item.children ? (
                 <div key={item.label}>
                   <button 
-                    className="w-full text-left py-2 text-navy hover:text-gold transition-all duration-300 flex items-center justify-between"
+                    className={`w-full text-left py-2 ${item.children.some(child => isActive(child.path)) ? 'text-[#C4AF67]' : 'text-navy'} hover:text-gold transition-all duration-300 flex items-center justify-between`}
                     onClick={() => setIsDropdownOpen(!isDropdownOpen)}
                   >
                     {item.label}
@@ -90,7 +95,7 @@ const Header = () => {
                         <Link
                           key={child.label}
                           to={child.path}
-                          className="block py-2 text-navy hover:text-gold transition-all duration-300"
+                          className={`block py-2 ${isActive(child.path) ? 'text-[#C4AF67]' : 'text-navy'} hover:text-gold transition-all duration-300`}
                           onClick={() => {
                             setIsMenuOpen(false);
                             setIsDropdownOpen(false);
@@ -106,7 +111,7 @@ const Header = () => {
                 <Link
                   key={item.label}
                   to={item.path}
-                  className="block py-2 text-navy hover:text-gold transition-all duration-300"
+                  className={`block py-2 ${isActive(item.path) ? 'text-[#C4AF67]' : 'text-navy'} hover:text-gold transition-all duration-300`}
                   onClick={() => setIsMenuOpen(false)}
                 >
                   {item.label}
