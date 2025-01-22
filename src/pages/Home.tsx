@@ -16,7 +16,7 @@ const Home = () => {
         <meta name="description" content="Cabinet d'avocat à Lille spécialisé en droit de la fonction publique. Maître Anger-Bourez accompagne les agents publics et employeurs publics dans toute la France." />
         <link rel="canonical" href="https://angerbourezavocat.fr" />
       </Helmet>
-      <div className="min-h-screen w-full bg-offWhite">
+      <div className="min-h-screen w-full bg-white">
         <Header />
         <main>
           <Hero />

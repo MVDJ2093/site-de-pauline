@@ -27,8 +27,8 @@ const Header = () => {
   };
 
   return (
-    <header className="fixed w-full top-0 left-0 z-50 bg-gradient-to-b from-white/80 to-white/40 backdrop-blur-sm">
-      <div className="max-w-[1400px] mx-auto px-6 py-4">
+    <header className="fixed w-full top-0 left-0 z-50 bg-gradient-to-b from-white/80 to-white/40 backdrop-blur-sm animate-header-slide-down">
+      <div className="max-w-[1400px] mx-auto px-6 py-6">
         <div className="flex justify-between items-center">
           <div className="w-24 mt-6"></div>
           
