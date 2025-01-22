@@ -42,7 +42,7 @@ const expertises = [
 
 const Services = () => {
   return (
-    <section id="services" className="py-20 bg-[#8c9ab8] relative">
+    <section id="services" className="py-20 bg-white relative">
       <div className="container mx-auto px-4 relative z-10 max-w-[1200px]">
         <h2 className="text-2xl md:text-3xl tracking-wide text-center mb-12 font-aptos">
           <span className="text-navy font-bold">
