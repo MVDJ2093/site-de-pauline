@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Menu, X, ChevronDown } from "lucide-react";
+import { Menu, X, ChevronDown, Home } from "lucide-react";
 import { Link, useLocation } from "react-router-dom";
 
 const Header = () => {
@@ -8,6 +8,7 @@ const Header = () => {
   const location = useLocation();
 
   const menuItems = [
+    { label: "ACCUEIL", path: "/home", icon: Home },
     { label: "LE CABINET", path: "/cabinet" },
     {
       label: "FONCTION PUBLIQUE",
@@ -68,8 +69,9 @@ const Header = () => {
                 <Link
                   key={item.label}
                   to={item.path}
-                  className={`text-[16px] ${isActive(item.path) ? 'text-[#C4AF67]' : 'text-navy'} hover:text-gold transition-all duration-300 whitespace-nowrap`}
+                  className={`text-[16px] ${isActive(item.path) ? 'text-[#C4AF67]' : 'text-navy'} hover:text-gold transition-all duration-300 whitespace-nowrap flex items-center gap-2`}
                 >
+                  {item.icon && <item.icon size={20} />}
                   {item.label}
                 </Link>
               )
@@ -111,9 +113,10 @@ const Header = () => {
                 <Link
                   key={item.label}
                   to={item.path}
-                  className={`block py-2 ${isActive(item.path) ? 'text-[#C4AF67]' : 'text-navy'} hover:text-gold transition-all duration-300`}
+                  className={`block py-2 ${isActive(item.path) ? 'text-[#C4AF67]' : 'text-navy'} hover:text-gold transition-all duration-300 flex items-center gap-2`}
                   onClick={() => setIsMenuOpen(false)}
                 >
+                  {item.icon && <item.icon size={20} />}
                   {item.label}
                 </Link>
               )
