@@ -1,4 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Aptos:wght@400;500;600;700&display=swap');
+@font-face {
+  font-family: 'FuturaRener';
+  src: url('/fonts/FuturaRener-Regular.woff2') format('woff2'),
+       url('/fonts/FuturaRener-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
 
 @tailwind base;
 @tailwind components;
@@ -69,7 +75,7 @@
 
 * {
   @apply border-border;
-  font-family: 'Aptos', sans-serif;
+  font-family: 'FuturaRener', sans-serif;
 }
 
 body {

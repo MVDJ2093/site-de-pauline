@@ -19,7 +19,7 @@ export default {
     },
     extend: {
       fontFamily: {
-        aptos: ['Aptos', 'sans-serif'],
+        futura: ['FuturaRener', 'sans-serif'],
       },
       colors: {
         navy: "#1A1F2C",

@@ -1,6 +1,6 @@
 const Description = () => {
   return (
-    <section className="py-16 bg-offWhite">
+    <section className="py-16 bg-white">
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row gap-8 max-w-6xl mx-auto">
           <div className="md:w-1/3 transform transition-all duration-300 hover:scale-[1.02] opacity-0 animate-[fadeIn_1s_ease-in-out_forwards]">
