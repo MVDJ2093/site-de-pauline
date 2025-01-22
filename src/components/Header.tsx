@@ -8,7 +8,6 @@ const Header = () => {
   const location = useLocation();
 
   const menuItems = [
-    { label: "ACCUEIL", path: "/home", icon: Home },
     { label: "LE CABINET", path: "/cabinet" },
     {
       label: "FONCTION PUBLIQUE",
@@ -31,6 +30,14 @@ const Header = () => {
     <header className="fixed w-full top-0 left-0 z-50 bg-gradient-to-b from-white/80 to-white/40 backdrop-blur-sm animate-header-slide-down">
       <div className="max-w-[1400px] mx-auto px-6 py-6">
         <div className="flex justify-between items-center">
+          <Link
+            to="/home"
+            className={`text-[16px] ${isActive('/home') ? 'text-[#C4AF67]' : 'text-navy'} hover:text-gold transition-all duration-300 whitespace-nowrap flex items-center gap-2`}
+          >
+            <Home size={20} />
+            <span className="md:inline">ACCUEIL</span>
+          </Link>
+          
           <div className="w-24 mt-6"></div>
           
           <button
@@ -69,9 +76,8 @@ const Header = () => {
                 <Link
                   key={item.label}
                   to={item.path}
-                  className={`text-[16px] ${isActive(item.path) ? 'text-[#C4AF67]' : 'text-navy'} hover:text-gold transition-all duration-300 whitespace-nowrap flex items-center gap-2`}
+                  className={`text-[16px] ${isActive(item.path) ? 'text-[#C4AF67]' : 'text-navy'} hover:text-gold transition-all duration-300 whitespace-nowrap`}
                 >
-                  {item.icon && <item.icon size={20} />}
                   {item.label}
                 </Link>
               )
@@ -113,10 +119,9 @@ const Header = () => {
                 <Link
                   key={item.label}
                   to={item.path}
-                  className={`block py-2 ${isActive(item.path) ? 'text-[#C4AF67]' : 'text-navy'} hover:text-gold transition-all duration-300 flex items-center gap-2`}
+                  className={`block py-2 ${isActive(item.path) ? 'text-[#C4AF67]' : 'text-navy'} hover:text-gold transition-all duration-300`}
                   onClick={() => setIsMenuOpen(false)}
                 >
-                  {item.icon && <item.icon size={20} />}
                   {item.label}
                 </Link>
               )
