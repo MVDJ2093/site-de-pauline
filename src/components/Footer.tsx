@@ -18,36 +18,36 @@ const Footer = () => {
 
           {/* First menu column */}
           <div className="flex flex-col space-y-4">
-            <Link to="/cabinet" className="text-lg md:text-xl text-[#f1f1f1] hover:text-gold transition-all duration-300">
+            <Link to="/cabinet" className="text-[#f1f1f1] hover:text-gold transition-all duration-300">
               Le cabinet
             </Link>
-            <Link to="/fonction-publique" className="text-lg md:text-xl text-[#f1f1f1] hover:text-gold transition-all duration-300">
+            <Link to="/fonction-publique" className="text-[#f1f1f1] hover:text-gold transition-all duration-300">
               Fonction publique
             </Link>
-            <Link to="/autres-domaines-d-expertise" className="text-lg md:text-xl text-[#f1f1f1] hover:text-gold transition-all duration-300">
+            <Link to="/autres-domaines-d-expertise" className="text-[#f1f1f1] hover:text-gold transition-all duration-300">
               Autres domaines d'expertise
             </Link>
           </div>
 
           {/* Second menu column */}
           <div className="flex flex-col space-y-4">
-            <Link to="/honoraires" className="text-lg md:text-xl text-[#f1f1f1] hover:text-gold transition-all duration-300">
+            <Link to="/honoraires" className="text-[#f1f1f1] hover:text-gold transition-all duration-300">
               Honoraires
             </Link>
-            <Link to="/actualites" className="text-lg md:text-xl text-[#f1f1f1] hover:text-gold transition-all duration-300">
+            <Link to="/actualites" className="text-[#f1f1f1] hover:text-gold transition-all duration-300">
               Actualités
             </Link>
-            <Link to="/contact" className="text-lg md:text-xl text-[#f1f1f1] hover:text-gold transition-all duration-300">
+            <Link to="/contact" className="text-[#f1f1f1] hover:text-gold transition-all duration-300">
               Contact
             </Link>
           </div>
 
           {/* Third menu column */}
           <div className="flex flex-col space-y-4">
-            <Link to="/mentions-legales" className="text-lg md:text-xl text-[#f1f1f1] hover:text-gold transition-all duration-300">
+            <Link to="/mentions-legales" className="text-[#f1f1f1] hover:text-gold transition-all duration-300">
               Mentions légales
             </Link>
-            <Link to="/politique-cookies" className="text-lg md:text-xl text-[#f1f1f1] hover:text-gold transition-all duration-300">
+            <Link to="/politique-cookies" className="text-[#f1f1f1] hover:text-gold transition-all duration-300">
               Politique des cookies
             </Link>
           </div>
@@ -55,11 +55,11 @@ const Footer = () => {
       </div>
 
       {/* Background logo */}
-      <div className="absolute right-0 bottom-0 transform translate-y-1/3">
+      <div className="absolute right-0 bottom-0 transform translate-y-1/2">
         <img 
           src="/lovable-uploads/2b5188f9-d7fa-4ec6-949c-cc7b1dc61eba.png" 
           alt="PAB Avocat Background" 
-          className="h-[480px] w-auto brightness-0 invert opacity-10"
+          className="h-[480px] w-auto brightness-0 invert opacity-10" // Augmenté de 20%
         />
       </div>
     </footer>
