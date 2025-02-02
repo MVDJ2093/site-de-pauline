@@ -75,23 +75,61 @@
 
 * {
   @apply border-border;
-  font-family: 'FuturaRener', sans-serif;
+  font-family: 'FuturaRener', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
 }
 
 body {
-  @apply bg-white text-foreground text-[14px];
+  @apply bg-white text-foreground;
+  font-size: 16px;
+  line-height: 1.6;
 }
 
+/* Typographie pour desktop */
 h1 {
-  @apply text-2xl md:text-3xl font-bold;
+  @apply text-[40px] font-bold leading-tight;
 }
 
 h2 {
-  @apply text-lg md:text-xl font-medium;
+  @apply text-[32px] font-semibold leading-tight;
+}
+
+h3 {
+  @apply text-[24px] font-medium leading-snug;
+}
+
+h4 {
+  @apply text-[20px] font-medium leading-snug;
 }
 
 p {
-  @apply text-xs md:text-sm leading-relaxed;
+  @apply text-base leading-relaxed;
+}
+
+.small-text {
+  @apply text-sm;
+}
+
+/* Typographie responsive pour mobile */
+@media (max-width: 767px) {
+  body {
+    font-size: 15px;
+  }
+
+  h1 {
+    @apply text-[32px];
+  }
+
+  h2 {
+    @apply text-[28px];
+  }
+
+  h3 {
+    @apply text-[22px];
+  }
+
+  h4 {
+    @apply text-[18px];
+  }
 }
 
 .lovable-banner, 
