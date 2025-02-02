@@ -27,12 +27,12 @@ const Header = () => {
   };
 
   return (
-    <header className="fixed w-full top-0 left-0 z-50 bg-gradient-to-b from-white/80 to-white/40 backdrop-blur-sm animate-header-slide-down">
+    <header className="fixed w-full top-0 left-0 z-50 bg-navy">
       <div className="max-w-[1400px] mx-auto px-6 py-6">
         <div className="flex justify-between items-center">
           <Link
             to="/home"
-            className={`text-[16px] ${isActive('/home') ? 'text-[#C4AF67]' : 'text-navy'} hover:text-gold transition-all duration-300 whitespace-nowrap flex items-center gap-2`}
+            className={`text-[16px] ${isActive('/home') ? 'text-[#C4AF67]' : 'text-white'} hover:text-gold transition-all duration-300 whitespace-nowrap flex items-center gap-2`}
           >
             <Home size={20} />
             <span className="md:inline">ACCUEIL</span>
@@ -44,7 +44,7 @@ const Header = () => {
             className="md:hidden"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
           >
-            {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
+            {isMenuOpen ? <X size={24} className="text-white" /> : <Menu size={24} className="text-white" />}
           </button>
 
           <nav className="hidden md:flex items-center justify-center flex-1 gap-8">
@@ -56,7 +56,7 @@ const Header = () => {
                   onMouseEnter={() => setIsDropdownOpen(true)}
                   onMouseLeave={() => setIsDropdownOpen(false)}
                 >
-                  <button className={`text-[16px] ${item.children.some(child => isActive(child.path)) ? 'text-[#C4AF67]' : 'text-navy'} hover:text-gold transition-all duration-300 whitespace-nowrap flex items-center gap-1`}>
+                  <button className={`text-[16px] ${item.children.some(child => isActive(child.path)) ? 'text-[#C4AF67]' : 'text-white'} hover:text-gold transition-all duration-300 whitespace-nowrap flex items-center gap-1`}>
                     {item.label}
                     <ChevronDown size={20} />
                   </button>
@@ -76,7 +76,7 @@ const Header = () => {
                 <Link
                   key={item.label}
                   to={item.path}
-                  className={`text-[16px] ${isActive(item.path) ? 'text-[#C4AF67]' : 'text-navy'} hover:text-gold transition-all duration-300 whitespace-nowrap`}
+                  className={`text-[16px] ${isActive(item.path) ? 'text-[#C4AF67]' : 'text-white'} hover:text-gold transition-all duration-300 whitespace-nowrap`}
                 >
                   {item.label}
                 </Link>
@@ -91,7 +91,7 @@ const Header = () => {
               item.children ? (
                 <div key={item.label}>
                   <button 
-                    className={`w-full text-left py-2 ${item.children.some(child => isActive(child.path)) ? 'text-[#C4AF67]' : 'text-navy'} hover:text-gold transition-all duration-300 flex items-center justify-between`}
+                    className={`w-full text-left py-2 ${item.children.some(child => isActive(child.path)) ? 'text-[#C4AF67]' : 'text-white'} hover:text-gold transition-all duration-300 flex items-center justify-between`}
                     onClick={() => setIsDropdownOpen(!isDropdownOpen)}
                   >
                     {item.label}
@@ -103,7 +103,7 @@ const Header = () => {
                         <Link
                           key={child.label}
                           to={child.path}
-                          className={`block py-2 ${isActive(child.path) ? 'text-[#C4AF67]' : 'text-navy'} hover:text-gold transition-all duration-300`}
+                          className={`block py-2 ${isActive(child.path) ? 'text-[#C4AF67]' : 'text-white'} hover:text-gold transition-all duration-300`}
                           onClick={() => {
                             setIsMenuOpen(false);
                             setIsDropdownOpen(false);
@@ -119,7 +119,7 @@ const Header = () => {
                 <Link
                   key={item.label}
                   to={item.path}
-                  className={`block py-2 ${isActive(item.path) ? 'text-[#C4AF67]' : 'text-navy'} hover:text-gold transition-all duration-300`}
+                  className={`block py-2 ${isActive(item.path) ? 'text-[#C4AF67]' : 'text-white'} hover:text-gold transition-all duration-300`}
                   onClick={() => setIsMenuOpen(false)}
                 >
                   {item.label}
