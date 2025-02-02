@@ -2,10 +2,10 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <footer className="w-full bg-[#1A1F2C] py-16 relative overflow-hidden">
+    <footer className="w-full bg-[#1A1F2C] py-32 relative overflow-hidden">
       <div className="container mx-auto px-6 relative z-10">
-        <div className="flex flex-col space-y-8">
-          {/* Logo section - réduit l'espacement vertical */}
+        <div className="flex flex-col space-y-12">
+          {/* Logo section */}
           <div className="w-full flex justify-center">
             <Link to="/" className="inline-block">
               <img 
@@ -16,8 +16,8 @@ const Footer = () => {
             </Link>
           </div>
 
-          {/* Navigation grid - réorganisé avec espacement réduit */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          {/* Navigation grid */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
             {/* First menu column */}
             <div className="flex flex-col space-y-4">
               <Link to="/cabinet" className="text-[#f1f1f1] hover:text-gold transition-all duration-300">
@@ -57,7 +57,7 @@ const Footer = () => {
         </div>
       </div>
 
-      {/* Background logo - conservé tel quel */}
+      {/* Background logo */}
       <div className="absolute right-0 bottom-0 transform translate-y-1/2">
         <img 
           src="/lovable-uploads/2b5188f9-d7fa-4ec6-949c-cc7b1dc61eba.png" 
