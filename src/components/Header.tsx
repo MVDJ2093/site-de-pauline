@@ -34,7 +34,7 @@ const Header = () => {
             to="/home"
             className={`text-[16px] ${isActive('/home') ? 'text-[#C4AF67]' : 'text-navy'} hover:text-gold transition-all duration-300 whitespace-nowrap flex items-center gap-2`}
           >
-            <Home size={20} />
+            <Home size={20} className="brightness-0 invert" />
             <span className="md:inline">ACCUEIL</span>
           </Link>
           
