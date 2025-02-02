@@ -2,11 +2,11 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <footer className="w-full bg-[#1A1F2C] py-32 relative overflow-hidden">
+    <footer className="w-full bg-[#1A1F2C] pt-5 relative overflow-hidden">
       <div className="container mx-auto px-6 relative z-10">
-        <div className="flex flex-col space-y-12">
-          {/* Logo section */}
-          <div className="w-full flex justify-center">
+        <div className="flex flex-col">
+          {/* Logo section with minimal top padding */}
+          <div className="w-full flex justify-center mb-7">
             <Link to="/" className="inline-block">
               <img 
                 src="/lovable-uploads/2b5188f9-d7fa-4ec6-949c-cc7b1dc61eba.png" 
@@ -16,7 +16,7 @@ const Footer = () => {
             </Link>
           </div>
 
-          {/* Navigation grid */}
+          {/* Navigation grid with reduced spacing */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
             {/* First menu column */}
             <div className="flex flex-col space-y-4">
