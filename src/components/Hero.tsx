@@ -3,7 +3,7 @@ const Hero = () => {
     <section className="relative min-h-[50vh] flex items-center justify-center bg-navy text-white overflow-hidden">
       <div className="absolute left-0 top-0 md:top-36 w-full md:w-auto md:transform md:-translate-y-1/4">
         <img 
-          src="/lovable-uploads/2b5188f9-d7fa-4ec6-949c-cc7b1dc61eba.png" 
+          src="/lovable-uploads/3dca0b14-18d4-43f4-aefe-1fe49b2eee3b.png" 
           alt="PAB Avocat Background" 
           className="w-full md:w-auto h-auto md:h-[538px] brightness-0 invert opacity-10 mt-16 md:mt-0"
         />
