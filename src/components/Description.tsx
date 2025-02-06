@@ -6,7 +6,11 @@ const Description = () => {
           <div className="md:w-1/3 transform transition-all duration-300 hover:scale-[1.02] opacity-0 animate-[fadeIn_1s_ease-in-out_forwards]">
             <div className="bg-gradient-to-br from-[#f3f3f3]/80 to-white/40 backdrop-blur-md rounded-2xl shadow-lg p-4 hover:shadow-xl transition-all duration-500">
               <div className="bg-gradient-to-br from-gray-200 to-gray-100 rounded-lg aspect-[3/4] flex items-center justify-center overflow-hidden">
-                <p className="text-gray-500 text-sm">Photo de Maître Anger-Bourez</p>
+                <img 
+                  src="/lovable-uploads/af7234d0-3308-4c1d-b425-e7e20f389157.png"
+                  alt="Maître Anger-Bourez"
+                  className="w-full h-full object-cover"
+                />
               </div>
             </div>
           </div>

@@ -2,11 +2,11 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <footer className="w-full bg-[#1A1F2C] pt-5 relative overflow-hidden">
+    <footer className="w-full bg-[#1A1F2C] pt-5 pb-16 relative overflow-hidden">
       <div className="container mx-auto px-6 relative z-10">
         <div className="flex flex-col">
-          {/* Logo section with minimal top padding */}
-          <div className="w-full flex justify-center mb-7">
+          {/* Logo section with left alignment */}
+          <div className="w-full flex justify-start mb-7">
             <Link to="/" className="inline-block">
               <img 
                 src="/lovable-uploads/2b5188f9-d7fa-4ec6-949c-cc7b1dc61eba.png" 
@@ -55,15 +55,6 @@ const Footer = () => {
             </div>
           </div>
         </div>
-      </div>
-
-      {/* Background logo */}
-      <div className="absolute right-0 bottom-0 transform translate-y-1/2">
-        <img 
-          src="/lovable-uploads/2b5188f9-d7fa-4ec6-949c-cc7b1dc61eba.png" 
-          alt="PAB Avocat Background" 
-          className="h-[480px] w-auto brightness-0 invert opacity-10"
-        />
       </div>
     </footer>
   );
