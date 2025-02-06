@@ -67,7 +67,7 @@ const Services = () => {
                 <h3 className="text-xl font-semibold text-navy mb-3 group-hover:text-gold transition-colors duration-500">
                   {expertise.title}
                 </h3>
-                <p className="text-gray-600 group-hover:text-gray-700 transition-colors duration-500">
+                <p className="text-lg text-gray-600 group-hover:text-gray-700 transition-colors duration-500">
                   {expertise.description}
                 </p>
               </div>

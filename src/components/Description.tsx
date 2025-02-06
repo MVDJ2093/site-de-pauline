@@ -19,7 +19,7 @@ const Description = () => {
             <h2 className="text-3xl text-navy mb-8 transform transition-all duration-500 group-hover:translate-x-2 tracking-tight">
               À propos de <span className="font-bold text-navy">Pauline Anger-Bourez</span>
             </h2>
-            <div className="space-y-6 text-lg text-gray-700">
+            <div className="space-y-6 text-xl text-gray-700">
               <p className="transform transition-all duration-500 hover:translate-x-2">
                 Avocate depuis 2016, Pauline ANGER-BOUREZ accompagne les employeurs publics et
                 les agents publics dans leurs problématiques liées au droit de la fonction publique.
