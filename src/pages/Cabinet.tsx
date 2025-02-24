@@ -1,3 +1,4 @@
+
 import React from "react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -5,7 +6,7 @@ import RdvButton from "@/components/RdvButton";
 
 const Cabinet = () => {
   return (
-    <div className="min-h-screen flex flex-col bg-offWhite">
+    <div className="min-h-screen flex flex-col bg-white">
       <Header />
       <main className="flex-grow">
         <div className="relative h-[400px] w-full overflow-hidden">
@@ -22,10 +23,61 @@ const Cabinet = () => {
           </div>
         </div>
         <div className="container mx-auto px-4 py-12 max-w-[1200px]">
-          <div className="prose max-w-none">
-            <p className="text-lg text-gray-700 mb-6">
-              Le cabinet PAB AVOCAT est spécialisé en droit de la fonction publique. Notre expertise nous permet d'accompagner les agents publics dans toutes leurs démarches juridiques.
+          <div className="prose max-w-none text-gray-700 space-y-6">
+            <p className="text-lg">
+              Pauline ANGER-BOUREZ a fait le choix d'un cabinet à taille humaine dédié au droit de la fonction publique avec pour ambition de répondre aux problématiques RH et individuelles des employeurs et agents publics, par un accompagnement et des réponses personnalisées et pragmatiques.
             </p>
+            
+            <p className="text-lg">
+              Avant d'intégrer la profession d'avocat, Pauline ANGER-BOUREZ a exercé les fonctions d'attachée territoriale en qualité de responsable d'un service d'une collectivité de plus de 30.000 habitants dans le territoire des Hauts-de France.
+            </p>
+            
+            <p className="text-lg">
+              Après 2 années de formations à l'Ecole des avocats du nord-ouest, l'obtention du Certification d'aptitude à la profession d'avocat (CAPA) et une prestation de serment en 2016, Maître Pauline ANGER-BOUREZ a intégré un cabinet d'avocats spécialisé en droit public avec l'intention d'exercer la profession d'avocat au service des acteurs publics, employeurs et agents publics,
+            </p>
+            
+            <p className="text-lg">
+              En 2024, Pauline ANGER-BOUREZ a créé un cabinet spécialement dédié au conseil juridique et au contentieux de la fonction publique.
+            </p>
+            
+            <p className="text-lg">
+              En lien avec ce parcours, Maître Pauline ANGER-BOUREZ vous propose une approche pragmatique en mettant à profit sa maîtrise du fonctionnement interne des administrations et son expertise dans le domaine de la fonction publique.
+            </p>
+            
+            <div className="mt-12">
+              <h2 className="text-2xl font-semibold mb-6">Nos valeurs :</h2>
+              <p className="text-lg italic">
+                « Je jure comme Avocat d'exercer mes fonctions avec dignité, conscience, indépendance, probité et humanité »
+              </p>
+            </div>
+            
+            <div className="mt-12">
+              <h2 className="text-2xl font-semibold mb-6">La philosophie du cabinet</h2>
+              <p className="text-lg">
+                Instaurer une relation de confiance dans le respect des principes de la profession d'avocat (confidentialité, secret professionnel) afin d'apporter une réponse juridique claire et adaptée à vos besoins.
+              </p>
+            </div>
+            
+            <div>
+              <h3 className="text-xl font-semibold mb-4">Ecoute et expertise</h3>
+              <p className="text-lg">
+                Chaque situation est particulière, l'objectif du cabinet est de mettre au service de vos besoins son expertise et de construire avec vous des solutions juridiques personnalisées
+              </p>
+            </div>
+            
+            <div>
+              <h3 className="text-xl font-semibold mb-4">Clarté et pédagogie</h3>
+              <p className="text-lg">
+                Le cabinet s'efforce de conseiller et de défendre ses clients en toute transparence, en l'informant des chances de succès en amont et en l'accompagnant à chaque étapes de la procédure, amiable ou contentieuse
+              </p>
+            </div>
+            
+            <div>
+              <h3 className="text-xl font-semibold mb-4">Règlement amiable</h3>
+              <p className="text-lg">
+                Plus rapides et apaisées, le cabinet privilégie les solutions juridiques amiables avec l'accord de son client lorsque la situation et les circonstances le permettent
+              </p>
+            </div>
           </div>
         </div>
       </main>
