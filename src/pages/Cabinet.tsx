@@ -1,4 +1,3 @@
-
 import React from "react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -47,15 +46,13 @@ const Cabinet = () => {
             
             <div className="mt-12">
               <h2 className="text-2xl font-semibold mb-6 underline text-center">LA PHILOSOPHIE DU CABINET</h2>
-              <p className="text-lg text-left">
-                Instaurer une <strong>relation de confiance</strong> dans le respect des principes de la profession d'avocat<br />
-                (confidentialité, secret professionnel) afin d'apporter une réponse juridique claire<br />
-                et adaptée à vos besoins.
+              <p className="text-lg text-center max-w-4xl mx-auto">
+                Instaurer une <strong>relation de confiance</strong> dans le respect des principes de la profession d'avocat (confidentialité, secret professionnel) afin d'apporter une réponse juridique claire et adaptée à vos besoins.
               </p>
             </div>
             
-            <div className="grid grid-cols-1 gap-6 mt-12">
-              <Card className="p-4 w-full">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-12 max-w-5xl mx-auto">
+              <Card className="p-4 w-full transform transition-all duration-300 hover:shadow-lg hover:-translate-y-1 bg-white">
                 <CardContent className="pt-4">
                   <h3 className="text-xl font-semibold mb-4 text-center">Ecoute et expertise</h3>
                   <p className="text-lg">
@@ -64,7 +61,7 @@ const Cabinet = () => {
                 </CardContent>
               </Card>
               
-              <Card className="p-4 w-full">
+              <Card className="p-4 w-full transform transition-all duration-300 hover:shadow-lg hover:-translate-y-1 bg-white">
                 <CardContent className="pt-4">
                   <h3 className="text-xl font-semibold mb-4 text-center">Clarté et pédagogie</h3>
                   <p className="text-lg">
@@ -73,7 +70,7 @@ const Cabinet = () => {
                 </CardContent>
               </Card>
               
-              <Card className="p-4 w-full">
+              <Card className="p-4 w-full transform transition-all duration-300 hover:shadow-lg hover:-translate-y-1 bg-white">
                 <CardContent className="pt-4">
                   <h3 className="text-xl font-semibold mb-4 text-center">Règlement amiable</h3>
                   <p className="text-lg">
