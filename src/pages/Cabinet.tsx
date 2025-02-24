@@ -46,7 +46,7 @@ const Cabinet = () => {
             </p>
             
             <div className="mt-12">
-              <h2 className="text-2xl font-semibold mb-6 underline text-left">LA PHILOSOPHIE DU CABINET</h2>
+              <h2 className="text-2xl font-semibold mb-6 underline text-center">LA PHILOSOPHIE DU CABINET</h2>
               <p className="text-lg text-left">
                 Instaurer une <strong>relation de confiance</strong> dans le respect des principes de la profession d'avocat<br />
                 (confidentialité, secret professionnel) afin d'apporter une réponse juridique claire<br />
@@ -57,25 +57,25 @@ const Cabinet = () => {
             <div className="grid grid-cols-1 gap-6 mt-12">
               <Card className="p-4 w-full">
                 <CardContent className="pt-4">
-                  <h3 className="text-xl font-semibold mb-4">Ecoute et expertise</h3>
+                  <h3 className="text-xl font-semibold mb-4 text-center">Ecoute et expertise</h3>
                   <p className="text-lg">
-                    Chaque situation est particulière, l'objectif du cabinet est de mettre au service de vos besoins son expertise et de construire avec vous des solutions juridiques personnalisées
+                    Chaque situation est particulière, l'objectif du cabinet est de mettre au service de vos besoins son expertise et de construire avec vous des solutions juridiques adaptées
                   </p>
                 </CardContent>
               </Card>
               
               <Card className="p-4 w-full">
                 <CardContent className="pt-4">
-                  <h3 className="text-xl font-semibold mb-4">Clarté et pédagogie</h3>
+                  <h3 className="text-xl font-semibold mb-4 text-center">Clarté et pédagogie</h3>
                   <p className="text-lg">
-                    Le cabinet s'efforce de conseiller et de défendre ses clients en toute transparence, en l'informant des chances de succès en amont et en l'accompagnant à chaque étapes de la procédure, amiable ou contentieuse
+                    Le cabinet s'efforce de conseiller et de défendre ses clients en toute transparence, en l'informant des chances de succès en amont et en l'accompagnant à chaque étape de la procédure, amiable ou contentieuse
                   </p>
                 </CardContent>
               </Card>
               
               <Card className="p-4 w-full">
                 <CardContent className="pt-4">
-                  <h3 className="text-xl font-semibold mb-4">Règlement amiable</h3>
+                  <h3 className="text-xl font-semibold mb-4 text-center">Règlement amiable</h3>
                   <p className="text-lg">
                     Plus rapides et apaisées, le cabinet privilégie les solutions juridiques amiables avec l'accord de son client lorsque la situation et les circonstances le permettent
                   </p>
