@@ -1,3 +1,4 @@
+
 import React from "react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -51,8 +52,8 @@ const Cabinet = () => {
               </p>
             </div>
             
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-12 max-w-5xl mx-auto">
-              <Card className="p-4 w-full transform transition-all duration-300 hover:shadow-lg hover:-translate-y-1 bg-white">
+            <div className="flex flex-col space-y-6 mt-12 max-w-3xl mx-auto">
+              <Card className="p-4 w-full transition-shadow duration-300 hover:shadow-lg bg-white">
                 <CardContent className="pt-4">
                   <h3 className="text-xl font-semibold mb-4 text-center">Ecoute et expertise</h3>
                   <p className="text-lg">
@@ -61,7 +62,7 @@ const Cabinet = () => {
                 </CardContent>
               </Card>
               
-              <Card className="p-4 w-full transform transition-all duration-300 hover:shadow-lg hover:-translate-y-1 bg-white">
+              <Card className="p-4 w-full transition-shadow duration-300 hover:shadow-lg bg-white">
                 <CardContent className="pt-4">
                   <h3 className="text-xl font-semibold mb-4 text-center">Clarté et pédagogie</h3>
                   <p className="text-lg">
@@ -70,7 +71,7 @@ const Cabinet = () => {
                 </CardContent>
               </Card>
               
-              <Card className="p-4 w-full transform transition-all duration-300 hover:shadow-lg hover:-translate-y-1 bg-white">
+              <Card className="p-4 w-full transition-shadow duration-300 hover:shadow-lg bg-white">
                 <CardContent className="pt-4">
                   <h3 className="text-xl font-semibold mb-4 text-center">Règlement amiable</h3>
                   <p className="text-lg">
@@ -96,3 +97,4 @@ const Cabinet = () => {
 };
 
 export default Cabinet;
+
