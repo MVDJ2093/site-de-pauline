@@ -1,3 +1,4 @@
+
 import { useState } from "react";
 import { Menu, X, ChevronDown, Home } from "lucide-react";
 import { Link, useLocation } from "react-router-dom";
@@ -32,7 +33,7 @@ const Header = () => {
         <div className="flex justify-between items-center">
           <Link
             to="/home"
-            className={`text-[16px] ${isActive('/home') ? 'text-[#C4AF67]' : 'text-navy'} hover:text-gold transition-all duration-300 whitespace-nowrap flex items-center gap-2`}
+            className={`text-[16px] ${isActive('/home') ? 'text-[#C4AF67]' : 'text-gold'} hover:text-gold transition-all duration-300 whitespace-nowrap flex items-center gap-2`}
           >
             <Home size={20} className="brightness-0 invert" />
             <span className="md:inline">ACCUEIL</span>
@@ -56,7 +57,7 @@ const Header = () => {
                   onMouseEnter={() => setIsDropdownOpen(true)}
                   onMouseLeave={() => setIsDropdownOpen(false)}
                 >
-                  <button className={`text-[16px] ${item.children.some(child => isActive(child.path)) ? 'text-[#C4AF67]' : 'text-navy'} hover:text-gold transition-all duration-300 whitespace-nowrap flex items-center gap-1`}>
+                  <button className={`text-[16px] font-bold ${item.children.some(child => isActive(child.path)) ? 'text-[#C4AF67]' : 'text-navy'} hover:text-gold transition-all duration-300 whitespace-nowrap flex items-center gap-1`}>
                     {item.label}
                     <ChevronDown size={20} />
                   </button>
@@ -65,7 +66,7 @@ const Header = () => {
                       <Link
                         key={child.label}
                         to={child.path}
-                        className={`block px-6 py-2 ${isActive(child.path) ? 'text-[#C4AF67]' : 'text-black'} hover:text-gold hover:bg-gray-50 transition-all duration-300`}
+                        className={`block px-6 py-2 font-bold ${isActive(child.path) ? 'text-[#C4AF67]' : 'text-navy'} hover:text-gold hover:bg-gray-50 transition-all duration-300`}
                       >
                         {child.label}
                       </Link>
@@ -76,7 +77,7 @@ const Header = () => {
                 <Link
                   key={item.label}
                   to={item.path}
-                  className={`text-[16px] ${isActive(item.path) ? 'text-[#C4AF67]' : 'text-navy'} hover:text-gold transition-all duration-300 whitespace-nowrap`}
+                  className={`text-[16px] font-bold ${isActive(item.path) ? 'text-[#C4AF67]' : 'text-navy'} hover:text-gold transition-all duration-300 whitespace-nowrap`}
                 >
                   {item.label}
                 </Link>
@@ -91,7 +92,7 @@ const Header = () => {
               item.children ? (
                 <div key={item.label}>
                   <button 
-                    className={`w-full text-left py-2 ${item.children.some(child => isActive(child.path)) ? 'text-[#C4AF67]' : 'text-navy'} hover:text-gold transition-all duration-300 flex items-center justify-between`}
+                    className={`w-full text-left py-2 font-bold ${item.children.some(child => isActive(child.path)) ? 'text-[#C4AF67]' : 'text-navy'} hover:text-gold transition-all duration-300 flex items-center justify-between`}
                     onClick={() => setIsDropdownOpen(!isDropdownOpen)}
                   >
                     {item.label}
@@ -103,7 +104,7 @@ const Header = () => {
                         <Link
                           key={child.label}
                           to={child.path}
-                          className={`block py-2 ${isActive(child.path) ? 'text-[#C4AF67]' : 'text-navy'} hover:text-gold transition-all duration-300`}
+                          className={`block py-2 font-bold ${isActive(child.path) ? 'text-[#C4AF67]' : 'text-navy'} hover:text-gold transition-all duration-300`}
                           onClick={() => {
                             setIsMenuOpen(false);
                             setIsDropdownOpen(false);
@@ -119,7 +120,7 @@ const Header = () => {
                 <Link
                   key={item.label}
                   to={item.path}
-                  className={`block py-2 ${isActive(item.path) ? 'text-[#C4AF67]' : 'text-navy'} hover:text-gold transition-all duration-300`}
+                  className={`block py-2 font-bold ${isActive(item.path) ? 'text-[#C4AF67]' : 'text-navy'} hover:text-gold transition-all duration-300`}
                   onClick={() => setIsMenuOpen(false)}
                 >
                   {item.label}
