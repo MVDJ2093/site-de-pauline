@@ -1,3 +1,4 @@
+
 import { Helmet } from "react-helmet";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -5,7 +6,7 @@ import RdvButton from "@/components/RdvButton";
 
 const EmployeursPublics = () => {
   return (
-    <div className="min-h-screen flex flex-col bg-offWhite">
+    <div className="min-h-screen flex flex-col bg-white">
       <Helmet>
         <title>Avocat Employeurs Publics Lille | Cabinet Anger-Bourez | Droit de la Fonction Publique</title>
         <meta name="description" content="Cabinet d'avocat spécialisé en droit de la fonction publique à Lille. Maître Anger-Bourez accompagne les employeurs publics dans la gestion de leurs agents et le contentieux administratif." />
@@ -31,41 +32,80 @@ const EmployeursPublics = () => {
 
         <article className="container mx-auto px-4 py-12 max-w-4xl">
           <section className="mb-12">
-            <h2 className="text-3xl font-bold text-navy mb-6">Accompagnement juridique des employeurs publics</h2>
             <div className="prose max-w-none">
-              <p className="text-lg leading-relaxed mb-6">
-                Le Cabinet Anger-Bourez, situé à Lille, est spécialisé dans le conseil et la représentation des employeurs publics en matière de droit de la fonction publique. Notre expertise s'étend à l'ensemble du territoire français, permettant d'accompagner les collectivités territoriales, établissements publics et administrations dans la gestion de leurs ressources humaines et le contentieux administratif.
-              </p>
-              
-              <h3 className="text-2xl font-semibold text-navy mb-4">Nos domaines d'intervention</h3>
-              <ul className="list-disc pl-6 space-y-3 mb-8">
-                <li>Gestion des ressources humaines publiques</li>
-                <li>Procédures disciplinaires</li>
-                <li>Contentieux de la fonction publique</li>
-                <li>Restructurations et réorganisations de services</li>
-                <li>Accompagnement dans les procédures de recrutement</li>
-                <li>Conseil en matière de rémunération et avantages</li>
-              </ul>
+              <div className="text-center mb-8">
+                <h2 className="text-3xl font-bold text-navy mb-4">DROIT DE LA FONCTION PUBLIQUE</h2>
+                <p className="text-xl text-navy">PROBLEMATIQUES RH</p>
+              </div>
 
-              <h3 className="text-2xl font-semibold text-navy mb-4">Notre approche</h3>
-              <p className="text-lg leading-relaxed mb-6">
-                Nous proposons un accompagnement personnalisé et adapté aux spécificités de chaque structure publique. Notre cabinet assure une veille juridique constante pour garantir une expertise actualisée en droit de la fonction publique et droit administratif.
-              </p>
+              <div className="grid md:grid-cols-3 gap-6 mb-12 text-center">
+                <div>Collectivités territoriales</div>
+                <div>Centres hospitaliers</div>
+                <div>Etablissements publics</div>
+              </div>
+
+              <h3 className="text-2xl font-semibold text-navy mb-4">MES SERVICES :</h3>
+              
+              <div className="space-y-8">
+                <div>
+                  <h4 className="text-xl font-semibold text-navy mb-3">CONSEIL/ AIDE A LA DECISION :</h4>
+                  <ul className="list-disc pl-6 space-y-2">
+                    <li>Audit : de vos procédures et actes (contrat, délibération, arrêtés, conventions)</li>
+                    <li>Enquête administrative</li>
+                    <li>Consultations / Consultation en urgence</li>
+                  </ul>
+                </div>
+
+                <div>
+                  <h4 className="text-xl font-semibold text-navy mb-3">ACCOMPAGNEMENT DANS VOS PROCEDURES :</h4>
+                  <ul className="list-disc pl-6 space-y-2">
+                    <li>Procédure disciplinaire</li>
+                    <li>Reclassements, aménagement de poste</li>
+                    <li>Mutations dans l'intérêt du service</li>
+                    <li>Négociations dans le cadre d'une rupture conventionnelle</li>
+                    <li>Médiation/ transaction</li>
+                  </ul>
+                </div>
+
+                <div>
+                  <h4 className="text-xl font-semibold text-navy mb-3">DEFENSE DE VOS INTERETS DEVANT LES INSTANCES ET LES JURIDICTIONS :</h4>
+                  <ul className="list-disc pl-6 space-y-2">
+                    <li>devant le conseil de discipline</li>
+                    <li>devant les juridictions administratives et judiciaires</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div className="my-8 space-y-4">
+                <p>Le cabinet accompagne, conseille et défend l'ensemble des acteurs publics dans leurs problématiques qui relèvent du droit de la fonction publique et leurs problématiques RH : Collectivités territoriales, centres hospitaliers, établissements publics (syndicats mixtes, centres de gestion).</p>
+                <p>Qu'il s'agisse d'un conflit avec un agent, de décisions individuelles, de choix stratégiques en matière RH, le cabinet vous accompagne et vous apporte des outils d'aide à la décision en tenant compte de vos contraintes et du cadre légal.</p>
+                <p>Le cabinet se veut d'être un véritable partenaire dans les décisions et réflexions des employeurs publics qui concernent les ressources humaines :</p>
+                <ul className="list-disc pl-6 space-y-2">
+                  <li>Recrutement</li>
+                  <li>Gestion de la carrière des agents publics : avancement, disponibilité, mise à disposition, détachement, cumul d'activités, mutation, évaluation professionnelle, déroulement de carrières, temps de travail, rémunération, formation professionnelle, régimes des contractuels, des stagiaires</li>
+                  <li>Rémunération des agents</li>
+                  <li>Discipline</li>
+                  <li>Incidents de carrière : Maladie, inaptitude, reclassement, mise à la retraite d'office, protection fonctionnelle</li>
+                  <li>Cessation des fonctions : licenciement, démission, rupture conventionnelle, suppression d'emploi, fin de contrat</li>
+                </ul>
+              </div>
 
               <div className="bg-gold/10 p-6 rounded-lg mb-8">
-                <h4 className="text-xl font-semibold text-navy mb-3">Expertise territoriale</h4>
-                <p className="text-lg leading-relaxed">
-                  Basé à Lille dans le Nord (59), notre cabinet intervient sur l'ensemble du territoire français. Cette mobilité nous permet d'accompagner efficacement les employeurs publics, quelle que soit leur localisation.
-                </p>
+                <p>Des questions ? Le cabinet vous propose une première rencontre sur place ou en visio afin de faire le point sur vos dossiers en cours, vos besoins et établir un devis.</p>
+              </div>
+
+              <div className="space-y-4">
+                <h3 className="text-2xl font-semibold text-navy mb-4">Droit des collectivités territoriales :</h3>
+                <p>Le cabinet assiste également les élus et les collectivités territoriales (communes, intercommunalité, métropoles, départements, régions) afin de sécuriser juridiquement leurs décisions et les actions qui en découlent en dehors des problématiques RH :</p>
+                <ul className="list-disc pl-6 space-y-2">
+                  <li>Rédaction/Elaboration des actes : délibérations/arrêtés</li>
+                  <li>Police administrative</li>
+                  <li>Responsabilité</li>
+                  <li>Droit des élus</li>
+                  <li>Services publics</li>
+                </ul>
               </div>
             </div>
-          </section>
-
-          <section className="bg-white/80 backdrop-blur-sm p-8 rounded-xl shadow-md">
-            <h3 className="text-2xl font-semibold text-navy mb-4">Contactez notre cabinet</h3>
-            <p className="text-lg leading-relaxed mb-6">
-              Pour toute demande de conseil ou d'accompagnement juridique, n'hésitez pas à nous contacter. Nous vous répondrons dans les plus brefs délais pour étudier votre situation et vous proposer un accompagnement adapté.
-            </p>
           </section>
         </article>
       </main>
@@ -76,3 +116,4 @@ const EmployeursPublics = () => {
 };
 
 export default EmployeursPublics;
+
