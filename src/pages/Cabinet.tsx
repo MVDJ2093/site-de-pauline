@@ -52,28 +52,28 @@ const Cabinet = () => {
             </div>
             
             <div className="flex flex-col space-y-6 mt-12 max-w-3xl mx-auto">
-              <Card className="p-6 w-full bg-gradient-to-br from-white to-gray-50 border-2 border-gray-100 shadow-sm hover:shadow-md transition-all duration-300">
+              <Card className="p-4 w-full bg-white">
                 <CardContent className="pt-4">
-                  <h3 className="text-xl font-semibold mb-4 text-center text-navy">Ecoute et expertise</h3>
-                  <p className="text-lg text-gray-700">
+                  <h3 className="text-xl font-semibold mb-4 text-center">Ecoute et expertise</h3>
+                  <p className="text-lg">
                     Chaque situation est particulière, l'objectif du cabinet est de mettre au service de vos besoins son expertise et de construire avec vous des solutions juridiques adaptées
                   </p>
                 </CardContent>
               </Card>
               
-              <Card className="p-6 w-full bg-gradient-to-br from-white to-gray-50 border-2 border-gray-100 shadow-sm hover:shadow-md transition-all duration-300">
+              <Card className="p-4 w-full bg-white">
                 <CardContent className="pt-4">
-                  <h3 className="text-xl font-semibold mb-4 text-center text-navy">Clarté et pédagogie</h3>
-                  <p className="text-lg text-gray-700">
+                  <h3 className="text-xl font-semibold mb-4 text-center">Clarté et pédagogie</h3>
+                  <p className="text-lg">
                     Le cabinet s'efforce de conseiller et de défendre ses clients en toute transparence, en l'informant des chances de succès en amont et en l'accompagnant à chaque étape de la procédure, amiable ou contentieuse
                   </p>
                 </CardContent>
               </Card>
               
-              <Card className="p-6 w-full bg-gradient-to-br from-white to-gray-50 border-2 border-gray-100 shadow-sm hover:shadow-md transition-all duration-300">
+              <Card className="p-4 w-full bg-white">
                 <CardContent className="pt-4">
-                  <h3 className="text-xl font-semibold mb-4 text-center text-navy">Règlement amiable</h3>
-                  <p className="text-lg text-gray-700">
+                  <h3 className="text-xl font-semibold mb-4 text-center">Règlement amiable</h3>
+                  <p className="text-lg">
                     Plus rapides et apaisées, le cabinet privilégie les solutions juridiques amiables avec l'accord de son client lorsque la situation et les circonstances le permettent
                   </p>
                 </CardContent>
