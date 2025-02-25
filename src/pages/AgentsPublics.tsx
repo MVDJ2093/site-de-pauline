@@ -5,7 +5,7 @@ import RdvButton from "@/components/RdvButton";
 
 const AgentsPublics = () => {
   return (
-    <div className="min-h-screen flex flex-col bg-offWhite">
+    <div className="min-h-screen flex flex-col bg-white">
       <Helmet>
         <title>Avocat Agents Publics Lille | Cabinet Anger-Bourez | Défense des Fonctionnaires</title>
         <meta name="description" content="Cabinet d'avocat spécialisé dans la défense des agents publics à Lille. Maître Anger-Bourez accompagne les fonctionnaires et agents publics dans leurs démarches et contentieux administratifs." />

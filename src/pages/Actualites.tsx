@@ -4,7 +4,7 @@ import RdvButton from "@/components/RdvButton";
 
 const Actualites = () => {
   return (
-    <div className="min-h-screen flex flex-col bg-offWhite">
+    <div className="min-h-screen flex flex-col bg-white">
       <Header />
       <main className="flex-grow">
         <div className="relative h-[400px] w-full overflow-hidden">

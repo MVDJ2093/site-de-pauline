@@ -39,12 +39,12 @@ const EmployeursPublics = () => {
               </div>
 
               <div className="grid md:grid-cols-3 gap-6 mb-12 text-center">
-                <div>Collectivités territoriales</div>
-                <div>Centres hospitaliers</div>
-                <div>Etablissements publics</div>
+                <div className="font-bold">Collectivités territoriales</div>
+                <div className="font-bold">Centres hospitaliers</div>
+                <div className="font-bold">Etablissements publics</div>
               </div>
 
-              <h3 className="text-2xl font-semibold text-navy mb-4">MES SERVICES :</h3>
+              <h3 className="text-2xl font-semibold text-navy mb-4 text-center underline">MES SERVICES :</h3>
               
               <div className="space-y-8">
                 <div>
@@ -79,14 +79,14 @@ const EmployeursPublics = () => {
               <div className="my-8 space-y-4">
                 <p>Le cabinet accompagne, conseille et défend l'ensemble des acteurs publics dans leurs problématiques qui relèvent du droit de la fonction publique et leurs problématiques RH : Collectivités territoriales, centres hospitaliers, établissements publics (syndicats mixtes, centres de gestion).</p>
                 <p>Qu'il s'agisse d'un conflit avec un agent, de décisions individuelles, de choix stratégiques en matière RH, le cabinet vous accompagne et vous apporte des outils d'aide à la décision en tenant compte de vos contraintes et du cadre légal.</p>
-                <p>Le cabinet se veut d'être un véritable partenaire dans les décisions et réflexions des employeurs publics qui concernent les ressources humaines :</p>
+                <p>Le cabinet se veut d'être un <span className="font-bold">véritable partenaire dans les décisions et réflexions des employeurs publics qui concernent les ressources humaines</span> :</p>
                 <ul className="list-disc pl-6 space-y-2">
-                  <li>Recrutement</li>
-                  <li>Gestion de la carrière des agents publics : avancement, disponibilité, mise à disposition, détachement, cumul d'activités, mutation, évaluation professionnelle, déroulement de carrières, temps de travail, rémunération, formation professionnelle, régimes des contractuels, des stagiaires</li>
-                  <li>Rémunération des agents</li>
-                  <li>Discipline</li>
-                  <li>Incidents de carrière : Maladie, inaptitude, reclassement, mise à la retraite d'office, protection fonctionnelle</li>
-                  <li>Cessation des fonctions : licenciement, démission, rupture conventionnelle, suppression d'emploi, fin de contrat</li>
+                  <li><span className="font-bold">Recrutement</span></li>
+                  <li><span className="font-bold">Gestion de la carrière des agents publics</span> : avancement, disponibilité, mise à disposition, détachement, cumul d'activités, mutation, évaluation professionnelle, déroulement de carrières, temps de travail, rémunération, formation professionnelle, régimes des contractuels, des stagiaires</li>
+                  <li><span className="font-bold">Rémunération</span> des agents</li>
+                  <li><span className="font-bold">Discipline</span></li>
+                  <li><span className="font-bold">Incidents de carrière</span> : Maladie, inaptitude, reclassement, mise à la retraite d'office, protection fonctionnelle</li>
+                  <li><span className="font-bold">Cessation des fonctions</span> : licenciement, démission, rupture conventionnelle, suppression d'emploi, fin de contrat</li>
                 </ul>
               </div>
 
@@ -116,4 +116,3 @@ const EmployeursPublics = () => {
 };
 
 export default EmployeursPublics;
-
