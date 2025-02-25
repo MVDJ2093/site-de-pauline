@@ -1,4 +1,3 @@
-
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import ContactForm from "@/components/ContactForm";
@@ -20,7 +19,7 @@ const Contact = () => {
             <div className="absolute inset-0 bg-navy/70"></div>
           </div>
           <div className="relative h-full flex items-center justify-center text-white">
-            <h1 className="text-2xl md:text-[2.4rem] font-extralight tracking-wide">Contact</h1>
+            <h1 className="text-2xl md:text-[2.4rem] font-extralight tracking-wide text-center">Contact</h1>
           </div>
         </div>
         <div className="container mx-auto px-4 py-12 grid md:grid-cols-2 gap-8">

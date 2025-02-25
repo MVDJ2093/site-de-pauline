@@ -1,4 +1,3 @@
-
 import { Helmet } from "react-helmet";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -26,7 +25,7 @@ const AgentsPublics = () => {
             <div className="absolute inset-0 bg-navy/60"></div>
           </div>
           <div className="relative h-full flex items-center justify-center text-white">
-            <h1 className="text-2xl md:text-[2.4rem] font-extralight tracking-wide text-center md:text-left md:ml-[20%]">Agents Publics</h1>
+            <h1 className="text-2xl md:text-[2.4rem] font-extralight tracking-wide text-center">Agents Publics</h1>
           </div>
         </div>
 
