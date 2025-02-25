@@ -1,3 +1,4 @@
+
 import React from "react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -50,6 +51,13 @@ const Cabinet = () => {
                 Instaurer une <strong>relation de confiance</strong> dans le respect des principes de la profession d'avocat (confidentialité, secret professionnel) afin d'apporter une réponse juridique claire et adaptée à vos besoins.
               </p>
             </div>
+
+            <div className="mt-12">
+              <h2 className="text-2xl font-semibold mb-6 underline">Nos valeurs :</h2>
+              <p className="text-lg italic">
+                « Je jure comme Avocat d'exercer mes fonctions avec dignité, conscience, indépendance, probité et humanité »
+              </p>
+            </div>
             
             <div className="flex flex-col space-y-6 mt-12 max-w-3xl mx-auto">
               <Card className="p-4 w-full bg-white">
@@ -79,13 +87,6 @@ const Cabinet = () => {
                 </CardContent>
               </Card>
             </div>
-
-            <div className="mt-12">
-              <h2 className="text-2xl font-semibold mb-6 underline">Nos valeurs :</h2>
-              <p className="text-lg italic">
-                « Je jure comme Avocat d'exercer mes fonctions avec dignité, conscience, indépendance, probité et humanité »
-              </p>
-            </div>
           </div>
         </div>
       </main>
@@ -96,3 +97,4 @@ const Cabinet = () => {
 };
 
 export default Cabinet;
+
