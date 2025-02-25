@@ -1,3 +1,4 @@
+
 import { Helmet } from "react-helmet";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -17,7 +18,7 @@ const EmployeursPublics = () => {
       <main className="flex-grow">
         <div className="relative h-[400px] w-full overflow-hidden">
           <div
-            className="absolute inset-0 bg-cover bg-center bg-[position:50%_65%]"
+            className="absolute inset-0 bg-cover bg-center bg-[position:50%_65%] brightness-[0.7]"
             style={{
               backgroundImage: "url('https://images.unsplash.com/photo-1497215728101-856f4ea42174?q=80&w=2070&auto=format&fit=crop')",
             }}
@@ -25,7 +26,7 @@ const EmployeursPublics = () => {
             <div className="absolute inset-0 bg-navy/50"></div>
           </div>
           <div className="relative h-full flex items-center justify-center text-white">
-            <h1 className="text-4xl md:text-5xl font-bold font-aptos">Employeurs Publics</h1>
+            <h1 className="text-2xl md:text-[2.4rem] font-extralight tracking-wide">Employeurs Publics</h1>
           </div>
         </div>
 
