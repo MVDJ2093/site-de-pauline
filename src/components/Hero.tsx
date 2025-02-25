@@ -10,7 +10,7 @@ const Hero = () => {
         />
       </div>
       <div className="container mx-auto px-4 relative z-10">
-        <div className="max-w-4xl mx-auto mt-28 md:mt-16">
+        <div className="max-w-4xl mx-auto mt-36 md:mt-16">
           <h1 className="text-3xl md:text-5xl mb-6 font-aptos opacity-0 animate-[fadeIn_1.5s_ease-in-out_forwards] tracking-tight font-light text-center md:text-right md:ml-[20%]">
             <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#C6A87D] via-[#E5D5B7] to-[#C6A87D] whitespace-nowrap block">
               AVOCAT EN DROIT PUBLIC
