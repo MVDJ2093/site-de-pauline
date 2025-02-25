@@ -52,7 +52,7 @@ const Cabinet = () => {
               </p>
             </div>
 
-            <div className="mt-12">
+            <div className="mt-24 mb-24">
               <h2 className="text-2xl font-semibold mb-6 underline">Nos valeurs :</h2>
               <p className="text-lg italic">
                 « Je jure comme Avocat d'exercer mes fonctions avec dignité, conscience, indépendance, probité et humanité »
@@ -97,4 +97,3 @@ const Cabinet = () => {
 };
 
 export default Cabinet;
-
