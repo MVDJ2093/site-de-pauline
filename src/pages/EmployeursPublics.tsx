@@ -35,7 +35,7 @@ const EmployeursPublics = () => {
             <div className="prose max-w-none">
               <div className="text-center mb-8">
                 <h2 className="text-3xl font-bold text-navy mb-4">DROIT DE LA FONCTION PUBLIQUE</h2>
-                <p className="text-xl text-navy">PROBLEMATIQUES RH</p>
+                <p className="text-xl text-navy font-bold">PROBLEMATIQUES RH</p>
               </div>
 
               <div className="grid md:grid-cols-3 gap-6 mb-12 text-center">
@@ -90,12 +90,12 @@ const EmployeursPublics = () => {
                 </ul>
               </div>
 
-              <div className="bg-gold/10 p-6 rounded-lg mb-8">
-                <p>Des questions ? Le cabinet vous propose une première rencontre sur place ou en visio afin de faire le point sur vos dossiers en cours, vos besoins et établir un devis.</p>
+              <div className="mb-8">
+                <p><span className="font-bold">Des questions ?</span> Le cabinet vous propose une première rencontre sur place ou en visio afin de faire le point sur vos dossiers en cours, vos besoins et établir un devis.</p>
               </div>
 
               <div className="space-y-4">
-                <h3 className="text-2xl font-semibold text-navy mb-4">Droit des collectivités territoriales :</h3>
+                <h3 className="text-2xl font-semibold text-navy mb-4 underline">Droit des collectivités territoriales :</h3>
                 <p>Le cabinet assiste également les élus et les collectivités territoriales (communes, intercommunalité, métropoles, départements, régions) afin de sécuriser juridiquement leurs décisions et les actions qui en découlent en dehors des problématiques RH :</p>
                 <ul className="list-disc pl-6 space-y-2">
                   <li>Rédaction/Elaboration des actes : délibérations/arrêtés</li>
