@@ -10,7 +10,7 @@ const Honoraires = () => {
       <main className="flex-grow">
         <div className="relative h-[400px] w-full overflow-hidden">
           <div
-            className="absolute inset-0 bg-cover bg-center"
+            className="absolute inset-0 bg-cover bg-center brightness-[0.7]"
             style={{
               backgroundImage: "url('https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2426&auto=format&fit=crop')",
             }}
@@ -18,7 +18,7 @@ const Honoraires = () => {
             <div className="absolute inset-0 bg-navy/50"></div>
           </div>
           <div className="relative h-full flex items-center justify-center text-white">
-            <h1 className="text-4xl md:text-5xl font-bold font-aptos">Honoraires</h1>
+            <h1 className="text-2xl md:text-[2.4rem] font-extralight tracking-wide">Honoraires</h1>
           </div>
         </div>
         <div className="container mx-auto px-4 py-12">
