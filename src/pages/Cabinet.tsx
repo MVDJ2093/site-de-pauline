@@ -52,7 +52,7 @@ const Cabinet = () => {
             </div>
             
             <div className="flex flex-col space-y-6 mt-12 max-w-3xl mx-auto">
-              <Card className="p-4 w-full transition-shadow duration-300 hover:shadow-lg bg-white">
+              <Card className="p-4 w-full bg-white">
                 <CardContent className="pt-4">
                   <h3 className="text-xl font-semibold mb-4 text-center">Ecoute et expertise</h3>
                   <p className="text-lg">
@@ -61,7 +61,7 @@ const Cabinet = () => {
                 </CardContent>
               </Card>
               
-              <Card className="p-4 w-full transition-shadow duration-300 hover:shadow-lg bg-white">
+              <Card className="p-4 w-full bg-white">
                 <CardContent className="pt-4">
                   <h3 className="text-xl font-semibold mb-4 text-center">Clarté et pédagogie</h3>
                   <p className="text-lg">
@@ -70,7 +70,7 @@ const Cabinet = () => {
                 </CardContent>
               </Card>
               
-              <Card className="p-4 w-full transition-shadow duration-300 hover:shadow-lg bg-white">
+              <Card className="p-4 w-full bg-white">
                 <CardContent className="pt-4">
                   <h3 className="text-xl font-semibold mb-4 text-center">Règlement amiable</h3>
                   <p className="text-lg">
