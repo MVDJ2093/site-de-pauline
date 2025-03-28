@@ -32,9 +32,9 @@ const Header = () => {
         <div className="flex justify-between items-center">
           <Link
             to="/home"
-            className={`text-[16px] ${isActive('/home') ? 'text-white' : 'text-gold'} hover:text-white transition-all duration-300 whitespace-nowrap flex items-center gap-2`}
+            className={`text-[16px] ${isActive('/home') ? 'text-black' : 'text-navy'} hover:text-white transition-all duration-300 whitespace-nowrap flex items-center gap-2`}
           >
-            <Home size={20} className="brightness-0 invert" />
+            <Home size={20} className="brightness-0" />
             <span className="md:inline">ACCUEIL</span>
           </Link>
           
