@@ -3,6 +3,7 @@ import { Helmet } from "react-helmet";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import RdvButton from "@/components/RdvButton";
+import { Building2, FileText, Scale } from "lucide-react";
 
 const EmployeursPublics = () => {
   return (
@@ -33,22 +34,46 @@ const EmployeursPublics = () => {
         <article className="container mx-auto px-4 py-12 max-w-4xl">
           <section className="mb-12">
             <div className="prose max-w-none">
-              <div className="text-center mb-8">
-                <h2 className="text-3xl font-bold text-navy mb-4">DROIT DE LA FONCTION PUBLIQUE</h2>
-                <p className="text-xl text-navy font-bold">PROBLEMATIQUES RH</p>
+              <div className="grid md:grid-cols-3 gap-6 mb-12">
+                <div className="group bg-gradient-to-br from-white/80 to-white/40 backdrop-blur-sm rounded-xl p-6 shadow-md hover:shadow-xl transition-all duration-500 ease-in-out transform hover:-translate-y-1 border border-gray-100/50 hover:border-gold/20">
+                  <div className="flex flex-col items-center text-center">
+                    <div className="w-16 h-16 flex items-center justify-center rounded-full bg-gold/10 mb-4 group-hover:bg-gold/20 transition-all duration-500 transform group-hover:scale-110">
+                      <Building2 className="w-8 h-8 text-gold group-hover:scale-110 transition-transform duration-500" />
+                    </div>
+                    <h3 className="text-xl font-semibold text-navy mb-2 group-hover:text-navy/90 transition-colors duration-500">
+                      Collectivités territoriales
+                    </h3>
+                  </div>
+                </div>
+                
+                <div className="group bg-gradient-to-br from-white/80 to-white/40 backdrop-blur-sm rounded-xl p-6 shadow-md hover:shadow-xl transition-all duration-500 ease-in-out transform hover:-translate-y-1 border border-gray-100/50 hover:border-gold/20">
+                  <div className="flex flex-col items-center text-center">
+                    <div className="w-16 h-16 flex items-center justify-center rounded-full bg-gold/10 mb-4 group-hover:bg-gold/20 transition-all duration-500 transform group-hover:scale-110">
+                      <FileText className="w-8 h-8 text-gold group-hover:scale-110 transition-transform duration-500" />
+                    </div>
+                    <h3 className="text-xl font-semibold text-navy mb-2 group-hover:text-navy/90 transition-colors duration-500">
+                      Centres hospitaliers
+                    </h3>
+                  </div>
+                </div>
+                
+                <div className="group bg-gradient-to-br from-white/80 to-white/40 backdrop-blur-sm rounded-xl p-6 shadow-md hover:shadow-xl transition-all duration-500 ease-in-out transform hover:-translate-y-1 border border-gray-100/50 hover:border-gold/20">
+                  <div className="flex flex-col items-center text-center">
+                    <div className="w-16 h-16 flex items-center justify-center rounded-full bg-gold/10 mb-4 group-hover:bg-gold/20 transition-all duration-500 transform group-hover:scale-110">
+                      <Scale className="w-8 h-8 text-gold group-hover:scale-110 transition-transform duration-500" />
+                    </div>
+                    <h3 className="text-xl font-semibold text-navy mb-2 group-hover:text-navy/90 transition-colors duration-500">
+                      Etablissements publics
+                    </h3>
+                  </div>
+                </div>
               </div>
 
-              <div className="grid md:grid-cols-3 gap-6 mb-12 text-center">
-                <div className="font-bold">Collectivités territoriales</div>
-                <div className="font-bold">Centres hospitaliers</div>
-                <div className="font-bold">Etablissements publics</div>
-              </div>
-
-              <h3 className="text-2xl font-semibold text-navy mb-4 text-center underline">MES SERVICES :</h3>
+              <h3 className="text-2xl font-semibold text-navy mb-4 underline text-left">MES SERVICES :</h3>
               
               <div className="space-y-8">
-                <div>
-                  <h4 className="text-xl font-semibold text-navy mb-3">CONSEIL/ AIDE A LA DECISION :</h4>
+                <div className="group bg-gradient-to-br from-white/80 to-white/40 backdrop-blur-sm rounded-xl p-6 shadow-md hover:shadow-xl transition-all duration-500 ease-in-out transform hover:-translate-y-1 border border-gray-100/50 hover:border-gold/20">
+                  <h4 className="text-xl font-semibold text-navy mb-3">CONSEIL / AIDE A LA DECISION :</h4>
                   <ul className="list-disc pl-6 space-y-2">
                     <li>Audit : de vos procédures et actes (contrat, délibération, arrêtés, conventions)</li>
                     <li>Enquête administrative</li>
@@ -56,7 +81,7 @@ const EmployeursPublics = () => {
                   </ul>
                 </div>
 
-                <div>
+                <div className="group bg-gradient-to-br from-white/80 to-white/40 backdrop-blur-sm rounded-xl p-6 shadow-md hover:shadow-xl transition-all duration-500 ease-in-out transform hover:-translate-y-1 border border-gray-100/50 hover:border-gold/20">
                   <h4 className="text-xl font-semibold text-navy mb-3">ACCOMPAGNEMENT DANS VOS PROCEDURES :</h4>
                   <ul className="list-disc pl-6 space-y-2">
                     <li>Procédure disciplinaire</li>
@@ -67,7 +92,7 @@ const EmployeursPublics = () => {
                   </ul>
                 </div>
 
-                <div>
+                <div className="group bg-gradient-to-br from-white/80 to-white/40 backdrop-blur-sm rounded-xl p-6 shadow-md hover:shadow-xl transition-all duration-500 ease-in-out transform hover:-translate-y-1 border border-gray-100/50 hover:border-gold/20">
                   <h4 className="text-xl font-semibold text-navy mb-3">DEFENSE DE VOS INTERETS DEVANT LES INSTANCES ET LES JURIDICTIONS :</h4>
                   <ul className="list-disc pl-6 space-y-2">
                     <li>devant le conseil de discipline</li>
